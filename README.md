@@ -1,0 +1,1 @@
+If "Time Series with Konrad"[https://github.com/tng-konrad/time-series-with-Konrad] was a TV show, this would be a spinoff focused on a new character that turned out to be quite popular.
