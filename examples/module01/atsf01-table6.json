@@ -1,0 +1,42 @@
+[
+  {
+    "headers": [
+      "Case",
+      "Bad field",
+      "Rejected by",
+      "Writer calls",
+      "Delivery",
+      "Numbers unchanged"
+    ],
+    "raw": [
+      [
+        "Injected",
+        "unknown.fact",
+        "Evidence-ID gate",
+        0,
+        "template fallback",
+        "yes"
+      ]
+    ],
+    "display": [
+      [
+        "Injected",
+        "unknown.fact",
+        "Evidence-ID gate",
+        "0",
+        "template fallback",
+        "yes"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str",
+        "int",
+        "str",
+        "str"
+      ]
+    ]
+  }
+]

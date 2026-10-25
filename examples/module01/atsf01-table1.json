@@ -1,0 +1,146 @@
+[
+  {
+    "headers": [
+      "Series",
+      "Units",
+      "Frequency",
+      "Rows"
+    ],
+    "raw": [
+      [
+        "IPG2211N",
+        "Index 2017=100",
+        "Monthly, unadjusted",
+        312
+      ]
+    ],
+    "display": [
+      [
+        "IPG2211N",
+        "Index 2017=100",
+        "Monthly, unadjusted",
+        "312"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str",
+        "int"
+      ]
+    ]
+  },
+  {
+    "headers": [
+      "Role",
+      "Train start",
+      "Train end",
+      "Score year",
+      "Train n",
+      "Score n"
+    ],
+    "raw": [
+      [
+        "Validation 1",
+        "2000-01",
+        "2021-12",
+        "2022",
+        264,
+        12
+      ],
+      [
+        "Validation 2",
+        "2000-01",
+        "2022-12",
+        "2023",
+        276,
+        12
+      ],
+      [
+        "Validation 3",
+        "2000-01",
+        "2023-12",
+        "2024",
+        288,
+        12
+      ],
+      [
+        "Final",
+        "2000-01",
+        "2024-12",
+        "2025",
+        300,
+        12
+      ]
+    ],
+    "display": [
+      [
+        "Validation 1",
+        "2000-01",
+        "2021-12",
+        "2022",
+        "264",
+        "12"
+      ],
+      [
+        "Validation 2",
+        "2000-01",
+        "2022-12",
+        "2023",
+        "276",
+        "12"
+      ],
+      [
+        "Validation 3",
+        "2000-01",
+        "2023-12",
+        "2024",
+        "288",
+        "12"
+      ],
+      [
+        "Final",
+        "2000-01",
+        "2024-12",
+        "2025",
+        "300",
+        "12"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "int"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "int"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "int"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "int"
+      ]
+    ]
+  }
+]

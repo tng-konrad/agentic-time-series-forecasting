@@ -1,12 +1,18 @@
 [project]
 name = "agentic-time-series-forecasting"
 version = "0.1.0"
-description = "Add your description here"
+description = "Companion notebooks for agentic time series forecasting workflows"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "matplotlib>=3.11.2",
-    "numpy>=2.5.4",
-    "pandas>=3.1.0",
-    "statsmodels>=0.15.0",
+    "ipykernel>=7.3.0",
+    "nbclient>=0.11.0",
+    "nbformat>=5.11.1",
+    # Match the numerical environment used to capture the published examples.
+    "matplotlib==3.11.0",
+    "numpy==2.4.6",
+    "pandas==3.0.3",
+    "scipy==1.15.3",
+    "statsforecast==2.0.3",
+    "statsmodels==0.14.6",
 ]

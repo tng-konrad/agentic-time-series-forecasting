@@ -1,0 +1,91 @@
+{
+  "status": "matched",
+  "bundle_hash": "dec9136082d443b23ee5e05b04dd3e4ecd8926d4e829b60e61b1f1ba13020cff",
+  "arms": {
+    "A": {
+      "language_status": "not applicable",
+      "report_type": "template",
+      "report": {
+        "selection": {
+          "text": "hw_add minimized mean RMSE across the 2022, 2023 and 2024 validation years. Delivered hw_add; delivery status: ok.",
+          "evidence_ids": [
+            "protocol.selection",
+            "validation.results",
+            "forecast.delivery"
+          ]
+        },
+        "evaluation": {
+          "text": "January–December 2025: delivered RMSE 3.00 and MAE 2.46 index points; seasonal-naive RMSE 3.44 and MAE 2.83. Delivered RMSE is lower than the baseline.",
+          "evidence_ids": [
+            "evaluation.final",
+            "data.profile"
+          ]
+        },
+        "limitation": {
+          "text": "This revised snapshot does not reproduce the data vintage available at each historical origin. One series and one final year do not establish general forecasting or reporting performance.",
+          "evidence_ids": [
+            "limitations.vintage",
+            "limitations.scope"
+          ]
+        }
+      }
+    },
+    "B": {
+      "language_status": "ok",
+      "report_type": "LLM",
+      "report": {
+        "evaluation": {
+          "evidence_ids": [
+            "evaluation.final",
+            "forecast.delivery"
+          ],
+          "text": "For Jan-Dec 2025, the delivered hw_add model achieved RMSE 3.00 and MAE 2.46, versus baseline RMSE 3.44 and MAE 2.83; RMSE is 0.43 lower."
+        },
+        "limitation": {
+          "evidence_ids": [
+            "limitations.scope"
+          ],
+          "text": "Performance is based on one series, three validation years, and one final year; this does not establish generalizability across series or contexts."
+        },
+        "selection": {
+          "evidence_ids": [
+            "catalog.hw_add",
+            "validation.results",
+            "forecast.delivery",
+            "protocol.selection"
+          ],
+          "text": "hw_add (damped additive trend, additive seasonality, period 12) was selected as validation-minimum RMSE model; no fallback was needed."
+        }
+      }
+    },
+    "C": {
+      "language_status": "ok",
+      "report_type": "LLM",
+      "report": {
+        "evaluation": {
+          "evidence_ids": [
+            "evaluation.final",
+            "validation.results"
+          ],
+          "text": "Jan-Dec 2025 delivered RMSE 3.00 and MAE 2.46, versus baseline RMSE 3.44 and MAE 2.83; RMSE is 0.43 lower (12.6% improvement)."
+        },
+        "limitation": {
+          "evidence_ids": [
+            "limitations.scope"
+          ],
+          "text": "One series, three validation years, and one final year do not establish general performance across diverse power-generation contexts."
+        },
+        "selection": {
+          "evidence_ids": [
+            "protocol.selection",
+            "validation.results",
+            "forecast.delivery"
+          ],
+          "text": "hw_add selected by minimum mean three-fold RMSE (3.61 vs. hw_mul 4.10, seasonal_naive 3.74); no fallback needed."
+        }
+      }
+    }
+  },
+  "replay_seconds": 0.0007615829817950726,
+  "new_model_calls": 0
+}

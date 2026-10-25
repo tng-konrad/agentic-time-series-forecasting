@@ -1,0 +1,101 @@
+[
+  {
+    "headers": [
+      "Producer",
+      "Artifact",
+      "Evidence example",
+      "Consumer",
+      "Check"
+    ],
+    "raw": [
+      [
+        "Inspect",
+        "Profile",
+        "data.profile",
+        "Analyst",
+        "Development prefix only"
+      ],
+      [
+        "Analyst",
+        "CandidateBrief",
+        "catalog.hw_add",
+        "Writer",
+        "Fixed IDs; known references"
+      ],
+      [
+        "Python",
+        "ForecastResult",
+        "forecast.delivery",
+        "Scorer / writer",
+        "Frozen predictions and dates"
+      ],
+      [
+        "Writer",
+        "Report",
+        "evaluation.final",
+        "Reader / audit",
+        "Shape checked; meaning reviewed"
+      ]
+    ],
+    "display": [
+      [
+        "Inspect",
+        "Profile",
+        "data.profile",
+        "Analyst",
+        "Development prefix only"
+      ],
+      [
+        "Analyst",
+        "CandidateBrief",
+        "catalog.hw_add",
+        "Writer",
+        "Fixed IDs; known references"
+      ],
+      [
+        "Python",
+        "ForecastResult",
+        "forecast.delivery",
+        "Scorer / writer",
+        "Frozen predictions and dates"
+      ],
+      [
+        "Writer",
+        "Report",
+        "evaluation.final",
+        "Reader / audit",
+        "Shape checked; meaning reviewed"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str"
+      ]
+    ]
+  }
+]

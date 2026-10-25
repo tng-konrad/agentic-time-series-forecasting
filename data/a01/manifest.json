@@ -1,0 +1,102 @@
+{
+  "source_url": "https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/jun-2025/8501011.xlsx",
+  "source_sha256": "13853143285f65c1d368c51b81e9bf83aab1d9613dac1c091e0dd38e6c64ae5c",
+  "release_date": "2025-07-31",
+  "retrieved_on": "2026-10-22",
+  "source_sheet": "Data1",
+  "source_table": 11,
+  "units": "nominal AUD millions",
+  "series_type": "Original",
+  "frequency": "MS",
+  "start": "2000-01-01",
+  "end": "2025-06-01",
+  "observations_per_series": 306,
+  "rows": 4896,
+  "series": [
+    {
+      "series_id": "A3349335T",
+      "state": "New South Wales",
+      "industry": "Supermarket and grocery stores"
+    },
+    {
+      "series_id": "A3349399C",
+      "state": "New South Wales",
+      "industry": "Clothing retailing"
+    },
+    {
+      "series_id": "A3349337W",
+      "state": "New South Wales",
+      "industry": "Hardware, building and garden supplies retailing"
+    },
+    {
+      "series_id": "A3349709X",
+      "state": "New South Wales",
+      "industry": "Cafes, restaurants and catering services"
+    },
+    {
+      "series_id": "A3349565X",
+      "state": "Victoria",
+      "industry": "Supermarket and grocery stores"
+    },
+    {
+      "series_id": "A3349483V",
+      "state": "Victoria",
+      "industry": "Clothing retailing"
+    },
+    {
+      "series_id": "A3349416V",
+      "state": "Victoria",
+      "industry": "Hardware, building and garden supplies retailing"
+    },
+    {
+      "series_id": "A3349640L",
+      "state": "Victoria",
+      "industry": "Cafes, restaurants and catering services"
+    },
+    {
+      "series_id": "A3349882C",
+      "state": "Queensland",
+      "industry": "Supermarket and grocery stores"
+    },
+    {
+      "series_id": "A3349477X",
+      "state": "Queensland",
+      "industry": "Clothing retailing"
+    },
+    {
+      "series_id": "A3349479C",
+      "state": "Queensland",
+      "industry": "Hardware, building and garden supplies retailing"
+    },
+    {
+      "series_id": "A3349481R",
+      "state": "Queensland",
+      "industry": "Cafes, restaurants and catering services"
+    },
+    {
+      "series_id": "A3349744F",
+      "state": "Western Australia",
+      "industry": "Supermarket and grocery stores"
+    },
+    {
+      "series_id": "A3349507A",
+      "state": "Western Australia",
+      "industry": "Clothing retailing"
+    },
+    {
+      "series_id": "A3349909T",
+      "state": "Western Australia",
+      "industry": "Hardware, building and garden supplies retailing"
+    },
+    {
+      "series_id": "A3349910A",
+      "state": "Western Australia",
+      "industry": "Cafes, restaurants and catering services"
+    }
+  ],
+  "csv_sha256": "6822dd47bdbad769feb6238a7044d4474033bc970690034c4dd9d3bad2999c21",
+  "extraction": "python scripts/prepare_a01_data.py /path/to/8501011.xlsx --retrieved-on 2026-10-22",
+  "license_url": "https://www.abs.gov.au/website-privacy-copyright-and-disclaimer",
+  "attribution": "Australian Bureau of Statistics, Retail Trade, Australia, June 2025, Table 11",
+  "vintage_note": "One June 2025 release; not a real-time vintage backtest."
+}

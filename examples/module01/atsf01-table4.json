@@ -1,0 +1,138 @@
+[
+  {
+    "headers": [
+      "Run",
+      "Step",
+      "Input",
+      "Output",
+      "Status",
+      "LLM calls"
+    ],
+    "raw": [
+      [
+        "Primary",
+        "1 · C analyst",
+        "Profile + catalog",
+        "CandidateBrief",
+        "ok",
+        1
+      ],
+      [
+        "Primary",
+        "2 · Backtest",
+        "Training prefixes",
+        "Validation choice",
+        "ok",
+        0
+      ],
+      [
+        "Primary",
+        "3 · Freeze / score",
+        "Choice + dated data",
+        "Forecast + evidence",
+        "ok",
+        0
+      ],
+      [
+        "Primary",
+        "4 · B writer",
+        "Evidence",
+        "Report B",
+        "ok",
+        1
+      ],
+      [
+        "Primary",
+        "5 · C writer",
+        "Evidence + actual brief",
+        "Report C",
+        "ok",
+        1
+      ]
+    ],
+    "display": [
+      [
+        "Primary",
+        "1 · C analyst",
+        "Profile + catalog",
+        "CandidateBrief",
+        "ok",
+        "1"
+      ],
+      [
+        "Primary",
+        "2 · Backtest",
+        "Training prefixes",
+        "Validation choice",
+        "ok",
+        "0"
+      ],
+      [
+        "Primary",
+        "3 · Freeze / score",
+        "Choice + dated data",
+        "Forecast + evidence",
+        "ok",
+        "0"
+      ],
+      [
+        "Primary",
+        "4 · B writer",
+        "Evidence",
+        "Report B",
+        "ok",
+        "1"
+      ],
+      [
+        "Primary",
+        "5 · C writer",
+        "Evidence + actual brief",
+        "Report C",
+        "ok",
+        "1"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "int"
+      ]
+    ]
+  }
+]

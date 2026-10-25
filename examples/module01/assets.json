@@ -1,0 +1,182 @@
+[
+  {
+    "kind": "graph",
+    "number": 1,
+    "filename": "atsf01-graph1.png",
+    "path": "graphs/atsf01-graph1.png",
+    "section": "Why chain a forecasting workflow?",
+    "cell_id": "workflow-diagram",
+    "caption": "Fixed stages and the three reporting paths.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "bb5d76e45533b20bf988a75bff716c1a0b57fd1d89bf74f7a405daac3fff04e2",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      4.2250000000000005
+    ]
+  },
+  {
+    "kind": "graph",
+    "number": 2,
+    "filename": "atsf01-graph2.png",
+    "path": "graphs/atsf01-graph2.png",
+    "section": "One series, one honest forecast question",
+    "cell_id": "development-plot",
+    "caption": "Development history; final 2025 outcomes are withheld.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "8beb7164a1961d5b6da303b01f56c18d3771f92a5b995d832977e93294d93187",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      5.2
+    ]
+  },
+  {
+    "kind": "table",
+    "number": 1,
+    "filename": "atsf01-table1.png",
+    "path": "graphs/atsf01-table1.png",
+    "section": "One series, one honest forecast question",
+    "cell_id": "protocol-table",
+    "caption": "Source metadata and expanding chronological windows.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "a109fe03b158e552039298faab8c9a7bf118fc5e871d5af2b01ec3a333a3c45f",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      3.08
+    ],
+    "table_sidecar": "examples/module01/atsf01-table1.json",
+    "table_sidecar_sha256": "8f28533dab65c7aa04b76cf3def41d32a422ccfceb73b394f506c69c62f4a94f",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 2,
+    "filename": "atsf01-table2.png",
+    "path": "graphs/atsf01-table2.png",
+    "section": "Build the numerical baseline first",
+    "cell_id": "scores-table",
+    "caption": "Validation scores and the frozen final comparison, in index points.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "fbe97c6eea06be97fa87b756074a5dfdfc4cbc5e5b2e8bd7c018ba37262ca964",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      3.08
+    ],
+    "table_sidecar": "examples/module01/atsf01-table2.json",
+    "table_sidecar_sha256": "8ea8c8a8f19c3865e79f36e431bc83378b66565ac69a84669b31d78b02e00b2c",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "graph",
+    "number": 3,
+    "filename": "atsf01-graph3.png",
+    "path": "graphs/atsf01-graph3.png",
+    "section": "Build the numerical baseline first",
+    "cell_id": "forecast-plot",
+    "caption": "Final observed values and frozen selected/baseline forecasts.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "064acf7dead88b69e78608747eac449d9888c954b98ea1f47bbeaa3c0f87a3e7",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      5.2
+    ]
+  },
+  {
+    "kind": "table",
+    "number": 3,
+    "filename": "atsf01-table3.png",
+    "path": "graphs/atsf01-table3.png",
+    "section": "Turn results into explicit handoffs",
+    "cell_id": "handoff-table",
+    "caption": "Four structured handoffs and the checks they support.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "f86b995ac0d18ee38c4c3749d70d1b3aed3e62c2e163d5e6e68645a88b4208f7",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      2.86
+    ],
+    "table_sidecar": "examples/module01/atsf01-table3.json",
+    "table_sidecar_sha256": "0b09dd513025ab206685d94a3c80540cc6ddc3deb2e439f3f6ee14039b1bc359",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 4,
+    "filename": "atsf01-table4.png",
+    "path": "graphs/atsf01-table4.png",
+    "section": "Compare a template, one call, and a chain",
+    "cell_id": "trace-table",
+    "caption": "Chronology of the genuine primary capture; the template also ran before B.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "27a0a55558603cc9f1767a578cb82394c3d1c982e29601e04863316ff5a97758",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      2.64
+    ],
+    "table_sidecar": "examples/module01/atsf01-table4.json",
+    "table_sidecar_sha256": "a77b80f4011e3bf2f21b4e071ed7e3958680728857a70372d757dfeda120860d",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 5,
+    "filename": "atsf01-table5.png",
+    "path": "graphs/atsf01-table5.png",
+    "section": "Check the claims and count the work",
+    "cell_id": "audit-work-table",
+    "caption": "Final-report factual audit and archived reporting work.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "118048b020588e594d7a25f561f2f942a15946099853f3212e7076adfdef8005",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      3.52
+    ],
+    "table_sidecar": "examples/module01/atsf01-table5.json",
+    "table_sidecar_sha256": "a9f7e0210694a393c8ec8ea730d0fe73c3e2615e59cc361ac8076e80237bc121",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 6,
+    "filename": "atsf01-table6.png",
+    "path": "graphs/atsf01-table6.png",
+    "section": "Make a failed handoff visible",
+    "cell_id": "failure-table",
+    "caption": "One injected unknown-reference failure, excluded from observed model outcomes.",
+    "source_result_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+    "sha256": "8209dd299a417db27345186f093c234c262ada84cf5f108559beafdbd7c3c45a",
+    "post": "a01-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      1.5
+    ],
+    "table_sidecar": "examples/module01/atsf01-table6.json",
+    "table_sidecar_sha256": "265cbfac9a039f49e89e6e02a99781bebac08e7beb22d691ab64d3bf6b62e97b",
+    "free_text_artists": 0
+  }
+]

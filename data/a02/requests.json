@@ -1,0 +1,122 @@
+[
+  {
+    "request_id": "A02-01",
+    "series_id": "FOODS_1_018_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-02",
+    "series_id": "FOODS_1_046_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-03",
+    "series_id": "FOODS_1_085_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-04",
+    "series_id": "FOODS_1_099_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-05",
+    "series_id": "FOODS_1_001_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-06",
+    "series_id": "FOODS_1_002_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-07",
+    "series_id": "FOODS_1_008_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-08",
+    "series_id": "FOODS_1_009_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-09",
+    "series_id": "FOODS_1_005_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-10",
+    "series_id": "FOODS_1_014_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-11",
+    "series_id": "FOODS_1_003_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  },
+  {
+    "request_id": "A02-12",
+    "series_id": "FOODS_1_017_CA_1_validation",
+    "text": "Forecast the next 28 days of recorded unit sales for this item.",
+    "target": "observed_sales",
+    "horizon": 28,
+    "frequency": "D",
+    "units": "item units",
+    "as_of": "2016-03-27"
+  }
+]

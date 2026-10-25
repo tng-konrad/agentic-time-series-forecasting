@@ -1,0 +1,22 @@
+{
+  "preparation_version": "module01-fresh-v1",
+  "series_id": "IPG2211N",
+  "title": "Industrial Production: Utilities: Electric Power Generation, Transmission, and Distribution (NAICS = 2211)",
+  "source_url": "https://fred.stlouisfed.org/series/IPG2211N",
+  "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IPG2211N",
+  "publisher": "Board of Governors of the Federal Reserve System (US), G.17; distributed by FRED",
+  "units": "Index 2017=100",
+  "frequency": "MS",
+  "seasonal_adjustment": "Not seasonally adjusted",
+  "start": "2000-01-01",
+  "end": "2025-12-01",
+  "rows": 312,
+  "retrieved_at": "2026-10-25T17:41:28.234387+00:00",
+  "source_updated": "2026-10-16",
+  "raw_path": "raw/IPG2211N.csv",
+  "raw_sha256": "1fa24a768a12b4f0ae17b7bdec61199f1d38cc76231f79a324f7a1c10dc45a3a",
+  "processed_sha256": "c70050df9a0b0cc32653b89b421dc71a2fcf0fab618240e00dcecaa342381f31",
+  "redistribution": "FRED series page tags the series Public Domain: Citation Requested; checked 2026-10-25.",
+  "attribution": "Board of Governors of the Federal Reserve System (US), IPG2211N, retrieved from FRED, Federal Reserve Bank of St. Louis, 25 October 2026.",
+  "vintage_note": "Newly downloaded revised vintage; historical observation-date splits are not real-time availability backtests."
+}

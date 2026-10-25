@@ -1,0 +1,195 @@
+{
+  "module": "a02",
+  "prepared_on": "2026-10-24",
+  "frequency": "D",
+  "units": "item units",
+  "target": "observed_sales",
+  "store": "CA_1",
+  "source_sha256": {
+    "sales_train_validation.csv.zip": "88cf53dbb3782b93dc64c038f7589a2677ff171df8857346a07745fb80f9803e",
+    "calendar.csv": "d12b5914ef03e66649adf5dd9e996e6602251c22b7a6af8f1f7e3aa12f8860f5"
+  },
+  "csv_sha256": "c191fa77fdabd32c41a77ebf23ca190c2d705a5788c62007e3873a83712cb050",
+  "store_source_count": 3049,
+  "selection": {
+    "origin_day": 1801,
+    "origin_date": "2016-01-03",
+    "window": 365,
+    "order": "Lexicographic source ID within each stratum; fixed counts 4/4/2/2",
+    "predicates": {
+      "dense": "zero_fraction <= .05",
+      "sparse": ".60 <= zero_fraction <= .95 and positive_count >= 20",
+      "boundary_below": ".40 <= zero_fraction < .50",
+      "boundary_above": ".50 <= zero_fraction <= .60"
+    },
+    "eligible_counts": {
+      "dense": 63,
+      "sparse": 1438,
+      "boundary_below": 371,
+      "boundary_above": 392
+    }
+  },
+  "span": {
+    "first_day": 1437,
+    "last_day": 1913,
+    "start": "2015-01-04",
+    "end": "2016-04-24",
+    "days_per_series": 477,
+    "observations": 5724
+  },
+  "protocol": {
+    "as_of": "2016-03-27",
+    "holdout_start": "2016-03-28",
+    "holdout_end": "2016-04-24",
+    "train_window": 365,
+    "horizon": 28,
+    "validation_ends": [
+      "2016-01-03",
+      "2016-01-31",
+      "2016-02-28"
+    ]
+  },
+  "sources": [
+    "https://www.kaggle.com/competitions/m5-forecasting-accuracy/data",
+    "https://github.com/Mcompetitions/M5-methods"
+  ],
+  "usage_terms": {
+    "reference": "https://www.kaggle.com/competitions/m5-forecasting-accuracy/rules",
+    "note": "Subset of the M5 competition files already supplied with this repository; original competition/data terms apply. No additional data license is asserted."
+  },
+  "extraction": ".venv/bin/python -m scripts.prepare_a02_data --prepared-on 2026-10-24",
+  "series": [
+    {
+      "series_id": "FOODS_1_018_CA_1_validation",
+      "item_id": "FOODS_1_018",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "dense",
+      "selection_zero_count": 5,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_046_CA_1_validation",
+      "item_id": "FOODS_1_046",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "dense",
+      "selection_zero_count": 11,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_085_CA_1_validation",
+      "item_id": "FOODS_1_085",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "dense",
+      "selection_zero_count": 2,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_099_CA_1_validation",
+      "item_id": "FOODS_1_099",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "dense",
+      "selection_zero_count": 7,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_001_CA_1_validation",
+      "item_id": "FOODS_1_001",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "sparse",
+      "selection_zero_count": 225,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_002_CA_1_validation",
+      "item_id": "FOODS_1_002",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "sparse",
+      "selection_zero_count": 247,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_008_CA_1_validation",
+      "item_id": "FOODS_1_008",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "sparse",
+      "selection_zero_count": 258,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_009_CA_1_validation",
+      "item_id": "FOODS_1_009",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "sparse",
+      "selection_zero_count": 231,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_005_CA_1_validation",
+      "item_id": "FOODS_1_005",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "boundary_below",
+      "selection_zero_count": 182,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_014_CA_1_validation",
+      "item_id": "FOODS_1_014",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "boundary_below",
+      "selection_zero_count": 168,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_003_CA_1_validation",
+      "item_id": "FOODS_1_003",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "boundary_above",
+      "selection_zero_count": 215,
+      "selection_observed_count": 365
+    },
+    {
+      "series_id": "FOODS_1_017_CA_1_validation",
+      "item_id": "FOODS_1_017",
+      "department": "FOODS_1",
+      "category": "FOODS",
+      "store": "CA_1",
+      "state": "CA",
+      "stratum": "boundary_above",
+      "selection_zero_count": 219,
+      "selection_observed_count": 365
+    }
+  ]
+}

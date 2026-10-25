@@ -1,0 +1,231 @@
+{
+  "capture_hash": "dec9136082d443b23ee5e05b04dd3e4ecd8926d4e829b60e61b1f1ba13020cff",
+  "review_method": "Editorial paragraph-by-paragraph mapping of empirical claims; automatic checks also recompute reported numbers and validate exact source text. Historical and technical claims use adjacent primary-source links in the article.",
+  "paragraphs": [
+    {
+      "text": "I downloaded a fresh snapshot and kept January 2000 through December 2025: 312 monthly observations. The task is a twelve-month retrospective forecast, accompanied by a short explanation for an energy-sector analyst.",
+      "evidence": [
+        "data/module01/manifest.json: start, end, rows, retrieved_at"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Graph 1 — The stages are fixed. C has a genuine brief-to-writer dependency; the language model cannot alter the forecasts.*",
+      "evidence": [
+        "scripts/capture_module01.py: main",
+        "examples/module01/recorded_run.json: stages.C.writer.predecessor_hash"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Graph 2 — Development history ends in December 2024. The shaded years are validation windows; the final 2025 observations are withheld.*",
+      "evidence": [
+        "examples/module01/numerical_results.json: frozen.profile, frozen.backtest"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Table 1 — Expanding training windows and twelve-month evaluation periods. Counts are observations, not independent experiments.*",
+      "evidence": [
+        "examples/module01/numerical_results.json: frozen.backtest.*.folds, frozen.profile"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "Each validation forecast spans a full year: 2022, 2023 or 2024. The final fit uses January 2000–December 2024 and predicts 2025. Everything remains chronological.",
+      "evidence": [
+        "examples/module01/numerical_results.json: frozen.backtest.*.folds, frozen.dates"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Table 2 — Errors are in index points. The upper block drives selection; the lower block evaluates the already-frozen final forecasts.*",
+      "evidence": [
+        "examples/module01/numerical_results.json: frozen.backtest, evaluation"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "Additive Holt–Winters wins on mean validation RMSE: **3.61**, compared with **3.74** for seasonal naive and **4.10** for multiplicative Holt–Winters. It does not win every validation year. Seasonal naive is better in 2022 and 2023; the additive smoother's stronger 2024 result brings its average below the baseline.",
+      "evidence": [
+        "examples/module01/numerical_results.json: frozen.backtest.*.folds, frozen.backtest.*.mean_rmse, frozen.selected_model"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "On the final year, the selected forecast has **3.00 RMSE and 2.46 MAE**, versus **3.44 RMSE and 2.83 MAE** for seasonal naive. No final-refit fallback was needed. Ranking uses full precision; displayed scores use two decimal places.",
+      "evidence": [
+        "examples/module01/numerical_results.json: evaluation.delivered, evaluation.baseline, frozen.delivery_status"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Graph 3 — Recent history, frozen forecasts and 2025 observations. The shorter display window does not shorten training.*",
+      "evidence": [
+        "examples/module01/numerical_results.json: frozen.profile, frozen.forecast, frozen.baseline_forecast, evaluation.actual"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The selected numerical method does better on this final year. An LLM did not produce that improvement. Every reporting path receives these same forecast arrays and scores. Their equality is a check on the architecture, not a discovery about agent forecasting ability.",
+      "evidence": [
+        "examples/module01/numerical_results.json: evaluation.rmse_direction",
+        "examples/module01/replay_verification.json: status, arms"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "We also have no calibrated prediction intervals here. An attractive shaded band would imply information the experiment has not estimated.",
+      "evidence": [
+        "examples/module01/protocol.json: numerical.scope",
+        "examples/module01/numerical_results.json: frozen.forecast"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Table 3 — Different handoffs support different checks. An evidence reference is an address, not a guarantee of truth.*",
+      "evidence": [
+        "agentic_ts/module01_workflow.py: validate, schema",
+        "examples/module01/claim_audit.json: brief"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "B and C use the same writer instruction, response contract, model and generation settings. B receives the original profile and catalog too. C gains an extra generated interpretation, not otherwise hidden source facts.",
+      "evidence": [
+        "examples/module01/recorded_run.json: contract, stages.B.writer.inputs, stages.C.writer.inputs"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The capture used the installed local `qwen3-coder-next:q4_K_M` model. All three scheduled language requests completed on their first attempts. No failed primary run was replaced with a more flattering example.",
+      "evidence": [
+        "examples/module01/recorded_run.json: model_identity.name, stages.*.status, policy"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Table 4 — The actual capture order. C's analyst precedes numerical fitting; its writer receives the accepted brief after scoring.*",
+      "evidence": [
+        "examples/module01/recorded_run.json: stages.*.started_at, stages.C.writer.predecessor_hash"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The brief's first note says that seasonal naive repeats the last twelve observations, but cites `data.profile`. That fact describes the series; it does not define the algorithm. The sentence is true, yet the supplied citation does not support its method claim. The correct catalog fact was available. The structural gate still accepted the response because the cited ID exists.",
+      "evidence": [
+        "examples/module01/recorded_run.json: stages.C.analyst.output.candidates.0.claim",
+        "examples/module01/claim_audit.json: brief.1"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "Both final LLM reports state the main numerical comparison correctly. C includes the three validation averages; B is shorter. Both omit explicit index-point units in their own report text. C also adds “12.6% improvement.” That relative RMSE reduction is arithmetically correct at the stated precision, but it was unrequested and uses one decimal place. It concerns the forecasting method, not the value of the chain.",
+      "evidence": [
+        "examples/module01/recorded_run.json: arms.B.report, arms.C.report",
+        "examples/module01/claim_audit.json: completeness_notes, reports, interpretation"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The notebook displays the exact reports and brief. It recomputes numerical results and verifies those captured responses offline. Replay checks inputs, hashes and dependencies; it does not pretend to be a new inference run.",
+      "evidence": [
+        "a01-forecasting-workflow.ipynb: show-brief, show-reports, replay-check",
+        "examples/module01/replay_verification.json: status, new_model_calls"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Table 5 — Final-report audit counts and archived work. The intermediate brief and injected failure are excluded from the report denominators.*",
+      "evidence": [
+        "examples/module01/claim_audit.json: summary, granularity",
+        "examples/module01/atsf01-table5.json: raw"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "A has adequate citations for **16 of 17** factual assertions. Its validation-year statement is correct, but the template cites score facts without year labels rather than `protocol.validation`. Even a hand-authored template needs reference checking.",
+      "evidence": [
+        "examples/module01/claim_audit.json: summary.A, reports.A.4"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "B's **18 of 18** and C's **19 of 19** factual assertions are supported. These totals reflect different amounts of detail; they are not independent trials. Nor does a supported-claim count erase omitted units or prove that readers prefer the report.",
+      "evidence": [
+        "examples/module01/claim_audit.json: summary.B, summary.C, completeness_notes"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The timing comparison requires equal care. B's writer request took **4.66 seconds**. C's analyst and writer requests summed to **28.04 seconds**. However, C went first, and its analyst request included **19.22 seconds** of server-reported model loading. A's template-render duration rounds to **0.00 seconds**, but is not exactly zero.",
+      "evidence": [
+        "examples/module01/recorded_run.json: stages.*.request_seconds, stages.C.analyst.metadata.load_duration, template_seconds"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "C's total excludes intervening numerical work and B's request. Template rendering and HTTP requests are different operations. This ordered capture does not establish stable latency, an end-to-end speedup, or a fair cold-versus-warm performance comparison.",
+      "evidence": [
+        "a01-forecasting-workflow.ipynb: audit-work-table",
+        "examples/module01/recorded_run.json: policy, numerical_seconds"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The more interesting question is what C's writer did with the brief. Its final report does not discuss the candidate rationales; it reports the measured winner and validation averages. It retains a narrow-scope qualification, but B supplies the same qualification without seeing the brief. Mechanical transfer is confirmed. A useful contribution from that extra stage is much less evident.",
+      "evidence": [
+        "examples/module01/claim_audit.json: brief_use",
+        "examples/module01/recorded_run.json: arms.B.report, arms.C.report"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The live responses passed structural validation, so the notebook adds one explicitly injected failure. An otherwise valid brief cites `unknown.fact`.",
+      "evidence": [
+        "examples/module01/recorded_run.json: stages.*.status",
+        "examples/module01/failure_fixture.json: mode, stage.raw"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "*Table 6 — The constructed unknown-reference case is a test of code behavior, not an observed model failure.*",
+      "evidence": [
+        "examples/module01/failure_fixture.json: mode, stage.status, writer_calls"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The validator rejects the missing ID. The downstream writer is skipped, a labeled template fallback is delivered, and the numerical evidence remains unchanged. There is no hidden retry loop and no new model call in this fixture.",
+      "evidence": [
+        "examples/module01/failure_fixture.json: stage.error, writer_calls, delivery, numerical_evidence_unchanged"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "That is a guarantee the code can enforce. It cannot enforce all the semantic judgments we needed earlier: the real brief's `data.profile` reference passed because it exists, despite being inadequate support for the method description.",
+      "evidence": [
+        "examples/module01/claim_audit.json: brief.1",
+        "examples/module01/recorded_run.json: stages.C.analyst.status"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "The numerical experiment produced a useful forecast comparison. The single-call report stated its principal result correctly. The two-call chain completed and made an intermediate artifact inspectable, but this case provides little evidence that the extra artifact was necessary for the final explanation.",
+      "evidence": [
+        "examples/module01/numerical_results.json: evaluation",
+        "examples/module01/claim_audit.json: summary, brief_use"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    },
+    {
+      "text": "For now, the scope is deliberately small: one series, one final year, one captured attempt per language path, revised data, and point forecasts. We have not measured reader clarity or human productivity. The next module can introduce routing between different forecasting requests while retaining the same discipline: decisions stay inspectable, and explanations remain accountable to evidence.\n",
+      "evidence": [
+        "examples/module01/protocol.json: numerical.scope",
+        "examples/module01/recorded_run.json: stages, policy",
+        "examples/module01/claim_audit.json: review_method"
+      ],
+      "review": "Supported with the qualifications stated in the paragraph; editorial interpretation is not an additional measured outcome."
+    }
+  ]
+}

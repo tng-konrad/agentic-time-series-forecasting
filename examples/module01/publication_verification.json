@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "capture_hash": "dec9136082d443b23ee5e05b04dd3e4ecd8926d4e829b60e61b1f1ba13020cff",
+  "frozen_hash": "f7ef78e1246aec112f89185cc71fde3861e9a6261dc9393cbae1800e21b210db",
+  "executed_code_cells": 26,
+  "matching_substantive_sections": 8,
+  "graphs": 3,
+  "tables": 6,
+  "checked_table_cells": 143,
+  "empirical_paragraphs_reviewed": 30,
+  "seo_characters": 146,
+  "new_model_calls": 0,
+  "notebook_sha256": "af56e8332df3df4a40b606991671872efa98e38c492956e6715b120918c9087b",
+  "post_sha256": "bdd0ba2ac6ff381042f0b9d716eb85cff341af11265a35eaf16e16b7f556a68c",
+  "scope": "Structural checks, independent arithmetic, exact replay and editorial evidence mappings. Visual and semantic review remain explicit author responsibilities."
+}
