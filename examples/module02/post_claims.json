@@ -1,0 +1,496 @@
+{
+  "reviewed_at": "2026-10-27T00:14:48.531074+00:00",
+  "post_sha256": "d7f87ba98fa0ad850adc2e4b423ebb94c85bb94d64bcceee2de8d04d9afd9457",
+  "capture_hash": "838667b77229aaafe8e608120af6f1ee418482c8149f3d0abb0a3a36be65e015",
+  "method": "Author read empirical prose and captions against actual captures, numerical records, policy and exported tables. References use file-relative JSON pointers; automated checks establish binding and arithmetic, not semantic truth.",
+  "paragraphs": [
+    {
+      "paragraph_index": 2,
+      "text": "In Module 2 of Agentic Time Series Forecasting, we give that decision an explicit place in the workflow. The [runnable notebook](a02-routing.ipynb) compares a simple forecasting baseline, deterministic routing rules, and an LLM router using the same available evidence. The interesting result was how often the model found a plausible path, then failed to provide a decision we could execute.",
+      "evidence": [
+        "examples/module02/work.json#/audit/0",
+        "examples/module02/work.json#/numerical"
+      ]
+    },
+    {
+      "paragraph_index": 4,
+      "text": "Routing classifies an input and directs it to a predefined specialist workflow. In Module 1, every request followed the same sequence. Here, the request can take a different path depending on its history and metadata.",
+      "evidence": [
+        "examples/module02/protocol.json#/policy",
+        "examples/module02/protocol.json#/system"
+      ]
+    },
+    {
+      "paragraph_index": 10,
+      "text": "*Graph 1 — One bounded decision selects a numerical workflow. Python validates the proposal, fits the models and calculates the forecasts.*",
+      "evidence": [
+        "examples/module02/assets.json#/0",
+        "examples/module02/protocol.json#/policy"
+      ]
+    },
+    {
+      "paragraph_index": 11,
+      "text": "There is no open-ended tool loop here. The model cannot invent a forecasting method, change the horizon or search for more data. Keeping that boundary small makes the experiment easier to understand.",
+      "evidence": [
+        "examples/module02/protocol.json#/policy",
+        "examples/module02/protocol.json#/numerical_config"
+      ]
+    },
+    {
+      "paragraph_index": 13,
+      "text": "The example uses a bundled M5 subset: twelve item series from Walmart's CA_1 store, with 477 daily observations each. The target is **recorded unit sales**. Calling this a demand-forecasting example does not make stock availability observable: zero recorded sales alone cannot distinguish zero demand from a product that was unavailable. [M5 organizers and dataset documentation](https://github.com/Mcompetitions/M5-methods).",
+      "evidence": [
+        "data/a02/manifest.json#/store",
+        "data/a02/manifest.json#/span",
+        "examples/module02/numerical_results.json#/rows/0/arms/B/decision/evidence/data.limitations"
+      ]
+    },
+    {
+      "paragraph_index": 14,
+      "text": "The forecast is issued on 27 March 2016 and covers 28 March–24 April. Each full-history request has 449 observations available at that origin. The panel includes dense, sparse and threshold-adjacent histories, selected using an earlier training window. Those selection labels never determine the later route.",
+      "evidence": [
+        "examples/module02/protocol.json#/origin",
+        "examples/module02/protocol.json#/target_start",
+        "examples/module02/protocol.json#/target_end",
+        "data/a02/manifest.json#/selection",
+        "examples/module02/numerical_results.json#/rows/0/arms/B/decision/evidence/history.available_span"
+      ]
+    },
+    {
+      "paragraph_index": 15,
+      "text": "We then create two restricted views of each of two anchor items. The short-history version exposes only the last 60 days. The simulated new-product version exposes no target history and supplies explicit synthetic launch metadata.",
+      "evidence": [
+        "data/module02/cases.json#/12",
+        "data/module02/cases.json#/13",
+        "data/module02/cases.json#/14",
+        "data/module02/cases.json#/15"
+      ]
+    },
+    {
+      "paragraph_index": 17,
+      "text": "*Graph 2 — Only permitted pre-origin data appear. The new-product panel shows donors; its target history is empty.*",
+      "evidence": [
+        "examples/module02/assets.json#/1",
+        "examples/module02/numerical_results.json#/rows/12/arms/B/decision/evidence"
+      ]
+    },
+    {
+      "paragraph_index": 18,
+      "text": "For the new-product views, three fixed same-department/store items supply a deliberately simple prior. We take each donor's mean sales over the preceding 28 days, then take the median of those means. No hidden target observations or target-based scaling enter the calculation.",
+      "evidence": [
+        "examples/module02/numerical_results.json#/rows/12/arms/B/decision/evidence/donor.prior",
+        "examples/module02/numerical_results.json#/rows/12/arms/B/numerical"
+      ]
+    },
+    {
+      "paragraph_index": 19,
+      "text": "That is an assumption we can inspect, not a discovered business relationship. These are established products being treated as unseen. The experiment does not establish performance on real launches, and the repeated anchor outcomes do not create additional independent products.",
+      "evidence": [
+        "data/module02/cases.json#/12/metadata_origin",
+        "data/module02/cases.json#/14/metadata_origin",
+        "examples/module02/numerical_results.json#/rows/12/case",
+        "examples/module02/numerical_results.json#/rows/14/case"
+      ]
+    },
+    {
+      "paragraph_index": 21,
+      "text": "*Table 1 — The twelve full histories and four constructed views stay separate. Additional input cases test request handling rather than forecast accuracy.*",
+      "evidence": [
+        "examples/module02/assets.json#/2",
+        "data/module02/cases.json#/0",
+        "data/module02/cases.json#/19"
+      ]
+    },
+    {
+      "paragraph_index": 22,
+      "text": "The full-history workflows compare candidates on three rolling 28-day validation blocks, each with 365 preceding training days. The short workflow uses one block: 32 training days followed by 28 validation days. Final fits use only the history available at the issue date. This follows the basic forecasting requirement that each prediction be evaluated on observations excluded from its corresponding fit. [Forecasting evaluation](https://otexts.com/fpp3/toolbox.html).",
+      "evidence": [
+        "examples/module02/numerical_results.json#/rows/0/arms/B/numerical/candidates",
+        "examples/module02/numerical_results.json#/rows/14/arms/B/numerical/candidates"
+      ]
+    },
+    {
+      "paragraph_index": 24,
+      "text": "The simplest reference, **A**, repeats the last observed week. For an eligible zero-history request, it uses the same fixed donor prior available to the other approaches. It has basic capability checks; it is not an artificially helpless baseline.",
+      "evidence": [
+        "examples/module02/numerical_results.json#/rows/0/arms/A/numerical",
+        "examples/module02/numerical_results.json#/rows/12/arms/A/numerical"
+      ]
+    },
+    {
+      "paragraph_index": 25,
+      "text": "**B** applies explicit routing rules. **C** asks the local language model to apply that same policy to the same Python-computed evidence. The numerical methods inside their routes are identical.",
+      "evidence": [
+        "examples/module02/protocol.json#/policy",
+        "examples/module02/recorded_run.json#/requests/M02-F01/B",
+        "examples/module02/recorded_run.json#/requests/M02-F01/C/contract/messages"
+      ]
+    },
+    {
+      "paragraph_index": 27,
+      "text": "*Table 2 — A workflow determines which candidates can be tested. It does not declare a winner in advance.*",
+      "evidence": [
+        "examples/module02/assets.json#/3",
+        "examples/module02/protocol.json#/numerical_config"
+      ]
+    },
+    {
+      "paragraph_index": 28,
+      "text": "The regular workflow compares seasonal naive with damped additive Holt–Winters. The intermittent workflow compares seasonal naive with TSB, which maintains estimates of occurrence probability and positive-sales size. Both TSB smoothing parameters are fixed at 0.10. The short workflow compares seasonal naive with a trailing-28-day mean. The new-product workflow uses the fixed donor prior. [TSB implementation](https://nixtlaverse.nixtla.io/statsforecast/docs/models/tsb.html).",
+      "evidence": [
+        "examples/module02/protocol.json#/numerical_config",
+        "examples/module02/numerical_results.json#/rows/0/arms/B/numerical/candidates",
+        "examples/module02/numerical_results.json#/rows/4/arms/B/numerical/candidates",
+        "examples/module02/numerical_results.json#/rows/15/arms/B/numerical/candidates",
+        "examples/module02/numerical_results.json#/rows/12/arms/B/numerical"
+      ]
+    },
+    {
+      "paragraph_index": 29,
+      "text": "Selection minimizes validation RMSE at full precision. A candidate must succeed on every required fold. Nonconvergence is a failure even if an optimizer returns finite numbers. If the selected final fit fails, code can deliver seasonal naive with an explicit numerical-fallback status.",
+      "evidence": [
+        "examples/module02/numerical_results.json#/rows/0/arms/B/numerical",
+        "examples/module02/numerical_results.json#/rows/14/arms/B/numerical",
+        "examples/module02/numerical_results.json#/rows/15/arms/B/numerical"
+      ]
+    },
+    {
+      "paragraph_index": 30,
+      "text": "The routing policy handles history availability before zero frequency. With fewer than 56 observed days, the declared workflows ask for more information. With 56–448 days, they use the short workflow. With at least 449 days, they choose intermittent when at least half the last 365 observations are zero; otherwise they choose regular.",
+      "evidence": [
+        "examples/module02/protocol.json#/policy"
+      ]
+    },
+    {
+      "paragraph_index": 31,
+      "text": "Those boundaries are teaching contracts. The 50% threshold is not an optimality claim or the standard ADI/CV² classification. The 56-day floor is not seasonal naive's mathematical minimum. Both choices are fixed before final evaluation.",
+      "evidence": [
+        "examples/module02/protocol.json#/policy"
+      ]
+    },
+    {
+      "paragraph_index": 33,
+      "text": "The model returns four fields: a route, supporting evidence IDs, a short reason, and a clarification question. A forecasting route requires the question to be JSON `null`. A clarification requires a real question and produces no forecast.",
+      "evidence": [
+        "examples/module02/recorded_run.json#/requests/M02-F01/C/contract/schema",
+        "examples/module02/recorded_run.json#/requests/M02-F01/C/contract/messages/0"
+      ]
+    },
+    {
+      "paragraph_index": 35,
+      "text": "For the first item, the model correctly identified five zeros in the current 365-day window and proposed the regular route. It also asked for a launch date and confirmation that the product was established. The lifecycle was already supplied, and an established item did not need a launch date. The response failed the forecasting-decision contract.",
+      "evidence": [
+        "examples/module02/recorded_run.json#/requests/M02-F01/C/response/text",
+        "examples/module02/recorded_run.json#/requests/M02-F01/C/failure",
+        "examples/module02/routing_audit.json#/reviews/0"
+      ]
+    },
+    {
+      "paragraph_index": 37,
+      "text": "*Table 3 — “C proposal” records what the model suggested. “C execution” records what actually ran. The abbreviated short/new labels refer to the workflows above.*",
+      "evidence": [
+        "examples/module02/assets.json#/4",
+        "examples/module02/numerical_results.json#/rows/0/arms/C/decision"
+      ]
+    },
+    {
+      "paragraph_index": 38,
+      "text": "Across the sixteen main cases, **eleven forecasting proposals were rejected and fell back to rules; five responses asked unnecessary clarification questions and delivered no forecast**. No primary LLM forecasting decision was accepted. A plausible route label did not make the complete response usable.",
+      "evidence": [
+        "examples/module02/work.json#/audit/0",
+        "examples/module02/work.json#/numerical/2"
+      ]
+    },
+    {
+      "paragraph_index": 39,
+      "text": "All sixteen responses matched the supplied JSON schema's shape. Only five passed the additional decision-contract checks, and those were clarifications. The [routing metrics](examples/module02/routing_metrics.json) distinguish shape, contract, capability, policy agreement and question usefulness. With zero accepted forecasting decisions, their policy agreement is N/A.",
+      "evidence": [
+        "examples/module02/routing_metrics.json#/cohorts/main",
+        "examples/module02/routing_metrics.json#/notes"
+      ]
+    },
+    {
+      "paragraph_index": 40,
+      "text": "Several reasons applied new-product requirements to established products. The model sometimes calculated the zero threshold correctly, then insisted on irrelevant launch or donor information. Structured output constrained the response's shape, but it did not establish that the policy was understood.",
+      "evidence": [
+        "examples/module02/routing_audit.json#/reviews"
+      ]
+    },
+    {
+      "paragraph_index": 41,
+      "text": "I retained every primary response. A separate development call then clarified that established products need no launch date and changed the nullable-field schema to an equivalent type-union representation. On that call, the same model returned a null question and a valid regular route, which genuinely controlled numerical dispatch.",
+      "evidence": [
+        "examples/module02/recorded_run.json#/requests",
+        "examples/module02/development_run.json#/change",
+        "examples/module02/development_run.json#/decision",
+        "examples/module02/development_run.json#/numerical"
+      ]
+    },
+    {
+      "paragraph_index": 42,
+      "text": "That demonstration is excluded from the primary benchmark. Two changes were made together, so it is not an ablation identifying the cause of improvement, nor evidence of a reliable fix. The [development record](examples/module02/development_run.json) and [primary capture](examples/module02/recorded_run.json) make the distinction inspectable.",
+      "evidence": [
+        "examples/module02/development_run.json#/excluded_from_primary",
+        "examples/module02/development_run.json#/change",
+        "examples/module02/development_run.json#/primary_capture_hash"
+      ]
+    },
+    {
+      "paragraph_index": 44,
+      "text": "After dispatch, Python computes and freezes the forecasts before opening the final observations. A fourth comparison, **D**, evaluates all three full-history candidates on the same validation blocks. It checks the consequences of pruning a candidate family. It does not select using the final outcomes or feed its results back to the router.",
+      "evidence": [
+        "examples/module02/frozen_forecasts.json#/rows",
+        "examples/module02/numerical_results.json#/scored_after_freeze",
+        "examples/module02/numerical_results.json#/rows/0/arms/D/numerical"
+      ]
+    },
+    {
+      "paragraph_index": 46,
+      "text": "*Graph 3 — Four cases chosen before evaluation. Full histories display only their most recent sixty days for readability. Shared curves are labeled explicitly; C's displayed forecasts came from rules.*",
+      "evidence": [
+        "examples/module02/assets.json#/5",
+        "examples/module02/protocol.json#/representative_cases",
+        "examples/module02/numerical_results.json#/rows/0/arms/C/decision/source"
+      ]
+    },
+    {
+      "paragraph_index": 48,
+      "text": "For the main full-history comparison, we therefore use the nine items delivered by every arm. All nine have a positive, finite MASE scale; none is excluded for an undefined scale. The scale is the item's mean absolute lag-7 difference in its final training window. A zero denominator would produce N/A, not an artificial epsilon.",
+      "evidence": [
+        "examples/module02/summary.json#/full_history",
+        "examples/module02/numerical_results.json#/rows/0/arms/A/metrics/scale"
+      ]
+    },
+    {
+      "paragraph_index": 50,
+      "text": "*Table 4 — The upper block uses the same nine scale-defined items for every MASE value. The lower block reports constructed views individually in daily item units.*",
+      "evidence": [
+        "examples/module02/assets.json#/6",
+        "examples/module02/summary.json#/full_history",
+        "examples/module02/numerical_results.json#/rows/12/arms"
+      ]
+    },
+    {
+      "paragraph_index": 51,
+      "text": "On that shared subset, macro MASE is **1.04 for A, 0.89 for B, 0.89 for C, and 0.84 for D**. A, B and D deliver all twelve full-history forecasts; C delivers nine. C's equality with B is explained by the fallback: every delivered primary C forecast came from the rule-selected workflow.",
+      "evidence": [
+        "examples/module02/summary.json#/full_history",
+        "examples/module02/work.json#/audit/0",
+        "examples/module02/numerical_results.json#/rows/0/arms/C/decision/source"
+      ]
+    },
+    {
+      "paragraph_index": 52,
+      "text": "D's lower score shows that pruning had consequences in this example. It also performed more candidate fits. It is not proof that searching every method will always improve the final forecast. MASE below one compares with historical scaling error; the actual final seasonal-naive result is the measured A column.",
+      "evidence": [
+        "examples/module02/summary.json#/full_history",
+        "examples/module02/work.json#/numerical",
+        "examples/module02/numerical_results.json#/rows/0/arms/A/metrics"
+      ]
+    },
+    {
+      "paragraph_index": 53,
+      "text": "The constructed views tell smaller, separate stories. For the sparse 60-day view S02, B selects the trailing mean and records MAE 0.93, versus A's 1.11. C abstains. For the dense simulated new product N01, the shared donor prior has MAE 7.54 for every delivered arm. A route can be eligible and still lead to a poor assumption about scale.",
+      "evidence": [
+        "examples/module02/numerical_results.json#/rows/15/arms",
+        "examples/module02/numerical_results.json#/rows/12/arms"
+      ]
+    },
+    {
+      "paragraph_index": 54,
+      "text": "These views are not pooled into the full-history score. The [numerical record](examples/module02/numerical_results.json) retains every request's errors and selected/delivered method, while the [summary](examples/module02/summary.json) retains paired differences. No final result was used to change the threshold or candidate settings.",
+      "evidence": [
+        "examples/module02/summary.json#/paired",
+        "examples/module02/numerical_results.json#/rows",
+        "examples/module02/protocol.json#/first_attempts_only",
+        "examples/module02/protocol.json#/policy",
+        "examples/module02/protocol.json#/numerical_config"
+      ]
+    },
+    {
+      "paragraph_index": 57,
+      "text": "X01 has zero history but unknown lifecycle and launch information. X02 declares a new product but lacks authorized donor information. Both genuine LLM responses ask about missing requirements. X02 also reconfirms facts already supplied; X01's reason incorrectly says that no end date was provided. Asking a relevant question and explaining it correctly are separate achievements.",
+      "evidence": [
+        "data/module02/cases.json#/16",
+        "data/module02/cases.json#/17",
+        "examples/module02/recorded_run.json#/requests/M02-X01/C/response/text",
+        "examples/module02/recorded_run.json#/requests/M02-X02/C/response/text",
+        "examples/module02/routing_audit.json#/reviews/16",
+        "examples/module02/routing_audit.json#/reviews/17"
+      ]
+    },
+    {
+      "paragraph_index": 59,
+      "text": "*Table 5 — Genuine ambiguity responses, shared input checks and injected response failures have separate provenance.*",
+      "evidence": [
+        "examples/module02/assets.json#/7",
+        "examples/module02/failure_fixtures.json#"
+      ]
+    },
+    {
+      "paragraph_index": 60,
+      "text": "X03 omits the horizon. X04 removes an interior date from a declared complete daily history. Shared Python validation stops both before inference. That is a gate doing its job, not evidence of agent judgment.",
+      "evidence": [
+        "data/module02/cases.json#/18",
+        "data/module02/cases.json#/19",
+        "examples/module02/recorded_run.json#/requests/M02-X03/C",
+        "examples/module02/recorded_run.json#/requests/M02-X04/C"
+      ]
+    },
+    {
+      "paragraph_index": 61,
+      "text": "The final two rows deliberately inject malformed JSON and an otherwise well-formed regular-route proposal for a 60-day history. They test contract and capability rejection, followed by one deterministic fallback. Neither fixture makes a real model call, and neither is counted as an observed model error.",
+      "evidence": [
+        "examples/module02/failure_fixtures.json#/0",
+        "examples/module02/failure_fixtures.json#/1"
+      ]
+    },
+    {
+      "paragraph_index": 63,
+      "text": "The primary model-cost cohort is the same sixteen requests. The capture used local `qwen3-coder-next:q4_K_M`, temperature zero and seed 42, with one attempt per request. Those settings make the run specified; they do not guarantee identical future inference across versions or machines. Reader execution replays the genuine responses only when their inputs match exactly.",
+      "evidence": [
+        "examples/module02/protocol.json#/primary_cohort",
+        "examples/module02/protocol.json#/model_config",
+        "examples/module02/protocol.json#/first_attempts_only",
+        "examples/module02/recorded_run.json#/model_identity",
+        "examples/module02/recorded_run.json#/requests/M02-F01/C/input_hash"
+      ]
+    },
+    {
+      "paragraph_index": 65,
+      "text": "*Table 6 — Contract checks and reason support are separate. Archived dispatch time and current numerical execution time come from different sessions and are not added into an end-to-end latency claim.*",
+      "evidence": [
+        "examples/module02/assets.json#/8",
+        "examples/module02/work.json#/capture_session",
+        "examples/module02/work.json#/numerical_session",
+        "examples/module02/work.json#/audit"
+      ]
+    },
+    {
+      "paragraph_index": 66,
+      "text": "Primary C dispatch took **60.09 seconds** across sixteen calls, with **8,372 input tokens and 2,054 output tokens**. Its median dispatch time was **2.56 seconds**. The first call included model loading, so the total is not a warm-model throughput estimate. A and B made no language-model calls.",
+      "evidence": [
+        "examples/module02/work.json#/dispatch/2",
+        "examples/module02/recorded_run.json#/requests/M02-F01/C/response/metadata"
+      ]
+    },
+    {
+      "paragraph_index": 67,
+      "text": "The two genuine ambiguity calls are separate: **4.72 seconds** in total. The development call is separate again. No token budget is silently reassigned from failed attempts to successful ones, and no dollar or energy cost is invented.",
+      "evidence": [
+        "examples/module02/work.json#/dispatch/3",
+        "examples/module02/development_run.json#/excluded_from_primary",
+        "examples/module02/development_run.json#/decision/seconds"
+      ]
+    },
+    {
+      "paragraph_index": 68,
+      "text": "The numerical record counts **103 fit attempts for B** across all sixteen main requests. Restricting both arms to the same twelve full histories gives **96 for B** and **132 for D**. B's remaining seven attempts belong to its two short-history requests; the new-product priors involve arithmetic rather than fitted models. C performs fewer fits because it declines five main cases, not because its LLM found a more efficient forecasting procedure.",
+      "evidence": [
+        "examples/module02/work.json#/numerical",
+        "examples/module02/numerical_results.json#/rows"
+      ]
+    },
+    {
+      "paragraph_index": 69,
+      "text": "Manual review of the sixteen primary reasons classified three as supported, eleven as contradicted, one as unsupported and one as ambiguous. This review considers the entire reason: correct arithmetic does not cancel an invented requirement later in the same explanation. The [case-by-case audit](examples/module02/routing_audit.md) records those judgments and the corresponding question reviews.",
+      "evidence": [
+        "examples/module02/routing_audit.json#/method",
+        "examples/module02/routing_audit.json#/reviews",
+        "examples/module02/work.json#/audit/0/reasons"
+      ]
+    },
+    {
+      "paragraph_index": 71,
+      "text": "Routing made the capability boundaries visible. It helped distinguish missing history from zero sales, short history from a real cold start, and a forecasting proposal from an executable decision.",
+      "evidence": [
+        "examples/module02/protocol.json#/policy",
+        "data/module02/cases.json#/12",
+        "data/module02/cases.json#/14"
+      ]
+    },
+    {
+      "paragraph_index": 72,
+      "text": "The primary LLM router added no demonstrated benefit here. Its numerical deliveries came from fallback rules, and its unnecessary clarifications reduced coverage. The separate development call shows a working mechanism; it does not erase those primary outcomes.",
+      "evidence": [
+        "examples/module02/work.json#/audit/0",
+        "examples/module02/work.json#/numerical/2",
+        "examples/module02/development_run.json#/excluded_from_primary"
+      ]
+    },
+    {
+      "paragraph_index": 73,
+      "text": "For this structured, policy-directed task, explicit rules are the stronger default. An LLM may become useful when requests contain language or context that is difficult to encode reliably, but this experiment does not measure that advantage. A larger evaluation would need to demonstrate it while preserving comparable information, coverage and costs.",
+      "evidence": [
+        "examples/module02/work.json#/audit/0",
+        "examples/module02/protocol.json#/policy",
+        "examples/module02/protocol.json#/primary_cohort"
+      ]
+    },
+    {
+      "paragraph_index": 74,
+      "text": "The limits are concrete: one store, one final horizon, fixed numerical settings, an illustrative routing threshold, constructed short/new views, assumed donors, repeated target outcomes and one ordered local-model capture. Recorded sales do not reveal unconstrained demand. Nothing here establishes calibrated uncertainty or operational inventory value.",
+      "evidence": [
+        "data/a02/manifest.json#/store",
+        "examples/module02/protocol.json#/target_start",
+        "examples/module02/protocol.json#/target_end",
+        "examples/module02/protocol.json#/policy",
+        "examples/module02/protocol.json#/numerical_config",
+        "data/module02/cases.json#/12",
+        "examples/module02/recorded_run.json#/session_id"
+      ]
+    },
+    {
+      "paragraph_index": 75,
+      "text": "The notebook can be rerun offline after environment setup. It recomputes the forecasts, verifies the captured decisions and exports the exact images used in this article. The next step in the series is a diagnostic agent that chooses its next tool. That additional freedom will still need a baseline, an evidence trail, and a clear account of who actually produced the forecast.",
+      "evidence": [
+        "examples/module02/replay_verification.json#",
+        "examples/module02/assets.json#"
+      ]
+    },
+    {
+      "paragraph_index": 76,
+      "text": "A [companion panel study](a02-post-new.md) tests the numerical policy across more products, stores and forecast origins.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/item_ids",
+        "examples/module02_panel/protocol.json#/stores",
+        "examples/module02_panel/protocol.json#/main_origins"
+      ]
+    }
+  ],
+  "external_context_sources": [
+    {
+      "claim": "MRKL is a 2022 modular-architecture antecedent",
+      "url": "https://arxiv.org/abs/2205.00445"
+    },
+    {
+      "claim": "Routing is explicitly documented in the December 2024 guide",
+      "url": "https://www.anthropic.com/research/building-effective-agents"
+    },
+    {
+      "claim": "Routing with structured decisions and conditional branches is documented",
+      "url": "https://docs.langchain.com/oss/python/langgraph/workflows-agents"
+    },
+    {
+      "claim": "M5 data provenance",
+      "url": "https://github.com/Mcompetitions/M5-methods"
+    },
+    {
+      "claim": "Chronological forecasting evaluation",
+      "url": "https://otexts.com/fpp3/toolbox.html"
+    },
+    {
+      "claim": "TSB implementation",
+      "url": "https://nixtlaverse.nixtla.io/statsforecast/docs/models/tsb.html"
+    }
+  ],
+  "semantic_decisions": [
+    "No attribution of rule-fallback scores to accepted LLM forecasting",
+    "Common subset has nine delivered and nine scale-defined items",
+    "Constructed anchor views are not independent launches",
+    "All latency and usage claims use archived inference only",
+    "Development demonstration changes two things and is not a repair ablation",
+    "Question usefulness and reason support are separately judged",
+    "Visibility in research/tooling is not an adoption statistic"
+  ]
+}

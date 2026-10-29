@@ -1,0 +1,11 @@
+{
+  "protocol_hash": "485573eaf454e41a3875f451990c7ac8cb1a22c6d3bb5e8df0a337d55c66ff4e",
+  "development_cases": 600,
+  "main_cases": 1800,
+  "frozen_semantic_hash": "6bdb50a0f9e9c04d3572d0842bb07ecec7287124368c3b3311ce673be5eec2b6",
+  "result_semantic_hash": "b9a7dab41f83104dfb320838c90bb9269d0331219bf90dac98d260bb8495d598",
+  "bank_semantic_hash": "afc74bf0ec464cd8628b11836a3e86d1f53b50d5fece5a12d34ad2785c9bd9bc",
+  "graphs": 5,
+  "tables": 4,
+  "new_llm_calls": 0
+}

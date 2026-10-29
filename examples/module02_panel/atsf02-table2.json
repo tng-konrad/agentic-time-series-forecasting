@@ -1,0 +1,163 @@
+[
+  {
+    "headers": [
+      "Arm",
+      "Decision",
+      "Numerical candidates"
+    ],
+    "raw": [
+      [
+        "A",
+        "Seasonal naive",
+        "Seasonal naive"
+      ],
+      [
+        "B",
+        "Zero fraction ≥ 0.50 → intermittent; otherwise regular",
+        "Selected family's two methods"
+      ],
+      [
+        "R",
+        "Always regular",
+        "Seasonal naive; damped additive Holt–Winters"
+      ],
+      [
+        "I",
+        "Always intermittent",
+        "Seasonal naive; TSB (0.10, 0.10)"
+      ],
+      [
+        "F",
+        "Choose R/I using development only",
+        "Same family for every main case"
+      ],
+      [
+        "D",
+        "All-candidates selection",
+        "Seasonal naive; Holt–Winters; TSB"
+      ]
+    ],
+    "display": [
+      [
+        "A",
+        "Seasonal naive",
+        "Seasonal naive"
+      ],
+      [
+        "B",
+        "Zero fraction ≥ 0.50 → intermittent; otherwise regular",
+        "Selected family's two methods"
+      ],
+      [
+        "R",
+        "Always regular",
+        "Seasonal naive; damped additive Holt–Winters"
+      ],
+      [
+        "I",
+        "Always intermittent",
+        "Seasonal naive; TSB (0.10, 0.10)"
+      ],
+      [
+        "F",
+        "Choose R/I using development only",
+        "Same family for every main case"
+      ],
+      [
+        "D",
+        "All-candidates selection",
+        "Seasonal naive; Holt–Winters; TSB"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ]
+    ]
+  },
+  {
+    "headers": [
+      "Evaluation level",
+      "Training / selection",
+      "Unseen observations"
+    ],
+    "raw": [
+      [
+        "Inner",
+        "3 folds; 365 days before each fold",
+        "Next 28 days, all before outer origin"
+      ],
+      [
+        "Outer",
+        "449 visible days; final fit uses last 365",
+        "Next 28 days after the outer origin"
+      ],
+      [
+        "Fixed control",
+        "600 development cases from CA_1/TX_1",
+        "1,800 main cases; WI_1 excluded from choice"
+      ]
+    ],
+    "display": [
+      [
+        "Inner",
+        "3 folds; 365 days before each fold",
+        "Next 28 days, all before outer origin"
+      ],
+      [
+        "Outer",
+        "449 visible days; final fit uses last 365",
+        "Next 28 days after the outer origin"
+      ],
+      [
+        "Fixed control",
+        "600 development cases from CA_1/TX_1",
+        "1,800 main cases; WI_1 excluded from choice"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ]
+    ]
+  }
+]

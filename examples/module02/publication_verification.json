@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "capture_hash": "838667b77229aaafe8e608120af6f1ee418482c8149f3d0abb0a3a36be65e015",
+  "new_model_calls": 0,
+  "executed_code_cells": 27,
+  "matching_substantive_sections": 8,
+  "checked_forecast_metrics": 55,
+  "graphs": 3,
+  "tables": 6,
+  "checked_table_cells": 255,
+  "reviewed_empirical_paragraphs": 51,
+  "seo_characters": 138,
+  "notebook_sha256": "19d83f4d07f3b2dc22e77de4ddec102c99a703c33ece2631fa4c89acad3c6493",
+  "post_sha256": "d7f87ba98fa0ad850adc2e4b423ebb94c85bb94d64bcceee2de8d04d9afd9457",
+  "scope": "Exact replay, independent final-score arithmetic, asset integrity/formatting, evidence mappings and links; semantic and visual judgments are explicitly recorded author reviews."
+}

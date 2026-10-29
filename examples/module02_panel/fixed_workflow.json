@@ -1,0 +1,16 @@
+{
+  "version": "module02-panel-v1",
+  "selected_arm": "I",
+  "family": "intermittent",
+  "common_scaled_n": 597,
+  "eligible_n": 600,
+  "macro_mase": {
+    "R": 1.0056522662696092,
+    "I": 1.0031411835243755
+  },
+  "development_result_hash": "002adb938dcf4553454e934628409a360ef1a96f610d44d678e658220c633815",
+  "tie_order": [
+    "R",
+    "I"
+  ]
+}

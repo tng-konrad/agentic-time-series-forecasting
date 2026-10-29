@@ -1,0 +1,10 @@
+{
+  "capture_hash": "838667b77229aaafe8e608120af6f1ee418482c8149f3d0abb0a3a36be65e015",
+  "frozen_semantic_hash": "c843f7e847f232a7669632e07a219479be6c0e0a55080c8a2371be00ec2016ba",
+  "result_semantic_hash": "9337b02b993d0ba1267128d5c2feb30aa5034ece07696c56cba5386699d2d410",
+  "live_calls_in_replay": 0,
+  "development_genuine_dispatch": true,
+  "asset_count": 9,
+  "graph_count": 3,
+  "table_count": 6
+}

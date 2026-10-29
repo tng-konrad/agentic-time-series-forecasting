@@ -1,0 +1,2102 @@
+[
+  {
+    "series_id": "FOODS_1_044_CA_1_validation",
+    "item_id": "FOODS_1_044",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_044_TX_1_validation",
+    "item_id": "FOODS_1_044",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_044_WI_1_validation",
+    "item_id": "FOODS_1_044",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_060_CA_1_validation",
+    "item_id": "FOODS_1_060",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_060_TX_1_validation",
+    "item_id": "FOODS_1_060",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_060_WI_1_validation",
+    "item_id": "FOODS_1_060",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_067_CA_1_validation",
+    "item_id": "FOODS_1_067",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_067_TX_1_validation",
+    "item_id": "FOODS_1_067",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_067_WI_1_validation",
+    "item_id": "FOODS_1_067",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_080_CA_1_validation",
+    "item_id": "FOODS_1_080",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_080_TX_1_validation",
+    "item_id": "FOODS_1_080",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_080_WI_1_validation",
+    "item_id": "FOODS_1_080",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_082_CA_1_validation",
+    "item_id": "FOODS_1_082",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_082_TX_1_validation",
+    "item_id": "FOODS_1_082",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_082_WI_1_validation",
+    "item_id": "FOODS_1_082",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_092_CA_1_validation",
+    "item_id": "FOODS_1_092",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_092_TX_1_validation",
+    "item_id": "FOODS_1_092",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_092_WI_1_validation",
+    "item_id": "FOODS_1_092",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_098_CA_1_validation",
+    "item_id": "FOODS_1_098",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_098_TX_1_validation",
+    "item_id": "FOODS_1_098",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_098_WI_1_validation",
+    "item_id": "FOODS_1_098",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_115_CA_1_validation",
+    "item_id": "FOODS_1_115",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_115_TX_1_validation",
+    "item_id": "FOODS_1_115",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_115_WI_1_validation",
+    "item_id": "FOODS_1_115",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_130_CA_1_validation",
+    "item_id": "FOODS_1_130",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_130_TX_1_validation",
+    "item_id": "FOODS_1_130",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_130_WI_1_validation",
+    "item_id": "FOODS_1_130",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_145_CA_1_validation",
+    "item_id": "FOODS_1_145",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_145_TX_1_validation",
+    "item_id": "FOODS_1_145",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_145_WI_1_validation",
+    "item_id": "FOODS_1_145",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_146_CA_1_validation",
+    "item_id": "FOODS_1_146",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_146_TX_1_validation",
+    "item_id": "FOODS_1_146",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_146_WI_1_validation",
+    "item_id": "FOODS_1_146",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_181_CA_1_validation",
+    "item_id": "FOODS_1_181",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_181_TX_1_validation",
+    "item_id": "FOODS_1_181",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_181_WI_1_validation",
+    "item_id": "FOODS_1_181",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_184_CA_1_validation",
+    "item_id": "FOODS_1_184",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_184_TX_1_validation",
+    "item_id": "FOODS_1_184",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_184_WI_1_validation",
+    "item_id": "FOODS_1_184",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_202_CA_1_validation",
+    "item_id": "FOODS_1_202",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_202_TX_1_validation",
+    "item_id": "FOODS_1_202",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_202_WI_1_validation",
+    "item_id": "FOODS_1_202",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_1_203_CA_1_validation",
+    "item_id": "FOODS_1_203",
+    "department": "FOODS_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_1_203_TX_1_validation",
+    "item_id": "FOODS_1_203",
+    "department": "FOODS_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_1_203_WI_1_validation",
+    "item_id": "FOODS_1_203",
+    "department": "FOODS_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_006_CA_1_validation",
+    "item_id": "FOODS_2_006",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_006_TX_1_validation",
+    "item_id": "FOODS_2_006",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_006_WI_1_validation",
+    "item_id": "FOODS_2_006",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_033_CA_1_validation",
+    "item_id": "FOODS_2_033",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_033_TX_1_validation",
+    "item_id": "FOODS_2_033",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_033_WI_1_validation",
+    "item_id": "FOODS_2_033",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_081_CA_1_validation",
+    "item_id": "FOODS_2_081",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_081_TX_1_validation",
+    "item_id": "FOODS_2_081",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_081_WI_1_validation",
+    "item_id": "FOODS_2_081",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_100_CA_1_validation",
+    "item_id": "FOODS_2_100",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_100_TX_1_validation",
+    "item_id": "FOODS_2_100",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_100_WI_1_validation",
+    "item_id": "FOODS_2_100",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_120_CA_1_validation",
+    "item_id": "FOODS_2_120",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_120_TX_1_validation",
+    "item_id": "FOODS_2_120",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_120_WI_1_validation",
+    "item_id": "FOODS_2_120",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_130_CA_1_validation",
+    "item_id": "FOODS_2_130",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_130_TX_1_validation",
+    "item_id": "FOODS_2_130",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_130_WI_1_validation",
+    "item_id": "FOODS_2_130",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_165_CA_1_validation",
+    "item_id": "FOODS_2_165",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_165_TX_1_validation",
+    "item_id": "FOODS_2_165",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_165_WI_1_validation",
+    "item_id": "FOODS_2_165",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_199_CA_1_validation",
+    "item_id": "FOODS_2_199",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_199_TX_1_validation",
+    "item_id": "FOODS_2_199",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_199_WI_1_validation",
+    "item_id": "FOODS_2_199",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_203_CA_1_validation",
+    "item_id": "FOODS_2_203",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_203_TX_1_validation",
+    "item_id": "FOODS_2_203",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_203_WI_1_validation",
+    "item_id": "FOODS_2_203",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_220_CA_1_validation",
+    "item_id": "FOODS_2_220",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_220_TX_1_validation",
+    "item_id": "FOODS_2_220",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_220_WI_1_validation",
+    "item_id": "FOODS_2_220",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_329_CA_1_validation",
+    "item_id": "FOODS_2_329",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_329_TX_1_validation",
+    "item_id": "FOODS_2_329",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_329_WI_1_validation",
+    "item_id": "FOODS_2_329",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_349_CA_1_validation",
+    "item_id": "FOODS_2_349",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_349_TX_1_validation",
+    "item_id": "FOODS_2_349",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_349_WI_1_validation",
+    "item_id": "FOODS_2_349",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_367_CA_1_validation",
+    "item_id": "FOODS_2_367",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_367_TX_1_validation",
+    "item_id": "FOODS_2_367",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_367_WI_1_validation",
+    "item_id": "FOODS_2_367",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_385_CA_1_validation",
+    "item_id": "FOODS_2_385",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_385_TX_1_validation",
+    "item_id": "FOODS_2_385",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_385_WI_1_validation",
+    "item_id": "FOODS_2_385",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_2_396_CA_1_validation",
+    "item_id": "FOODS_2_396",
+    "department": "FOODS_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_2_396_TX_1_validation",
+    "item_id": "FOODS_2_396",
+    "department": "FOODS_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_2_396_WI_1_validation",
+    "item_id": "FOODS_2_396",
+    "department": "FOODS_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_004_CA_1_validation",
+    "item_id": "FOODS_3_004",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_004_TX_1_validation",
+    "item_id": "FOODS_3_004",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_004_WI_1_validation",
+    "item_id": "FOODS_3_004",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_055_CA_1_validation",
+    "item_id": "FOODS_3_055",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_055_TX_1_validation",
+    "item_id": "FOODS_3_055",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_055_WI_1_validation",
+    "item_id": "FOODS_3_055",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_056_CA_1_validation",
+    "item_id": "FOODS_3_056",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_056_TX_1_validation",
+    "item_id": "FOODS_3_056",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_056_WI_1_validation",
+    "item_id": "FOODS_3_056",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_108_CA_1_validation",
+    "item_id": "FOODS_3_108",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_108_TX_1_validation",
+    "item_id": "FOODS_3_108",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_108_WI_1_validation",
+    "item_id": "FOODS_3_108",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_145_CA_1_validation",
+    "item_id": "FOODS_3_145",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_145_TX_1_validation",
+    "item_id": "FOODS_3_145",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_145_WI_1_validation",
+    "item_id": "FOODS_3_145",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_186_CA_1_validation",
+    "item_id": "FOODS_3_186",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_186_TX_1_validation",
+    "item_id": "FOODS_3_186",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_186_WI_1_validation",
+    "item_id": "FOODS_3_186",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_365_CA_1_validation",
+    "item_id": "FOODS_3_365",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_365_TX_1_validation",
+    "item_id": "FOODS_3_365",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_365_WI_1_validation",
+    "item_id": "FOODS_3_365",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_379_CA_1_validation",
+    "item_id": "FOODS_3_379",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_379_TX_1_validation",
+    "item_id": "FOODS_3_379",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_379_WI_1_validation",
+    "item_id": "FOODS_3_379",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_439_CA_1_validation",
+    "item_id": "FOODS_3_439",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_439_TX_1_validation",
+    "item_id": "FOODS_3_439",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_439_WI_1_validation",
+    "item_id": "FOODS_3_439",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_501_CA_1_validation",
+    "item_id": "FOODS_3_501",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_501_TX_1_validation",
+    "item_id": "FOODS_3_501",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_501_WI_1_validation",
+    "item_id": "FOODS_3_501",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_529_CA_1_validation",
+    "item_id": "FOODS_3_529",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_529_TX_1_validation",
+    "item_id": "FOODS_3_529",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_529_WI_1_validation",
+    "item_id": "FOODS_3_529",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_691_CA_1_validation",
+    "item_id": "FOODS_3_691",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_691_TX_1_validation",
+    "item_id": "FOODS_3_691",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_691_WI_1_validation",
+    "item_id": "FOODS_3_691",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_805_CA_1_validation",
+    "item_id": "FOODS_3_805",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_805_TX_1_validation",
+    "item_id": "FOODS_3_805",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_805_WI_1_validation",
+    "item_id": "FOODS_3_805",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "FOODS_3_815_CA_1_validation",
+    "item_id": "FOODS_3_815",
+    "department": "FOODS_3",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "FOODS_3_815_TX_1_validation",
+    "item_id": "FOODS_3_815",
+    "department": "FOODS_3",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "FOODS_3_815_WI_1_validation",
+    "item_id": "FOODS_3_815",
+    "department": "FOODS_3",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_010_CA_1_validation",
+    "item_id": "HOBBIES_1_010",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_010_TX_1_validation",
+    "item_id": "HOBBIES_1_010",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_010_WI_1_validation",
+    "item_id": "HOBBIES_1_010",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_051_CA_1_validation",
+    "item_id": "HOBBIES_1_051",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_051_TX_1_validation",
+    "item_id": "HOBBIES_1_051",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_051_WI_1_validation",
+    "item_id": "HOBBIES_1_051",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_067_CA_1_validation",
+    "item_id": "HOBBIES_1_067",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_067_TX_1_validation",
+    "item_id": "HOBBIES_1_067",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_067_WI_1_validation",
+    "item_id": "HOBBIES_1_067",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_086_CA_1_validation",
+    "item_id": "HOBBIES_1_086",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_086_TX_1_validation",
+    "item_id": "HOBBIES_1_086",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_086_WI_1_validation",
+    "item_id": "HOBBIES_1_086",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_103_CA_1_validation",
+    "item_id": "HOBBIES_1_103",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_103_TX_1_validation",
+    "item_id": "HOBBIES_1_103",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_103_WI_1_validation",
+    "item_id": "HOBBIES_1_103",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_240_CA_1_validation",
+    "item_id": "HOBBIES_1_240",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_240_TX_1_validation",
+    "item_id": "HOBBIES_1_240",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_240_WI_1_validation",
+    "item_id": "HOBBIES_1_240",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_247_CA_1_validation",
+    "item_id": "HOBBIES_1_247",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_247_TX_1_validation",
+    "item_id": "HOBBIES_1_247",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_247_WI_1_validation",
+    "item_id": "HOBBIES_1_247",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_279_CA_1_validation",
+    "item_id": "HOBBIES_1_279",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_279_TX_1_validation",
+    "item_id": "HOBBIES_1_279",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_279_WI_1_validation",
+    "item_id": "HOBBIES_1_279",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_287_CA_1_validation",
+    "item_id": "HOBBIES_1_287",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_287_TX_1_validation",
+    "item_id": "HOBBIES_1_287",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_287_WI_1_validation",
+    "item_id": "HOBBIES_1_287",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_294_CA_1_validation",
+    "item_id": "HOBBIES_1_294",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_294_TX_1_validation",
+    "item_id": "HOBBIES_1_294",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_294_WI_1_validation",
+    "item_id": "HOBBIES_1_294",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_327_CA_1_validation",
+    "item_id": "HOBBIES_1_327",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_327_TX_1_validation",
+    "item_id": "HOBBIES_1_327",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_327_WI_1_validation",
+    "item_id": "HOBBIES_1_327",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_340_CA_1_validation",
+    "item_id": "HOBBIES_1_340",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_340_TX_1_validation",
+    "item_id": "HOBBIES_1_340",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_340_WI_1_validation",
+    "item_id": "HOBBIES_1_340",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_412_CA_1_validation",
+    "item_id": "HOBBIES_1_412",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_412_TX_1_validation",
+    "item_id": "HOBBIES_1_412",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_412_WI_1_validation",
+    "item_id": "HOBBIES_1_412",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_1_423_CA_1_validation",
+    "item_id": "HOBBIES_1_423",
+    "department": "HOBBIES_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_1_423_TX_1_validation",
+    "item_id": "HOBBIES_1_423",
+    "department": "HOBBIES_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_1_423_WI_1_validation",
+    "item_id": "HOBBIES_1_423",
+    "department": "HOBBIES_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_004_CA_1_validation",
+    "item_id": "HOBBIES_2_004",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_004_TX_1_validation",
+    "item_id": "HOBBIES_2_004",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_004_WI_1_validation",
+    "item_id": "HOBBIES_2_004",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_019_CA_1_validation",
+    "item_id": "HOBBIES_2_019",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_019_TX_1_validation",
+    "item_id": "HOBBIES_2_019",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_019_WI_1_validation",
+    "item_id": "HOBBIES_2_019",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_024_CA_1_validation",
+    "item_id": "HOBBIES_2_024",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_024_TX_1_validation",
+    "item_id": "HOBBIES_2_024",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_024_WI_1_validation",
+    "item_id": "HOBBIES_2_024",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_056_CA_1_validation",
+    "item_id": "HOBBIES_2_056",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_056_TX_1_validation",
+    "item_id": "HOBBIES_2_056",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_056_WI_1_validation",
+    "item_id": "HOBBIES_2_056",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_065_CA_1_validation",
+    "item_id": "HOBBIES_2_065",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_065_TX_1_validation",
+    "item_id": "HOBBIES_2_065",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_065_WI_1_validation",
+    "item_id": "HOBBIES_2_065",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_071_CA_1_validation",
+    "item_id": "HOBBIES_2_071",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_071_TX_1_validation",
+    "item_id": "HOBBIES_2_071",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_071_WI_1_validation",
+    "item_id": "HOBBIES_2_071",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_078_CA_1_validation",
+    "item_id": "HOBBIES_2_078",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_078_TX_1_validation",
+    "item_id": "HOBBIES_2_078",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_078_WI_1_validation",
+    "item_id": "HOBBIES_2_078",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_097_CA_1_validation",
+    "item_id": "HOBBIES_2_097",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_097_TX_1_validation",
+    "item_id": "HOBBIES_2_097",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_097_WI_1_validation",
+    "item_id": "HOBBIES_2_097",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_103_CA_1_validation",
+    "item_id": "HOBBIES_2_103",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_103_TX_1_validation",
+    "item_id": "HOBBIES_2_103",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_103_WI_1_validation",
+    "item_id": "HOBBIES_2_103",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_107_CA_1_validation",
+    "item_id": "HOBBIES_2_107",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_107_TX_1_validation",
+    "item_id": "HOBBIES_2_107",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_107_WI_1_validation",
+    "item_id": "HOBBIES_2_107",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_111_CA_1_validation",
+    "item_id": "HOBBIES_2_111",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_111_TX_1_validation",
+    "item_id": "HOBBIES_2_111",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_111_WI_1_validation",
+    "item_id": "HOBBIES_2_111",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_123_CA_1_validation",
+    "item_id": "HOBBIES_2_123",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_123_TX_1_validation",
+    "item_id": "HOBBIES_2_123",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_123_WI_1_validation",
+    "item_id": "HOBBIES_2_123",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_130_CA_1_validation",
+    "item_id": "HOBBIES_2_130",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_130_TX_1_validation",
+    "item_id": "HOBBIES_2_130",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_130_WI_1_validation",
+    "item_id": "HOBBIES_2_130",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOBBIES_2_147_CA_1_validation",
+    "item_id": "HOBBIES_2_147",
+    "department": "HOBBIES_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOBBIES_2_147_TX_1_validation",
+    "item_id": "HOBBIES_2_147",
+    "department": "HOBBIES_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOBBIES_2_147_WI_1_validation",
+    "item_id": "HOBBIES_2_147",
+    "department": "HOBBIES_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_005_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_005",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_005_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_005",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_005_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_005",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_020_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_020",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_020_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_020",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_020_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_020",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_042_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_042",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_042_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_042",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_042_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_042",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_093_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_093",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_093_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_093",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_093_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_093",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_118_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_118",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_118_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_118",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_118_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_118",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_135_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_135",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_135_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_135",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_135_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_135",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_244_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_244",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_244_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_244",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_244_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_244",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_289_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_289",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_289_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_289",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_289_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_289",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_424_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_424",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_424_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_424",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_424_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_424",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_460_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_460",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_460_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_460",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_460_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_460",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_473_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_473",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_473_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_473",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_473_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_473",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_507_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_507",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_507_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_507",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_507_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_507",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_522_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_522",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_522_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_522",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_522_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_522",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_527_CA_1_validation",
+    "item_id": "HOUSEHOLD_1_527",
+    "department": "HOUSEHOLD_1",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_527_TX_1_validation",
+    "item_id": "HOUSEHOLD_1_527",
+    "department": "HOUSEHOLD_1",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_1_527_WI_1_validation",
+    "item_id": "HOUSEHOLD_1_527",
+    "department": "HOUSEHOLD_1",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_043_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_043",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_043_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_043",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_043_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_043",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_069_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_069",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_069_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_069",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_069_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_069",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_100_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_100",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_100_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_100",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_100_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_100",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_215_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_215",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_215_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_215",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_215_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_215",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_236_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_236",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_236_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_236",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_236_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_236",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_271_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_271",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_271_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_271",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_271_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_271",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_285_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_285",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_285_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_285",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_285_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_285",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_292_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_292",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_292_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_292",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_292_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_292",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_305_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_305",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_305_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_305",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_305_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_305",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_367_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_367",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_367_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_367",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_367_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_367",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_375_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_375",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_375_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_375",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_375_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_375",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_405_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_405",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_405_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_405",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_405_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_405",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_412_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_412",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_412_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_412",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_412_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_412",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_423_CA_1_validation",
+    "item_id": "HOUSEHOLD_2_423",
+    "department": "HOUSEHOLD_2",
+    "store": "CA_1",
+    "state": "CA"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_423_TX_1_validation",
+    "item_id": "HOUSEHOLD_2_423",
+    "department": "HOUSEHOLD_2",
+    "store": "TX_1",
+    "state": "TX"
+  },
+  {
+    "series_id": "HOUSEHOLD_2_423_WI_1_validation",
+    "item_id": "HOUSEHOLD_2_423",
+    "department": "HOUSEHOLD_2",
+    "store": "WI_1",
+    "state": "WI"
+  }
+]

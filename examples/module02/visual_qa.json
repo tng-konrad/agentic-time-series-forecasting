@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-10-26T22:22:27.476285+00:00",
+  "widths": [
+    "native",
+    760
+  ],
+  "asset_hashes": {
+    "atsf02-graph1.png": "7239a3fa24bc70bab796820fb24e6b6cf416a354bec9605a4578066725b2cfe5",
+    "atsf02-graph2.png": "f9c2e2d652b06dee4bff470e0e1b4674d8cf7675f585dc2da94ecc3ada67ac4e",
+    "atsf02-table1.png": "d5c091c219176f6dc95a579efbb95e62d02d6a6789e0cb3b964fea554d05767a",
+    "atsf02-table2.png": "4321d064e7a37b6724c25a43a6cd699beec51b6ac58deb2a509b11a2d91b6be2",
+    "atsf02-table3.png": "b397ba7eafdda5f8c7f5f3ed3dd82b451404d68bb8885418f91f1bdf41a055dc",
+    "atsf02-graph3.png": "9beae11c5cc40ac8ad794f094c45dda51da967867b9adbab6a17d0e840ec56ba",
+    "atsf02-table4.png": "c06cc468196a970e45600fade9240bcf8df15976046673ece3bf9f24438bfdd1",
+    "atsf02-table5.png": "33519213e32bdbada8fc058fb0bfa46df9f92dd42d0a61c9d52000f5396b16e8",
+    "atsf02-table6.png": "41e9933cfd94447d739ca080d44bfa1c72fa0112e16cb7a40720b213b68e2aae"
+  },
+  "method": "Author inspected all nine exported PNGs at native resolution and in 760-pixel previews; final native review repeated for all modified figures/table. Preview galleries are diagnostic copies in /tmp/module02-preview.",
+  "checks": [
+    "No clipping or overlapping text/date ticks",
+    "Readable labels and legends at article width",
+    "C fallback and identical forecast curves explicitly labeled",
+    "No title, footer, caption or note inside any table image",
+    "Two-decimal floats and integer counts match typed sidecars",
+    "N/A and cohort boundaries visible"
+  ],
+  "corrections": [
+    "Moved diagram validation text below router",
+    "Used concise date locators/formatters",
+    "Made forecast legends opaque",
+    "Named the zero-history scenario explicitly",
+    "Labeled combined schema/conditional validation as Contract valid"
+  ],
+  "final_review": "Final notebook run changed only measured numerical timings in table6; that image was reinspected at native and 760-pixel width. Other eight image hashes are unchanged."
+}

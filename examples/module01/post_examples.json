@@ -1,0 +1,162 @@
+{
+  "purpose": "Verbatim examples added to the article on 29 October 2026; no new model requests or reconstructed capture.",
+  "original_capture_hash": "dec9136082d443b23ee5e05b04dd3e4ecd8926d4e829b60e61b1f1ba13020cff",
+  "original_capture_git_commit": "bea212422c1e36916b83cb238e52c8210cbc8291",
+  "original_capture_git_path": "examples/module01/recorded_run.json",
+  "notebook_path": "a01-forecasting-workflow.ipynb",
+  "notebook_sha256": "16d44d2b6db0d45344e4463ac11ffa41bfcf12fe795494fe08a954b11edba2a2",
+  "replay_path": "examples/module01/replay_verification.json",
+  "replay_sha256": "f40dc8e68eec65283a760b786057e5a6f79fae6874461c66aa3a828023df47de",
+  "post_path": "a01-post.md",
+  "post_sha256": "7610290ce8640dd865cb4568be5b06556877a9b805b3fbe2a7b2950acb70af03",
+  "verification": "All 11 quoted fields and reference lists match saved notebook outputs and the original capture read from Git history. All three final report objects also match the current replay record. The actual brief-to-writer predecessor hash matches the original captured brief.",
+  "reproduction_limit": "Commit 8bb6753 removed the full capture, numerical freeze, protocol, audit and original post-claim records. They were read from history where needed, not restored. Current default fresh-kernel replay and the full publication verifier require those files.",
+  "examples": [
+    {
+      "id": "C.brief.seasonal_naive",
+      "text": "Seasonal naive repeats the last twelve observed months, offering a simple baseline for strong seasonal patterns.",
+      "evidence_ids": [
+        "data.profile"
+      ],
+      "notebook_cell_id": "show-brief",
+      "execution_count": 18,
+      "original_capture_field": "stages.C.analyst.output.candidates.0.claim",
+      "post_quote": "> Seasonal naive repeats the last twelve observed months, offering a simple baseline for strong seasonal patterns."
+    },
+    {
+      "id": "C.brief.hw_add",
+      "text": "Holt-Winters additive model with damped trend and additive seasonality may capture additive seasonal shifts and trend decay.",
+      "evidence_ids": [
+        "catalog.hw_add"
+      ],
+      "notebook_cell_id": "show-brief",
+      "execution_count": 18,
+      "original_capture_field": "stages.C.analyst.output.candidates.1.claim",
+      "post_quote": "> Holt-Winters additive model with damped trend and additive seasonality may capture additive seasonal shifts and trend decay."
+    },
+    {
+      "id": "A.report.selection",
+      "text": "hw_add minimized mean RMSE across the 2022, 2023 and 2024 validation years. Delivered hw_add; delivery status: ok.",
+      "evidence_ids": [
+        "protocol.selection",
+        "validation.results",
+        "forecast.delivery"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.A.report.selection",
+      "post_quote": "> **Selection:** hw_add minimized mean RMSE across the 2022, 2023 and 2024 validation years. Delivered hw_add; delivery status: ok."
+    },
+    {
+      "id": "A.report.evaluation",
+      "text": "January–December 2025: delivered RMSE 3.00 and MAE 2.46 index points; seasonal-naive RMSE 3.44 and MAE 2.83. Delivered RMSE is lower than the baseline.",
+      "evidence_ids": [
+        "evaluation.final",
+        "data.profile"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.A.report.evaluation",
+      "post_quote": "> **Evaluation:** January–December 2025: delivered RMSE 3.00 and MAE 2.46 index points; seasonal-naive RMSE 3.44 and MAE 2.83. Delivered RMSE is lower than the baseline."
+    },
+    {
+      "id": "A.report.limitation",
+      "text": "This revised snapshot does not reproduce the data vintage available at each historical origin. One series and one final year do not establish general forecasting or reporting performance.",
+      "evidence_ids": [
+        "limitations.vintage",
+        "limitations.scope"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.A.report.limitation",
+      "post_quote": "> **Limitation:** This revised snapshot does not reproduce the data vintage available at each historical origin. One series and one final year do not establish general forecasting or reporting performance."
+    },
+    {
+      "id": "B.report.selection",
+      "text": "hw_add (damped additive trend, additive seasonality, period 12) was selected as validation-minimum RMSE model; no fallback was needed.",
+      "evidence_ids": [
+        "catalog.hw_add",
+        "validation.results",
+        "forecast.delivery",
+        "protocol.selection"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.B.report.selection",
+      "post_quote": "> **Selection:** hw_add (damped additive trend, additive seasonality, period 12) was selected as validation-minimum RMSE model; no fallback was needed."
+    },
+    {
+      "id": "B.report.evaluation",
+      "text": "For Jan-Dec 2025, the delivered hw_add model achieved RMSE 3.00 and MAE 2.46, versus baseline RMSE 3.44 and MAE 2.83; RMSE is 0.43 lower.",
+      "evidence_ids": [
+        "evaluation.final",
+        "forecast.delivery"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.B.report.evaluation",
+      "post_quote": "> **Evaluation:** For Jan-Dec 2025, the delivered hw_add model achieved RMSE 3.00 and MAE 2.46, versus baseline RMSE 3.44 and MAE 2.83; RMSE is 0.43 lower."
+    },
+    {
+      "id": "B.report.limitation",
+      "text": "Performance is based on one series, three validation years, and one final year; this does not establish generalizability across series or contexts.",
+      "evidence_ids": [
+        "limitations.scope"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.B.report.limitation",
+      "post_quote": "> **Limitation:** Performance is based on one series, three validation years, and one final year; this does not establish generalizability across series or contexts."
+    },
+    {
+      "id": "C.report.selection",
+      "text": "hw_add selected by minimum mean three-fold RMSE (3.61 vs. hw_mul 4.10, seasonal_naive 3.74); no fallback needed.",
+      "evidence_ids": [
+        "protocol.selection",
+        "validation.results",
+        "forecast.delivery"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.C.report.selection",
+      "post_quote": "> **Selection:** hw_add selected by minimum mean three-fold RMSE (3.61 vs. hw_mul 4.10, seasonal_naive 3.74); no fallback needed."
+    },
+    {
+      "id": "C.report.evaluation",
+      "text": "Jan-Dec 2025 delivered RMSE 3.00 and MAE 2.46, versus baseline RMSE 3.44 and MAE 2.83; RMSE is 0.43 lower (12.6% improvement).",
+      "evidence_ids": [
+        "evaluation.final",
+        "validation.results"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.C.report.evaluation",
+      "post_quote": "> **Evaluation:** Jan-Dec 2025 delivered RMSE 3.00 and MAE 2.46, versus baseline RMSE 3.44 and MAE 2.83; RMSE is 0.43 lower (12.6% improvement)."
+    },
+    {
+      "id": "C.report.limitation",
+      "text": "One series, three validation years, and one final year do not establish general performance across diverse power-generation contexts.",
+      "evidence_ids": [
+        "limitations.scope"
+      ],
+      "notebook_cell_id": "show-reports",
+      "execution_count": 19,
+      "original_capture_field": "arms.C.report.limitation",
+      "post_quote": "> **Limitation:** One series, three validation years, and one final year do not establish general performance across diverse power-generation contexts."
+    }
+  ],
+  "editorial_checks": {
+    "status": "passed",
+    "verbatim_fields": 11,
+    "original_post_headings_preserved": 8,
+    "unchanged_image_references": 9,
+    "post_local_links": "resolved",
+    "notebook_bytes": "unchanged"
+  },
+  "full_publication_check": {
+    "status": "blocked_by_preexisting_changes",
+    "first_failure": "Current notebook has 25 code cells; existing verifier requires 26.",
+    "additional_limit": "Current shortened notebook headings differ from the original shared outline. Full capture, frozen numerical and audit records were removed by commit 8bb6753.",
+    "scope": "Only article excerpts and their provenance were updated; no notebook or archive reconstruction."
+  }
+}

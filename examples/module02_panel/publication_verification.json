@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "executed_code_cells": 31,
+  "matching_sections": 7,
+  "matching_subsections": 1,
+  "main_cases": 1800,
+  "development_cases": 600,
+  "independently_checked_forecast_metrics": 13800,
+  "checked_validation_folds": 21600,
+  "graphs": 5,
+  "tables": 4,
+  "checked_table_cells": 149,
+  "reviewed_empirical_paragraphs": 56,
+  "new_llm_calls": 0,
+  "notebook_sha256": "176288c5fd2f01d0c52e2b392707aa763bfbfa42ac73a125d27dd83f01d6b3f1",
+  "post": "a02-post-new.md",
+  "post_sha256": "92a59bdf309863d646c2199c0ae958eefcaba0b5367a4890e644c731a1d80b71",
+  "scope": "Arithmetic/provenance/chronology checks plus explicitly recorded semantic and visual author review; no guarantee of population generalization."
+}

@@ -1,0 +1,525 @@
+{
+  "reviewed_at": "2026-10-27T00:23:08.403374+00:00",
+  "post_sha256": "92a59bdf309863d646c2199c0ae958eefcaba0b5367a4890e644c731a1d80b71",
+  "result_semantic_hash": "b9a7dab41f83104dfb320838c90bb9269d0331219bf90dac98d260bb8495d598",
+  "method": "Author reviewed each mapped empirical paragraph against full-precision study records and numerical implementation. The verifier independently recalculates errors and validates pointers and text bindings; pointer existence alone is not proof of a claim.",
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "text": "*A simple routing rule saves model fits and delivers a small accuracy gain over a fixed workflow. A larger experiment shows where that claim holds—and where it needs qualifications.*",
+      "evidence": [
+        "examples/module02_panel/summary.json#/contrasts/F",
+        "examples/module02_panel/work.json#/logical_main"
+      ]
+    },
+    {
+      "paragraph_index": 3,
+      "text": "In the [first Module 2 experiment](a02-post.md), we made routing inspectable: profile a sales history, choose a specialist workflow, validate its candidates and produce a forecast. The LLM added paperwork, while deterministic fallbacks supplied the delivered forecasts. That left a useful question: does the underlying routing policy earn its place?",
+      "evidence": [
+        "examples/module02/work.json#/audit/0"
+      ]
+    },
+    {
+      "paragraph_index": 4,
+      "text": "The [new notebook](a02-routing-panel.ipynb) asks that question across 100 products, three stores and six forecast dates. The rule stays fixed. So do the forecasting methods. We give it more opportunities to succeed, fail and tie.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/item_ids",
+        "examples/module02_panel/protocol.json#/stores",
+        "examples/module02_panel/protocol.json#/main_origins",
+        "examples/module02_panel/protocol.json#/new_llm_calls"
+      ]
+    },
+    {
+      "paragraph_index": 5,
+      "text": "The result is a small accuracy improvement over the workflow chosen during development, fewer fits than evaluating every candidate, and several reasons to resist a triumphant headline. No new LLM calls were needed.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/contrasts",
+        "examples/module02_panel/work.json#/logical_main",
+        "examples/module02_panel/protocol.json#/new_llm_calls"
+      ]
+    },
+    {
+      "paragraph_index": 13,
+      "text": "**Selective work can reduce cost and waiting time.** An easy request may need a small model or a short tool sequence; a difficult one may justify a larger model, more diagnostics or human review. Routing selects which work to perform, whereas parallel execution performs several tasks. In our forecasting example, the concrete opportunity is avoiding candidate fits that the policy judges unnecessary. Savings still have to exceed the cost of classification and dispatch.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/routing_policy",
+        "examples/module02_panel/work.json#/logical_main"
+      ],
+      "qualification": "General design possibilities are illustrative; empirical scope is restricted to the fixed numerical routing policy implemented here."
+    },
+    {
+      "paragraph_index": 14,
+      "text": "**Separate branches can make changes and failures easier to locate.** As a design example, an insufficient-history branch could ask for more data instead of sending an unsuitable series into model fitting. An intermittent-sales branch could retain its own checks while a regular-sales branch changes its numerical method. These are possible extensions of the architecture; the notebook implements the two numerical families described below.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/numerical_config",
+        "examples/module02_panel/protocol.json#/routing_policy"
+      ],
+      "qualification": "General design possibilities are illustrative; empirical scope is restricted to the fixed numerical routing policy implemented here."
+    },
+    {
+      "paragraph_index": 17,
+      "text": "An LLM is useful at the routing step when the distinction requires interpreting language or combining contextual clues that are awkward to express as a simple rule. If the relevant evidence is already a number and the decision is a known threshold, ordinary code may be sufficient. This notebook takes that simpler case: a zero fraction selects a numerical family. It tests a routing component that could sit inside an agentic forecasting assistant; it does not establish that the router needs an LLM.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/routing_policy",
+        "examples/module02_panel/protocol.json#/new_llm_calls"
+      ],
+      "qualification": "General design possibilities are illustrative; empirical scope is restricted to the fixed numerical routing policy implemented here."
+    },
+    {
+      "paragraph_index": 20,
+      "text": "*Graph 1 — Development chooses a fixed comparator. Main evaluation repeats the complete forecasting decision. Shared computation and independent runtime measurement serve separate purposes.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/0",
+        "examples/module02_panel/protocol.json#/fixed_selection"
+      ]
+    },
+    {
+      "paragraph_index": 21,
+      "text": "This study isolates the numerical routing policy. It does not train a new router or test whether an LLM can discover a better rule. More products test whether an effect depends on a few unusual histories; matched products across stores expose geographic variation; repeated forecast dates show whether one month did most of the work.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/routing_policy",
+        "examples/module02_panel/protocol.json#/new_llm_calls",
+        "examples/module02_panel/protocol.json#/limitations"
+      ]
+    },
+    {
+      "paragraph_index": 23,
+      "text": "We use a fixed extract of the M5 daily unit-sales data: 100 item IDs in stores CA_1, TX_1 and WI_1. Each item–store series contains 701 observations, from 25 May 2014 through 24 April 2016. That gives us 300 series and 210,300 rows. The source is documented by the [M5 competition organizers](https://github.com/Mcompetitions/M5-methods).",
+      "evidence": [
+        "data/module02_panel/manifest.json#"
+      ]
+    },
+    {
+      "paragraph_index": 24,
+      "text": "The product sample is chosen using catalog membership, quotas across seven departments and a reproducible hash ranking of item IDs. The original twelve products are excluded. Forecast errors play no part in this selection, and an inconvenient product stays in the experiment.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/selection",
+        "examples/module02_panel/protocol.json#/quotas",
+        "examples/module02_panel/protocol.json#/excluded_original_items"
+      ]
+    },
+    {
+      "paragraph_index": 26,
+      "text": "*Graph 2 — Two products selected by hash before evaluation. Every panel shows only history available at the first main forecast date. The vertical axes reflect each series' sales scale.*",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/raw_plot_item_ids",
+        "examples/module02_panel/assets.json#/1"
+      ]
+    },
+    {
+      "paragraph_index": 27,
+      "text": "Matching the products matters. Comparing the same item in three locations is easier to interpret than comparing three unrelated assortments. It still cannot identify why sales differ: customer behavior, availability and other influences are not separated by these histories.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/item_ids",
+        "examples/module02_panel/protocol.json#/stores",
+        "examples/module02_panel/protocol.json#/limitations"
+      ]
+    },
+    {
+      "paragraph_index": 29,
+      "text": "*Table 1 — The predefined sample produces 600 development cases and 1,800 main cases. One case means one product, one store and one forecast date.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/2",
+        "examples/module02_panel/protocol.json#/case_manifest_hash"
+      ]
+    },
+    {
+      "paragraph_index": 30,
+      "text": "Department balance broadens the kinds of products we inspect. It does not reproduce Walmart's department shares, sales weights or revenue mix. The target is recorded sales, and zero sales need not mean zero demand. The results describe this cohort; they are neither M5 leaderboard scores nor estimates of inventory value.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/quotas",
+        "examples/module02_panel/protocol.json#/limitations"
+      ]
+    },
+    {
+      "paragraph_index": 33,
+      "text": "At each forecast date, every arm receives the same 449 past daily observations. Inside that history, candidates are compared on three rolling validation blocks: 365 training days followed by 28 validation days in each block. The eligible candidate with the lowest mean validation RMSE is refitted on the latest 365 days and predicts the next 28 days.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/numerical_config",
+        "examples/module02_panel/results.json.gz#/rows/0/candidates"
+      ]
+    },
+    {
+      "paragraph_index": 34,
+      "text": "Those final 28 days evaluate the complete decision. They are unavailable to routing and candidate selection. This is the distinction between choosing a method on past validation data and evaluating its subsequent forecast. [Time series cross-validation](https://otexts.com/fpp3/toolbox.html#time-series-cross-validation).",
+      "evidence": [
+        "examples/module02_panel/frozen_forecasts.json.gz#/rows/0",
+        "examples/module02_panel/results.json.gz#/rows/0/actual_dates"
+      ]
+    },
+    {
+      "paragraph_index": 36,
+      "text": "*Graph 3 — Three earlier forecast origins support development. Six later origins evaluate the frozen policy. Each outer forecast contains its own past-only candidate comparison.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/3",
+        "examples/module02_panel/protocol.json#/development_origins",
+        "examples/module02_panel/protocol.json#/main_origins"
+      ]
+    },
+    {
+      "paragraph_index": 37,
+      "text": "Development uses CA_1 and TX_1 at three origins: 16 August, 13 September and 11 October 2015. Main evaluation uses all three stores at six origins, from 8 November 2015 to 27 March 2016, spaced 28 days apart. A forecast origin is simply the date on which we issue the forecast.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/development_origins",
+        "examples/module02_panel/protocol.json#/main_origins",
+        "examples/module02_panel/protocol.json#/fixed_selection"
+      ]
+    },
+    {
+      "paragraph_index": 38,
+      "text": "The main outcome windows do not overlap. Training histories do: an observation that was a test outcome in November can legitimately become past information in December. The routing rule and development-selected comparator remain unchanged throughout.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/routing_policy",
+        "examples/module02_panel/protocol.json#/main_origins",
+        "examples/module02_panel/fixed_workflow.json#"
+      ]
+    },
+    {
+      "paragraph_index": 40,
+      "text": "*Table 2 — Every arm uses the same available history, numerical configuration, convergence checks and fallback rules. Their candidate sets differ.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/4",
+        "examples/module02_panel/protocol.json#/numerical_config"
+      ]
+    },
+    {
+      "paragraph_index": 42,
+      "text": "- **A: seasonal naive.** Repeat the latest observed week across the 28-day horizon.\n- **B: routing.** If at least 50% of the latest 365 sales observations equal zero, use the intermittent family. Otherwise use regular.\n- **R: always regular.** Compare seasonal naive with damped additive Holt–Winters, which models level, a damped trend and weekly seasonality.\n- **I: always intermittent.** Compare seasonal naive with TSB, an intermittent-sales method that separately smooths occurrence probability and nonzero size. Both smoothing parameters stay at 0.10.\n- **F: development-selected fixed family.** Choose R or I using development macro MASE, then use that family for every main case.\n- **D: all candidates.** Compare seasonal naive, Holt–Winters and TSB using past validation performance for every request.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/routing_policy",
+        "examples/module02_panel/protocol.json#/numerical_config",
+        "examples/module02_panel/protocol.json#/fixed_selection",
+        "examples/module02_panel/fixed_workflow.json#"
+      ]
+    },
+    {
+      "paragraph_index": 43,
+      "text": "The shared seasonal-naive candidate gives both specialist families a simple option. D is a broader search, not a future-aware oracle: it can still choose poorly from past validation evidence.",
+      "evidence": [
+        "examples/module02_panel/results.json.gz#/rows/0/candidates",
+        "examples/module02_panel/protocol.json#/numerical_config"
+      ]
+    },
+    {
+      "paragraph_index": 44,
+      "text": "Of 600 development cases, 597 have a defined training scale for MASE; the other three remain recorded as N/A. I scores 1.00314 against R's 1.00565, so F is fixed to intermittent. WI_1 contributes no error to this choice. The [fixed-choice record](examples/module02_panel/fixed_workflow.json) preserves the full-precision calculation.",
+      "evidence": [
+        "examples/module02_panel/fixed_workflow.json#",
+        "examples/module02_panel/protocol.json#/fixed_selection"
+      ]
+    },
+    {
+      "paragraph_index": 45,
+      "text": "That gap is small. We therefore retain both R and I in the main comparison. Choosing a comparator properly does not give us permission to hide another competitive control.",
+      "evidence": [
+        "examples/module02_panel/fixed_workflow.json#/macro_mase",
+        "examples/module02_panel/summary.json#/arms"
+      ]
+    },
+    {
+      "paragraph_index": 47,
+      "text": "The main grid contains 100 × 3 × 6 = 1,800 cases. In each case, Python constructs the permitted history, calculates its zero fraction and fixes B's route before candidate comparisons are available. All main predictions are frozen before their final outcomes are scored.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/case_manifest_hash",
+        "examples/module02_panel/frozen_forecasts.json.gz#/rows/0"
+      ]
+    },
+    {
+      "paragraph_index": 49,
+      "text": "Overlapping histories also repeat calculations. The notebook reuses an exact fit only when its training dates and values, method, numerical configuration and package versions match. Change a training value and the key changes.",
+      "evidence": [
+        "examples/module02_panel/fit_bank.json.gz#/fits",
+        "examples/module02_panel/author_run.json#/bank_semantic_hash"
+      ]
+    },
+    {
+      "paragraph_index": 50,
+      "text": "Across development and main evaluation, this bank serves 28,800 requested fits with 9,900 actual attempts and 18,900 cache hits. Six Holt–Winters fits fail convergence and remain in the evidence. Eligible alternatives still deliver every main forecast.",
+      "evidence": [
+        "examples/module02_panel/work.json#/bank",
+        "examples/module02_panel/summary.json#/arms"
+      ]
+    },
+    {
+      "paragraph_index": 51,
+      "text": "The bank makes the experiment practical to rerun. Its runtime cannot measure routing's standalone speed: all arms share it, and some requested results have already been computed. We account for logical work separately and use an uncached timing experiment below.",
+      "evidence": [
+        "examples/module02_panel/work.json#/bank",
+        "examples/module02_panel/work.json#/logical_main",
+        "examples/module02_panel/work.json#/uncached_timing"
+      ]
+    },
+    {
+      "paragraph_index": 52,
+      "text": "The notebook starts with an empty fit bank, recomputes the full study from bundled data and verifies its numerical results against the author run. The [study summary](examples/module02_panel/summary.json) and [execution record](examples/module02_panel/author_run.json) make that comparison inspectable.",
+      "evidence": [
+        "examples/module02_panel/recompute_verification.json#",
+        "examples/module02_panel/author_run.json#"
+      ]
+    },
+    {
+      "paragraph_index": 54,
+      "text": "First, the metric. **MAE** is mean absolute forecast error in units sold. **MASE** divides that error by the mean absolute week-apart change in the case's latest 365 training observations. Scaling lets us compare products with different sales volumes. We calculate it using past data and average cases equally. [Scaled forecast errors](https://otexts.com/fpp3/toolbox.html#scaled-errors).",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/numerical_config",
+        "examples/module02_panel/results.json.gz#/rows/0/arms/B/metrics",
+        "examples/module02_panel/summary.json#/arms"
+      ]
+    },
+    {
+      "paragraph_index": 55,
+      "text": "A MASE below one means error below that historical scaling quantity. It does not automatically mean beating seasonal naive on the future horizon; we measure that baseline directly as A.",
+      "evidence": [
+        "examples/module02_panel/results.json.gz#/rows/0/arms/A/metrics",
+        "examples/module02_panel/results.json.gz#/rows/0/arms/B/metrics"
+      ]
+    },
+    {
+      "paragraph_index": 56,
+      "text": "Every arm delivers all 1,800 main cases. Every main training scale is positive and finite, so all headline MASE values use the same denominator. There are no final numerical fallbacks or hidden main-scale exclusions.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/arms",
+        "examples/module02_panel/summary.json#/common_case_ids",
+        "examples/module02_panel/summary.json#/scaled_case_ids"
+      ]
+    },
+    {
+      "paragraph_index": 57,
+      "text": "Macro MASE is **1.09184 for A, 0.96875 for B, 0.96996 for R, 0.97396 for I/F, and 0.96719 for D**. Routing improves on the development-selected fixed workflow by **0.54%**. D has the lowest average error; B's is about 0.16% higher than D's. Always-regular R is close to B.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/arms",
+        "examples/module02_panel/summary.json#/contrasts"
+      ]
+    },
+    {
+      "paragraph_index": 58,
+      "text": "Those are relative changes in average scaled error, not percentage points of forecast accuracy. The competitive R control also makes the conclusion narrower: routing helps against F here, but the experiment provides little separation from another simple fixed family.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/arms/R",
+        "examples/module02_panel/summary.json#/arms/B",
+        "examples/module02_panel/summary.json#/contrasts/F"
+      ]
+    },
+    {
+      "paragraph_index": 60,
+      "text": "*Graph 4 — Each point averages 100 paired cases. Differences are B minus the comparator, multiplied by 1,000 for readability. Negative values favor routing.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/5",
+        "examples/module02_panel/summary.json#/by_store_origin"
+      ]
+    },
+    {
+      "paragraph_index": 61,
+      "text": "B has lower mean MASE than F in each store, including WI_1, and at each origin when stores are pooled. Individual store–origin combinations still lose; TX_1 in February is one example. Against D, the comparison varies over time, with a less favorable result for routing in March. A single date could hide that variation.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/by_store",
+        "examples/module02_panel/summary.json#/by_origin",
+        "examples/module02_panel/summary.json#/by_store_origin"
+      ]
+    },
+    {
+      "paragraph_index": 62,
+      "text": "MAE provides another qualification. In February, B's aggregate MAE is worse than F's even though its MASE is lower. Scaling changes how individual products contribute. We retain both metrics and keep MASE as the predefined primary measure.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/by_origin",
+        "examples/module02_panel/protocol.json#/primary_contrasts"
+      ]
+    },
+    {
+      "paragraph_index": 64,
+      "text": "*Graph 5 — The zero-fraction bands were fixed before scoring. Their case counts, from least to most zero-heavy, are 190, 422, 548 and 640.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/6",
+        "examples/module02_panel/protocol.json#/zero_band_edges",
+        "examples/module02_panel/summary.json#/by_zero_band"
+      ]
+    },
+    {
+      "paragraph_index": 65,
+      "text": "The upper two bands show no B–F difference **by construction**: both use the intermittent family when the zero fraction is at least 0.50. The differences below that boundary come from switching to the regular family. This explains which decisions contribute to the observed result. It does not show that 0.50 is an optimal threshold.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/by_zero_band",
+        "examples/module02_panel/protocol.json#/routing_policy",
+        "examples/module02_panel/fixed_workflow.json#/family"
+      ]
+    },
+    {
+      "paragraph_index": 67,
+      "text": "*Table 3 — All floating-point entries display two decimals. Paired differences and resampling endpoints use ΔMASE × 1,000 so rounding does not erase the small effects. MAE win/loss/tie counts retain the full 1,800-case denominator.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/7",
+        "examples/module02_panel/summary.json#/contrasts"
+      ]
+    },
+    {
+      "paragraph_index": 68,
+      "text": "The mean B–F difference is −0.00521 MASE. We resample the 100 item IDs as blocks 2,000 times, keeping each sampled item's stores and dates together. The conditional 95% interval is approximately **−0.00884 to −0.00182**. Products, rather than individual daily errors, are the resampling units.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/contrasts/F",
+        "examples/module02_panel/summary.json#/bootstrap/F",
+        "examples/module02_panel/protocol.json#/bootstrap"
+      ]
+    },
+    {
+      "paragraph_index": 69,
+      "text": "For B–D, the mean difference is +0.00156, with an interval of approximately **−0.00380 to +0.00725**. An interval spanning zero does not demonstrate equivalence. These intervals condition on three stores and six dates; resampling products cannot remove shocks shared across the calendar. Adjacent horizons do not establish reliability across every season or future regime.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/contrasts/D",
+        "examples/module02_panel/summary.json#/bootstrap/D",
+        "examples/module02_panel/protocol.json#/limitations"
+      ]
+    },
+    {
+      "paragraph_index": 70,
+      "text": "On MAE, B wins 354 cases, loses 251 and ties 1,195 against F. Against D, it wins 386, loses 399 and ties 1,015. Routing often delivers exactly the same numerical forecast as its comparator. The ties belong in the result.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/contrasts"
+      ]
+    },
+    {
+      "paragraph_index": 72,
+      "text": "Across the 1,800 main cases, standalone B would request **14,291 fit attempts**, compared with **19,697 for D**: **27.45% fewer**. These logical budgets include validation and final-fit attempts. They describe the work each arm requests without borrowing another arm's results.",
+      "evidence": [
+        "examples/module02_panel/work.json#/logical_main"
+      ]
+    },
+    {
+      "paragraph_index": 74,
+      "text": "*Table 4 — Separate blocks report shared development-plus-main computation, logical main-arm fit budgets and the author's archived uncached timing session. These are different measurement scopes.*",
+      "evidence": [
+        "examples/module02_panel/assets.json#/8",
+        "examples/module02_panel/work.json#"
+      ]
+    },
+    {
+      "paragraph_index": 75,
+      "text": "A fit count is not a stopwatch. Different numerical methods take different amounts of time, so we also time B and D without the shared bank on a predefined subset: two item IDs across three stores and six dates, giving 36 paired cases. The item IDs were selected by hash before scoring.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/timing_item_ids",
+        "examples/module02_panel/timings.json#/scope",
+        "examples/module02_panel/timings.json#/rows"
+      ]
+    },
+    {
+      "paragraph_index": 76,
+      "text": "B/D execution order alternates. Imports and numerical fitting are warmed using development data outside the measured totals. B's measurement includes its history profiling and dispatch. The independently computed forecasts must match those in the main study.",
+      "evidence": [
+        "examples/module02_panel/timings.json#/rows",
+        "examples/module02_panel/timings.json#/scope"
+      ]
+    },
+    {
+      "paragraph_index": 77,
+      "text": "In the archived timing session, B makes 286 attempts in **2.37 seconds**; D makes 394 in **4.70 seconds**. The [timing record](examples/module02_panel/timings.json) retains the case-level measurements and forecast hashes. A fresh notebook run repeats the benchmark and saves its own timings separately; the regenerated publication table uses the labeled archived session so quoted numbers have a stable source.",
+      "evidence": [
+        "examples/module02_panel/work.json#/uncached_timing",
+        "examples/module02_panel/timings.json#/rows",
+        "examples/module02_panel/reader_timings.json#/rows"
+      ]
+    },
+    {
+      "paragraph_index": 78,
+      "text": "This supports a local speed observation on those 36 cases. It is not a hardware-independent guarantee or a measured runtime for the full grid. B's positive median duration rounds to 0.00 seconds in the table; full-precision values remain in the records. We infer no dollar cost, energy saving or LLM latency from these measurements.",
+      "evidence": [
+        "examples/module02_panel/work.json#/uncached_timing",
+        "examples/module02_panel/protocol.json#/new_llm_calls"
+      ]
+    },
+    {
+      "paragraph_index": 80,
+      "text": "The fixed routing policy contributes a modest benefit in this cohort: lower average scaled error than the development-selected fixed workflow, fewer requested fits than searching all candidates, and a favorable result in the separate local timing sample.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/contrasts/F",
+        "examples/module02_panel/work.json#/logical_main",
+        "examples/module02_panel/work.json#/uncached_timing"
+      ]
+    },
+    {
+      "paragraph_index": 81,
+      "text": "The controls keep that finding in proportion. Always-regular R nearly matches B. All-candidates D has the lowest average error. Individual store–date combinations can favor the comparator, and even MAE and MASE can disagree about a month's result.",
+      "evidence": [
+        "examples/module02_panel/summary.json#/arms",
+        "examples/module02_panel/summary.json#/by_store_origin",
+        "examples/module02_panel/summary.json#/by_origin"
+      ]
+    },
+    {
+      "paragraph_index": 82,
+      "text": "The larger panel helps us see those qualifications. More products reduce dependence on a few idiosyncratic histories. The same products across stores let us examine the rule under different sales patterns. More forecast origins reveal variation that one convenient month would conceal. They improve the evidence about the rule; they do not improve the rule itself.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/item_ids",
+        "examples/module02_panel/protocol.json#/stores",
+        "examples/module02_panel/summary.json#/by_origin",
+        "examples/module02_panel/protocol.json#/routing_policy"
+      ]
+    },
+    {
+      "paragraph_index": 83,
+      "text": "Routing is also auditable here. We can trace a zero fraction to a family, that family to its eligible candidates, and validation scores to a forecast. The band analysis shows where the routing decision changes the result. Whether this makes a forecast more understandable or useful to an analyst remains unmeasured; an inspectable decision trail is not a human explainability study.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/routing_policy",
+        "examples/module02_panel/results.json.gz#/rows/0/candidates",
+        "examples/module02_panel/summary.json#/by_zero_band",
+        "examples/module02_panel/protocol.json#/limitations"
+      ]
+    },
+    {
+      "paragraph_index": 84,
+      "text": "This is a retrospective, department-balanced study of recorded sales, using three stores, six adjacent horizons and one fixed configuration. It establishes no LLM-specific advantage, calibrated forecast intervals, product-launch performance or inventory benefit. It also does not establish that this threshold is best.",
+      "evidence": [
+        "examples/module02_panel/protocol.json#/limitations",
+        "examples/module02_panel/protocol.json#/numerical_config",
+        "examples/module02_panel/protocol.json#/new_llm_calls"
+      ]
+    },
+    {
+      "paragraph_index": 85,
+      "text": "The [notebook](a02-routing-panel.ipynb) runs offline after environment setup and regenerates every figure and table used here. Its substantive section headings match this article, so readers can move from a claim to the calculation behind it. For a larger deployment, the next question is whether this small accuracy–computation trade-off survives more locations, seasons and an explicitly chosen business objective.",
+      "evidence": [
+        "examples/module02_panel/recompute_verification.json#",
+        "examples/module02_panel/assets.json#",
+        "examples/module02_panel/protocol.json#/limitations"
+      ]
+    }
+  ],
+  "external_context_sources": [
+    {
+      "claim": "Routing is documented as a specialist workflow pattern",
+      "url": "https://www.anthropic.com/research/building-effective-agents"
+    },
+    {
+      "claim": "Forecasting has feature-based model selection research",
+      "url": "https://robjhyndman.com/publications/fforms/"
+    },
+    {
+      "claim": "Source sales and competition metadata",
+      "url": "https://github.com/Mcompetitions/M5-methods"
+    },
+    {
+      "claim": "Chronological rolling-origin evaluation",
+      "url": "https://otexts.com/fpp3/toolbox.html#time-series-cross-validation"
+    },
+    {
+      "claim": "Seasonal scaling and rolling-origin evaluation definitions",
+      "url": "https://otexts.com/fpp3/toolbox.html#scaled-errors"
+    },
+    {
+      "claim": "Predefined workflows differ from agents that dynamically choose processes and tools",
+      "url": "https://docs.langchain.com/oss/python/langgraph/workflows-agents"
+    }
+  ],
+  "semantic_qualifications": [
+    "No LLM-specific benefit or explanation-quality claim",
+    "R comes close to B; D has lowest average error",
+    "Individual store-origin combinations can lose",
+    "February MAE and MASE move differently",
+    "Upper-band B/F equality is by construction",
+    "All main cases and scales included",
+    "Bootstrap conditions on stores/dates and cannot remove shared shocks",
+    "No equivalence claim from a zero-containing interval",
+    "Logical fitting differs from actual shared work",
+    "36-case timing sample is not full-grid speed guarantee",
+    "New routing-rationale subsection distinguishes potential specialization, efficiency and operational benefits from measured forecast results; LLM routing and human explainability benefits remain untested."
+  ],
+  "post": "a02-post-new.md"
+}

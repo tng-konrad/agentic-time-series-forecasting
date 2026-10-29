@@ -1,0 +1,134 @@
+{
+  "full_history": {
+    "A": {
+      "delivered": 12,
+      "total": 12,
+      "common_n": 9,
+      "scaled_n": 9,
+      "excluded_scale_n": 0,
+      "macro_mase": 1.0359286279819502
+    },
+    "B": {
+      "delivered": 12,
+      "total": 12,
+      "common_n": 9,
+      "scaled_n": 9,
+      "excluded_scale_n": 0,
+      "macro_mase": 0.8853634766678327
+    },
+    "C": {
+      "delivered": 9,
+      "total": 12,
+      "common_n": 9,
+      "scaled_n": 9,
+      "excluded_scale_n": 0,
+      "macro_mase": 0.8853634766678327
+    },
+    "D": {
+      "delivered": 12,
+      "total": 12,
+      "common_n": 9,
+      "scaled_n": 9,
+      "excluded_scale_n": 0,
+      "macro_mase": 0.8413081753945444
+    }
+  },
+  "paired": [
+    {
+      "case_id": "M02-F01",
+      "scenario": "full",
+      "b_minus_a_mae": -1.9688467480254994,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F02",
+      "scenario": "full",
+      "b_minus_a_mae": -0.12710790534432004,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F03",
+      "scenario": "full",
+      "b_minus_a_mae": -0.6225157367691354,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F04",
+      "scenario": "full",
+      "b_minus_a_mae": -1.8453139954739486,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F05",
+      "scenario": "full",
+      "b_minus_a_mae": -0.19400312681206056,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F06",
+      "scenario": "full",
+      "b_minus_a_mae": 0.053225607259187124,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F07",
+      "scenario": "full",
+      "b_minus_a_mae": -0.17923646498638351,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F08",
+      "scenario": "full",
+      "b_minus_a_mae": 0.007466643990234352,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-F09",
+      "scenario": "full",
+      "b_minus_a_mae": -0.588982169021082,
+      "c_minus_b_mae": null
+    },
+    {
+      "case_id": "M02-F10",
+      "scenario": "full",
+      "b_minus_a_mae": -0.947923434178453,
+      "c_minus_b_mae": null
+    },
+    {
+      "case_id": "M02-F11",
+      "scenario": "full",
+      "b_minus_a_mae": -0.20615762253187986,
+      "c_minus_b_mae": null
+    },
+    {
+      "case_id": "M02-F12",
+      "scenario": "full",
+      "b_minus_a_mae": -0.11488698245181705,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-N01",
+      "scenario": "new",
+      "b_minus_a_mae": 0.0,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-N02",
+      "scenario": "new",
+      "b_minus_a_mae": 0.0,
+      "c_minus_b_mae": null
+    },
+    {
+      "case_id": "M02-S01",
+      "scenario": "short",
+      "b_minus_a_mae": 0.0,
+      "c_minus_b_mae": 0.0
+    },
+    {
+      "case_id": "M02-S02",
+      "scenario": "short",
+      "b_minus_a_mae": -0.17346938775510212,
+      "c_minus_b_mae": null
+    }
+  ]
+}

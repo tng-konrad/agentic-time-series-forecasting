@@ -1,5 +1,5 @@
 """A02's fixed daily candidates and dated, training-only numerical procedures."""
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 import hashlib
 from importlib.metadata import version
 import json
@@ -115,6 +115,9 @@ def fit_forecast(train, model, config=ForecastConfig()):
         values = np.asarray(train, dtype=float)
         if model not in CATALOG or len(values) < 2 * config.season_length or not np.isfinite(values).all() or (values < 0).any():
             raise ValueError("Unsupported model or invalid training values")
+        if model == "tsb":
+            # Import/UI warnings are not numerical fitting diagnostics.
+            from statsforecast.models import TSB
         with warnings.catch_warnings(record=True) as caught:
             warnings.simplefilter("always")
             if model == "seasonal_naive":
@@ -128,7 +131,6 @@ def fit_forecast(train, model, config=ForecastConfig()):
                     raise ValueError("Holt-Winters optimizer did not converge")
                 predictions = np.asarray(fitted.forecast(config.horizon), dtype=float)
             else:
-                from statsforecast.models import TSB
                 predictions = np.asarray(TSB(alpha_d=config.tsb_alpha_d, alpha_p=config.tsb_alpha_p)
                                          .forecast(values, h=config.horizon)["mean"], dtype=float)
         if predictions.shape != (config.horizon,) or not np.isfinite(predictions).all():
@@ -172,18 +174,18 @@ def backtest_candidates(history, models, config=ForecastConfig(), forecaster=fit
     return candidates
 
 
-def select_candidate(candidates):
+def select_candidate(candidates, catalog=CATALOG):
     if not candidates.get("seasonal_naive", {}).get("eligible"):
         raise ValueError("The common baseline failed validation")
-    eligible = [m for m in CATALOG if m in candidates and candidates[m]["eligible"]]
-    return min(eligible, key=lambda m: (candidates[m]["mean_rmse"], CATALOG.index(m)))
+    eligible = [m for m in catalog if m in candidates and candidates[m]["eligible"]]
+    return min(eligible, key=lambda m: (candidates[m]["mean_rmse"], catalog.index(m)))
 
 
-def _finish_path(history, route, candidates, trace, config, forecaster, reusable_final=None):
+def _finish_path(history, route, candidates, trace, config, forecaster, reusable_final=None, catalog=CATALOG):
     result = {"route": route, "status": "numerical_failure", "candidates": candidates, "fit_trace": trace,
               "selected": None, "delivered": None, "final_fits": {}, "forecast": None, "dates": None}
     try:
-        selected = select_candidate(candidates)
+        selected = select_candidate(candidates, catalog)
         result["selected"] = selected
         train = history.iloc[-config.train_window:]
         for model in dict.fromkeys(["seasonal_naive", selected]):
@@ -259,3 +261,61 @@ def score_frozen_forecasts(frozen, panel, config=ForecastConfig()):
 
 def package_versions():
     return {name: version(name) for name in ("numpy", "pandas", "scipy", "statsmodels", "statsforecast")}
+
+
+SHORT_CATALOG = ("seasonal_naive", "mean28")
+
+
+def fit_simple(train, model, config=ForecastConfig()):
+    """Add a trailing mean without changing the original numerical catalog."""
+    if model != "mean28":
+        return fit_forecast(train, model, config)
+    started = time.perf_counter()
+    values = np.asarray(train, dtype=float)
+    result = {"model": model, "status": "failed", "warnings": [], "clip_count": 0,
+              "train_start": train.index[0].date().isoformat(),
+              "train_end": train.index[-1].date().isoformat(), "train_n": len(train)}
+    if len(values) < 28 or not np.isfinite(values).all() or (values < 0).any():
+        result["error"] = "Trailing mean needs 28 finite nonnegative observations"
+    else:
+        result.update(status="ok", forecast=[float(values[-28:].mean())] * config.horizon,
+                      dates=pd.date_range(train.index[-1] + pd.Timedelta(days=1),
+                                          periods=config.horizon, freq="D").strftime("%Y-%m-%d").tolist())
+    result["seconds"] = time.perf_counter() - started
+    return result
+
+
+def run_short_path(history, config=ForecastConfig(), forecaster=fit_simple):
+    """One 28-day validation block; final refit uses all visible observations."""
+    if not 56 <= len(history) < config.required_history:
+        raise ValueError("Short workflow requires 56–448 observed days")
+    started, trace = time.perf_counter(), []
+    validation_config = replace(config, train_window=len(history) - config.horizon, n_folds=1)
+    candidates = backtest_candidates(history, SHORT_CATALOG, validation_config, forecaster, trace)
+    final_config = replace(config, train_window=len(history), n_folds=1)
+    result = _finish_path(history, "short_history", candidates, trace, final_config,
+                          forecaster, catalog=SHORT_CATALOG)
+    result.update(seconds=time.perf_counter() - started, config=asdict(final_config),
+                  validation_config=asdict(validation_config))
+    return result
+
+
+def donor_prior(donors, origin, config=ForecastConfig()):
+    """A fixed median of three 28-day donor means; no target data are accepted."""
+    started = time.perf_counter()
+    origin = pd.Timestamp(origin)
+    expected = pd.date_range(origin - pd.Timedelta(days=27), origin, freq="D")
+    if len(donors) != 3:
+        raise ValueError("The prior requires exactly three authorized donors")
+    means = {}
+    for sid, series in donors.items():
+        if not series.index.equals(expected) or not np.isfinite(series).all() or (series < 0).any():
+            raise ValueError("Donor data must be the complete 28-day pre-origin window")
+        means[sid] = float(series.mean())
+    value = float(np.median(list(means.values())))
+    return {"route": "new_product", "status": "ok", "selected": "donor_median28",
+            "delivered": "donor_median28", "forecast": [value] * config.horizon,
+            "dates": pd.date_range(origin + pd.Timedelta(days=1), periods=config.horizon,
+                                   freq="D").strftime("%Y-%m-%d").tolist(),
+            "donor_means": means, "fit_trace": [], "candidates": {},
+            "seconds": time.perf_counter() - started, "config": asdict(config)}

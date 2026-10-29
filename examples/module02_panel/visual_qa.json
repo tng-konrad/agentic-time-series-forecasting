@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-10-27T00:16:07.941354+00:00",
+  "widths": [
+    "native",
+    760
+  ],
+  "asset_hashes": {
+    "atsf02-graph1.png": "4db2660f1c48c0b59f6074d54aa710e4cb6cdaf166326410f15dff513bd1651a",
+    "atsf02-graph2.png": "89de5fab4f1d1d12745350a255b9b182aeb1284c8f033a40adf1cc8798060668",
+    "atsf02-table1.png": "96e9db2e66160f32b811aefecc05bad7d382d3d7a07b0329600475167a2bc1a7",
+    "atsf02-graph3.png": "996cb6ed57ac0e5afc078496617d178055d4af444af935ae191498ce1e1a82a9",
+    "atsf02-table2.png": "5421504b1ed045e1a9546093e7ffb4d420595488f96ad9e8d3ecbd8a41a87ac1",
+    "atsf02-graph4.png": "c12495b3de8701d5e6ad11d05e238723d9b6b7a29e551ba812144b0480778750",
+    "atsf02-graph5.png": "47ea7134eafed4ab95f89630e3054893601cbf6e0ea421ec73b9d915e105a38d",
+    "atsf02-table3.png": "e19eff4b27abf3120f2eca2cc2aaece6adb1ffd5aafb9393340ec9d56cd4b01c",
+    "atsf02-table4.png": "dc32ca007b159feb6e7d8870682c8000213ecdc81344816f85f304663e1e090c"
+  },
+  "method": "Inspected all nine regenerated PNGs at native resolution and at 760 pixels wide in three galleries under /tmp/module02-post-new-preview. Images are byte-identical to the earlier reviewed numerical exports; notebook and manifest now bind them to a02-post-new.md.",
+  "checks": [
+    "No clipped labels or overlapping dates",
+    "Legible section/axis/legend/table text",
+    "All predefined stores/origins/bands shown",
+    "Small effects explicitly scaled by 1000",
+    "No free title/caption/footer in table images",
+    "Typed two-decimal floats and integer counts",
+    "Timing scopes and conditional intervals explained in surrounding prose"
+  ],
+  "post": "a02-post-new.md"
+}

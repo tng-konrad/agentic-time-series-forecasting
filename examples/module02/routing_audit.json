@@ -1,0 +1,331 @@
+{
+  "capture_hash": "838667b77229aaafe8e608120af6f1ee418482c8149f3d0abb0a3a36be65e015",
+  "reviewed_at": "2026-10-26T20:05:21.621990+00:00",
+  "method": "Manual semantic review of each complete reason and question against cited evidence and declared policy; a mixed reason is not rated supported.",
+  "reviews": [
+    {
+      "case_id": "M02-F01",
+      "response_hash": "acddf087f4c91622cad61f97244771026c845af3c70c059da52f2311b6d271ac",
+      "proposal": {
+        "clarification_question": "What is the product's launch date, and is the lifecycle field confirmed as 'established' (not 'new')?",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span",
+          "history.current_window"
+        ],
+        "reason": "449 observations meet the 449+ threshold; history.current_window shows 365 observed days with 5 zeros (zero_count=5, observed_count=365), so 2*5=10 < 365 \u2192 regular. Lifecycle is 'established', not 'new', so rule 2 does not apply.",
+        "route": "regular"
+      },
+      "reason_rating": "supported",
+      "reason_review": "Counts and threshold are correct; established lifecycle is correctly distinguished from new.",
+      "question_rating": "unnecessary",
+      "question_review": "Already supplied established status; a launch date is not required."
+    },
+    {
+      "case_id": "M02-F02",
+      "response_hash": "d3b98a2602fc68429f5dee0eb1cc037d3db84e2c98dfe0922919c63dca3d2ecd",
+      "proposal": {
+        "clarification_question": "Is the product\u2019s launch date known, and if so, what is it? (Required to verify lifecycle status per policy rule 1.)",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span",
+          "history.current_window"
+        ],
+        "reason": "Product has 449 observations (\u2265449), so history.current_window is evaluated: zero_count=8, observed_count=365 \u2192 2*8=16 < 365, so regular. However, lifecycle=established but launch_date=null triggers rule 1 clarification.",
+        "route": "regular"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Null launch date on an established item does not trigger rule 1.",
+      "question_rating": "unnecessary",
+      "question_review": "Requests a launch date not required by this workflow."
+    },
+    {
+      "case_id": "M02-F03",
+      "response_hash": "3330dfa87533596f5f0478b8061aceb984e4e7c20aca3bd43e4fd376a070d811",
+      "proposal": {
+        "clarification_question": "What is the product\u2019s launch date, and is the lifecycle field confirmed as 'established' (not 'new')?",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span",
+          "history.current_window"
+        ],
+        "reason": "History has 449 observations (\u2265449), so route depends on current_window zero ratio: 2*2=4 < 365 observed, so regular. However, launch_date is null and lifecycle is 'established'\u2014policy requires clarity on lifecycle status before final routing.",
+        "route": "regular"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Established lifecycle plus null launch date is not missing lifecycle evidence.",
+      "question_rating": "unnecessary",
+      "question_review": "Repeats already supplied lifecycle metadata."
+    },
+    {
+      "case_id": "M02-F04",
+      "response_hash": "7708a03dd02a4f7cc737036983ba4a9d79fd61dde7a5939d00258c5dc0deb0f1",
+      "proposal": {
+        "clarification_question": "Is the product\u2019s launch_date known, and are there three same-unit authorized donors available for donor.prior?",
+        "evidence_ids": [
+          "history.available_span",
+          "history.current_window",
+          "product.metadata",
+          "donor.prior"
+        ],
+        "reason": "449 observations meet the threshold for regular history (8 zeros < 182.5), lifecycle=established, and donor.prior.eligible=false due to no authorized donors.",
+        "route": "regular"
+      },
+      "reason_rating": "supported",
+      "reason_review": "Eight zeros, 449 observations and ineligible donors are factual; donor status is irrelevant here.",
+      "question_rating": "unnecessary",
+      "question_review": "Neither donors nor a launch date are required for this full history."
+    },
+    {
+      "case_id": "M02-F05",
+      "response_hash": "4611030dd22cf8af0e7b4cca4f269e86e95d6cb693e42bed99e8177113f4283b",
+      "proposal": {
+        "clarification_question": "What is the product's launch date, and is the lifecycle field confirmed as 'established' or 'new'?",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span",
+          "history.current_window"
+        ],
+        "reason": "Product has 449 observations (\u2265449), so history.current_window is evaluated: zero_count=220, observed_count=365, and 2*220=440 \u2265 365, so intermittent. However, launch_date is null and lifecycle is 'established', conflicting with new_product eligibility criteria.",
+        "route": "intermittent"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Established-item metadata need not satisfy new-product eligibility.",
+      "question_rating": "unnecessary",
+      "question_review": "Asks for already declared lifecycle and an unnecessary date."
+    },
+    {
+      "case_id": "M02-F06",
+      "response_hash": "dd600fccb931714a83571a23363d5204f93741a03d29cd541c5f87bccb5a679f",
+      "proposal": {
+        "clarification_question": "What is the product's launch date, and is the lifecycle field confirmed as 'established' or 'new'?",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span",
+          "history.current_window"
+        ],
+        "reason": "Product has 449 observations (\u2265449), so history.current_window is evaluated: zero_count=251, observed_count=365, and 2*251=502 \u2265 365 \u2192 intermittent. However, launch_date is null and lifecycle is 'established', conflicting with new_product eligibility criteria.",
+        "route": "intermittent"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Established-item metadata need not satisfy new-product eligibility.",
+      "question_rating": "unnecessary",
+      "question_review": "Asks for already declared lifecycle and an unnecessary date."
+    },
+    {
+      "case_id": "M02-F07",
+      "response_hash": "211caaf02418bd2b4b6857bdc5131927adc320100466c9e0dd22103deb65615b",
+      "proposal": {
+        "clarification_question": "Is the product lifecycle 'established' correct, and was the launch date prior to 2015-01-04?",
+        "evidence_ids": [
+          "history.available_span",
+          "history.current_window",
+          "product.metadata"
+        ],
+        "reason": "449 observations meet the threshold for regular/intermittent classification; history.current_window shows 275 zeros out of 365 observed days (75.3%), satisfying the intermittent threshold (2\u00d7275 \u2265 365). Product lifecycle is 'established', not 'new', so rule 2 does not apply.",
+        "route": "intermittent"
+      },
+      "reason_rating": "supported",
+      "reason_review": "275/365 zeros is 75.3 percent at the response's precision and satisfies the threshold.",
+      "question_rating": "unnecessary",
+      "question_review": "The existing history already supports dispatch; no launch-date check is needed."
+    },
+    {
+      "case_id": "M02-F08",
+      "response_hash": "62a45fb6d9d029b9efba5d4a135d4caa8a7bb7ea5a98e449b7ce453fd67994af",
+      "proposal": {
+        "clarification_question": "Is the product lifecycle 'established' correct, and was the launch date prior to 2015-01-04?",
+        "evidence_ids": [
+          "history.available_span",
+          "history.current_window",
+          "product.metadata"
+        ],
+        "reason": "449 observations meet the threshold for regular/intermittent classification; history.current_window shows 216 zeros out of 365 (2*216=432 \u2265 365), suggesting intermittent, but lifecycle=established conflicts with new_product criteria and launch_date=null requires clarification.",
+        "route": "intermittent"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Treats lack of launch metadata as a conflict despite an established lifecycle.",
+      "question_rating": "unnecessary",
+      "question_review": "Requests confirmation not required by the declared policy."
+    },
+    {
+      "case_id": "M02-F09",
+      "response_hash": "73df39b957a43b1c780d79427a9911db0effc2451dd74f90d70612c1c4ebf88b",
+      "proposal": {
+        "clarification_question": "Is the product\u2019s launch date known, and are there three same-unit authorized donors available for donor.prior?",
+        "evidence_ids": [
+          "donor.prior",
+          "product.metadata"
+        ],
+        "reason": "Product lifecycle is established but launch_date is null; donor.prior.eligible is false due to no authorized donors, requiring clarification on both launch timing and donor eligibility.",
+        "route": "clarify"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Wrongly requires launch and donor metadata for a full observed history.",
+      "question_rating": "unnecessary",
+      "question_review": "Both requested facts are irrelevant to this request's eligibility."
+    },
+    {
+      "case_id": "M02-F10",
+      "response_hash": "18e421e6e765399a8b75687ec849a6cd2cecc24d937c7d874422135333619226",
+      "proposal": {
+        "clarification_question": "Is the product lifecycle 'established' correct, and was the launch date before 2015-01-04?",
+        "evidence_ids": [
+          "history.available_span",
+          "history.current_window",
+          "product.metadata"
+        ],
+        "reason": "449 observations meet the threshold for regular/intermittent classification, but launch_date is null and lifecycle is 'established', conflicting with policy rule 1 (new product requires launch on first forecast day and no prior history).",
+        "route": "clarify"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Applies the new-product condition to an established product.",
+      "question_rating": "unnecessary",
+      "question_review": "Established status and historical dates are already present."
+    },
+    {
+      "case_id": "M02-F11",
+      "response_hash": "2a4dfbad7b573b70176b1d18af3c0514ca5185f03e2cbff98f986f3be1fae3d2",
+      "proposal": {
+        "clarification_question": "Is the product\u2019s launch date known, and are there three same-unit authorized donors available for donor.prior?",
+        "evidence_ids": [
+          "donor.prior",
+          "product.metadata"
+        ],
+        "reason": "Product lifecycle is established, history has 449 observations (\u2265449), so route depends on current_window intermittency. However, donor.prior.eligible=false and launch_date=null triggers clarification per policy rule 1.",
+        "route": "clarify"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Donor ineligibility and missing launch date do not trigger rule 1 here.",
+      "question_rating": "unnecessary",
+      "question_review": "Neither requested fact blocks a full-history route."
+    },
+    {
+      "case_id": "M02-F12",
+      "response_hash": "debaab32b90c92c5007c43010775b72d6ccceaaddda7330669f6f91d1df2e108",
+      "proposal": {
+        "clarification_question": "What is the product's launch date, and is the lifecycle field confirmed as 'established' or 'new'?",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span",
+          "history.current_window"
+        ],
+        "reason": "Product has 449 observations (\u2265449), so history.current_window is evaluated: zero_count=204, observed_count=365, and 2*204=408 \u2265 365, so intermittent. However, launch_date is null and lifecycle is 'established', conflicting with new_product eligibility criteria.",
+        "route": "intermittent"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Established items are not required to meet new-product eligibility.",
+      "question_rating": "unnecessary",
+      "question_review": "Asks for already supplied lifecycle and an unnecessary launch date."
+    },
+    {
+      "case_id": "M02-N01",
+      "response_hash": "b9f0b15592fa2b2ec0ef3930f632087b5ec0e2316515766d2e9f5600acb66226",
+      "proposal": {
+        "clarification_question": "Is the launch_date (2016-03-28) confirmed as the first forecast day, and is lifecycle='new' explicitly declared for this product?",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span"
+        ],
+        "reason": "Product has lifecycle='new' and launch_date=2016-03-28, but history.available_span shows 0 observations and no start date\u2014consistent with new product status per rule 1. However, rule 2 requires explicit confirmation that launch_date equals the first forecast day and donor eligibility is valid (donor.prior.eligible=true).",
+        "route": "new_product"
+      },
+      "reason_rating": "unsupported",
+      "reason_review": "Introduces an extra confirmation step despite declared launch date and eligible prior; cited IDs also omit donor.prior.",
+      "question_rating": "unnecessary",
+      "question_review": "Both requested facts are already explicitly supplied."
+    },
+    {
+      "case_id": "M02-N02",
+      "response_hash": "f6965b066b9c6fc5cb4cabce179f49f128ee61c57d356ff11d08aef1bbaa36d1",
+      "proposal": {
+        "clarification_question": "Is the launch_date (2016-03-28) confirmed as the first forecast day, and is lifecycle='new' explicitly declared for this product?",
+        "evidence_ids": [
+          "product.metadata",
+          "history.available_span"
+        ],
+        "reason": "Product has lifecycle='new' and launch_date=2016-03-28, but history.available_span shows 0 observations and no start date, so lifecycle/history metadata is inconsistent per rule 1.",
+        "route": "clarify"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "Zero history is consistent with a declared new product; the reason calls it inconsistent.",
+      "question_rating": "unnecessary",
+      "question_review": "Reconfirms already supplied launch and lifecycle fields."
+    },
+    {
+      "case_id": "M02-S01",
+      "response_hash": "013d397ab72a8a7896b3e8546538b42d9d341175ada5ac326c01dc0aee0fbce3",
+      "proposal": {
+        "clarification_question": "What is the product's launch date, and is the lifecycle field confirmed as 'established' or 'new'?",
+        "evidence_ids": [
+          "history.available_span",
+          "product.metadata"
+        ],
+        "reason": "60 target observations (56\u2013448 range) triggers short_history, but launch_date is null and lifecycle is 'established'\u2014policy requires explicit lifecycle metadata for new_product eligibility, and no donor donors are authorized or eligible per donor.prior.",
+        "route": "short_history"
+      },
+      "reason_rating": "ambiguous",
+      "reason_review": "Correctly identifies short_history but the 'but' clause implies irrelevant launch/donor requirements block it.",
+      "question_rating": "unnecessary",
+      "question_review": "No launch date or donor set is required for 60 observed days."
+    },
+    {
+      "case_id": "M02-S02",
+      "response_hash": "b7f7158ae4e98aeb9c67eb66c1cde668db608db60df86a3d8fc8efe22bdc15f4",
+      "proposal": {
+        "clarification_question": "What is the product's launch date, and are there three same-unit authorized donors available for prior-period borrowing?",
+        "evidence_ids": [
+          "history.available_span",
+          "product.metadata",
+          "donor.prior"
+        ],
+        "reason": "Product has 60 target observations (1\u201355 rule not met, 56\u2013448 \u2192 short_history), but lifecycle=established with no launch_date, and donor.prior.eligible=false. Policy requires clarification of launch date and donor eligibility before routing.",
+        "route": "clarify"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "The short-history policy does not require launch dates or donors.",
+      "question_rating": "unnecessary",
+      "question_review": "Requests irrelevant launch/donor information."
+    },
+    {
+      "case_id": "M02-X01",
+      "response_hash": "20f700d6a5fcdc308d587c99ebae8cdd9ec415c86a39751b6e89645f86fc1b49",
+      "proposal": {
+        "clarification_question": "What is the product's lifecycle status and launch date?",
+        "evidence_ids": [
+          "history.available_span",
+          "product.metadata"
+        ],
+        "reason": "history.available_span shows 0 observations and no start/end dates; product.metadata has null lifecycle and launch_date, violating rule 1 (new product requires declared launch on first forecast day).",
+        "route": "clarify"
+      },
+      "reason_rating": "contradicted",
+      "reason_review": "The lifecycle really is missing, but the reason falsely says there is no end date; 2016-03-27 is supplied.",
+      "question_rating": "relevant",
+      "question_review": "Requests the genuinely missing lifecycle and launch information."
+    },
+    {
+      "case_id": "M02-X02",
+      "response_hash": "fa0c1f7aab147d665bd81cdf1bfd317465157cf297c04c1ee9e14ba55482fffd",
+      "proposal": {
+        "clarification_question": "Is the product truly new (lifecycle=new, launch_date=2016-03-28), and are there three same-unit authorized donors available for donor.prior?",
+        "evidence_ids": [
+          "product.metadata",
+          "donor.prior",
+          "history.available_span"
+        ],
+        "reason": "Product metadata declares lifecycle=new and launch_date=2016-03-28 (first forecast day), but history.available_span shows 0 observations and donor.prior.eligible=false with reason requiring three same-unit donors\u2014triggering rule 2 clarification need.",
+        "route": "clarify"
+      },
+      "reason_rating": "supported",
+      "reason_review": "Correctly identifies missing donor eligibility for a declared new product.",
+      "question_rating": "relevant_with_redundancy",
+      "question_review": "Requests missing donors but also reconfirms already supplied lifecycle/date."
+    }
+  ],
+  "development": {
+    "bundle_hash": "68d7bba058ee42c89eefb591f747b851a158c92c9f4aad867f1fef71d6981981",
+    "reason_rating": "supported",
+    "review": "The separate development response uses the correct counts and threshold, with a null question; its regular route genuinely dispatches."
+  }
+}

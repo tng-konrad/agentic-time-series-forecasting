@@ -1,0 +1,24 @@
+{
+  "version": "module02-panel-v1",
+  "source_hashes": {
+    "sales_train_validation.csv.zip": "88cf53dbb3782b93dc64c038f7589a2677ff171df8857346a07745fb80f9803e",
+    "calendar.csv": "d12b5914ef03e66649adf5dd9e996e6602251c22b7a6af8f1f7e3aa12f8860f5"
+  },
+  "protocol_hash": "485573eaf454e41a3875f451990c7ac8cb1a22c6d3bb5e8df0a337d55c66ff4e",
+  "files": {
+    "sales.csv.gz": "63f09964d369e09dd652ce0131d22ced23c742c2e82aaf3a6ea0a620a00b7c04",
+    "items.json": "b98e68499ab43594c8d18b5c2d539faa6b4d4f8c2135152d2d08919cfc2ec3cb",
+    "cases.json": "f050bd6b5b1a81d5a04d3d621374edd606d4a12ba910c9d0582131e0358511e7"
+  },
+  "items": 100,
+  "series": 300,
+  "days": 701,
+  "rows": 210300,
+  "development_cases": 600,
+  "main_cases": 1800,
+  "span": [
+    "2014-05-25",
+    "2016-04-24"
+  ],
+  "source": "https://github.com/Mcompetitions/M5-methods"
+}

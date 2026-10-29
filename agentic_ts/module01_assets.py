@@ -26,28 +26,29 @@ def format_cell(value):
 
 
 class PublicationAssets:
-    def __init__(self, cfg, source_hash):
+    def __init__(self, cfg, source_hash, *, prefix="atsf01", post="a01-post.md", sidecar_dir="examples/module01"):
         self.cfg, self.source_hash, self.assets = cfg, source_hash, []
-        self.cfg.graph_folder.mkdir(exist_ok=True)
+        self.prefix, self.post, self.sidecar_dir = prefix, post, sidecar_dir
+        self.cfg.graph_folder.mkdir(parents=True, exist_ok=True)
         self.cfg.example_folder.mkdir(parents=True, exist_ok=True)
 
     def save(self, fig, kind, section, cell_id, caption, table_data=None):
         number = sum(a["kind"] == kind for a in self.assets) + 1
-        filename = f"atsf01-{kind}{number}.png"
+        filename = f"{self.prefix}-{kind}{number}.png"
         destination = self.cfg.graph_folder / filename
         if kind == "table":
             if fig.texts or fig._suptitle or any(ax.get_title() or ax.texts for ax in fig.axes):
                 raise ValueError("Table figures must have no titles, footer or free text")
         fig.savefig(destination, dpi=self.cfg.export_dpi, bbox_inches="tight", facecolor="white")
         plt.close(fig)
-        asset = {"kind": kind, "number": number, "filename": filename, "path": f"graphs/{filename}",
+        asset = {"kind": kind, "number": number, "filename": filename, "path": destination.relative_to(self.cfg.root).as_posix(),
                  "section": section, "cell_id": cell_id, "caption": caption,
                  "source_result_hash": self.source_hash, "sha256": file_digest(destination),
-                 "post": "a01-post.md", "dpi": self.cfg.export_dpi,
+                 "post": self.post, "dpi": self.cfg.export_dpi,
                  "font": Path(findfont(FontProperties(family=["sans-serif"]))).name,
                  "figsize": list(fig.get_size_inches())}
         if table_data is not None:
-            asset["table_sidecar"] = f"examples/module01/{filename.removesuffix('.png')}.json"
+            asset["table_sidecar"] = f"{self.sidecar_dir}/{filename.removesuffix('.png')}.json"
             write_json(self.cfg.root / asset["table_sidecar"], table_data)
             asset["table_sidecar_sha256"] = file_digest(self.cfg.root / asset["table_sidecar"])
             asset["free_text_artists"] = 0

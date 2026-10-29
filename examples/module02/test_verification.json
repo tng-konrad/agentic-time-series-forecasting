@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "command": ".venv/bin/python -m unittest tests.test_module02_routing tests.test_a02_routing tests.test_module01 -v",
+  "tests_run": 44,
+  "failures": 0,
+  "errors": 0,
+  "test_file_hashes": {
+    "tests/test_module02_routing.py": "bd39885c13ce4900e9a0810dfc9e596245f69c810be40c41c29d12128dec74c1",
+    "tests/test_a02_routing.py": "27e825fbb2077dfa34e18e184507e5a1d1b3ccfea0c2ee7584ce629304d6d194",
+    "tests/test_module01.py": "d1c55b0f58862f07c0feab8cfdf0b1f96d5ac7a47284a64252ad48c7af8c7668"
+  },
+  "recorded_at": "2026-10-26T22:21:56.864806+00:00",
+  "module01_compatibility": {
+    "regression_tests_passed": 13,
+    "asset_hashes_match_manifest": {
+      "graphs/atsf01-graph1.png": true,
+      "graphs/atsf01-graph2.png": true,
+      "graphs/atsf01-table1.png": true,
+      "graphs/atsf01-table2.png": true,
+      "graphs/atsf01-graph3.png": true,
+      "graphs/atsf01-table3.png": true,
+      "graphs/atsf01-table4.png": true,
+      "graphs/atsf01-table5.png": true,
+      "graphs/atsf01-table6.png": true
+    },
+    "publication_verifier": "Stops at pre-existing notebook execution-state check; current Module 1 counts equal HEAD. No Module 1 notebook/source/output was modified."
+  }
+}

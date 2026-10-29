@@ -1,0 +1,842 @@
+{
+  "session_id": "2026-10-29T21:55:25.456726+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6",
+    "statsforecast": "2.0.3"
+  },
+  "scope": "36 paired uncached cases; B includes profile/dispatch; D searches all methods; import warm-up excluded.",
+  "rows": [
+    {
+      "case_id": "P02-M-1745-FOODS_3_805-CA_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.0018605409422889352,
+          "fit_attempts": 8,
+          "forecast_hash": "88c628e38ae8e32bf791c6d6ce31d666a622e1982bce972000ef5e39865d5035",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.15916395792737603,
+          "fit_attempts": 11,
+          "forecast_hash": "495e04ab580aca0657e4831317c0fe310caa8954b80506851fa3462db921a7d9",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1745-FOODS_3_805-TX_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.17344520904589444,
+          "fit_attempts": 11,
+          "forecast_hash": "4626860ac7de2cdd18093405fd378018fc8d6f1d8d57c79032853fa5709b5dce",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.17272337502799928,
+          "fit_attempts": 8,
+          "forecast_hash": "4626860ac7de2cdd18093405fd378018fc8d6f1d8d57c79032853fa5709b5dce",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1745-FOODS_3_805-WI_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.1637524999678135,
+          "fit_attempts": 8,
+          "forecast_hash": "64771422045e80c67ee5c4ce806ec70e4590487fed427fe5f0d29bfd145d0247",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.16439245804212987,
+          "fit_attempts": 11,
+          "forecast_hash": "64771422045e80c67ee5c4ce806ec70e4590487fed427fe5f0d29bfd145d0247",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1745-HOUSEHOLD_2_100-CA_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.1170798329403624,
+          "fit_attempts": 11,
+          "forecast_hash": "5cb85997e29aeee0be8953c2f3278f9538f14852eeff939cc46573d0dcae65d6",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0018827499588951468,
+          "fit_attempts": 8,
+          "forecast_hash": "5cb85997e29aeee0be8953c2f3278f9538f14852eeff939cc46573d0dcae65d6",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1745-HOUSEHOLD_2_100-TX_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.0020867090206593275,
+          "fit_attempts": 8,
+          "forecast_hash": "b4c9dab0009a842888cc5b581e3dbd9cadf3568989535b451431b2588263c6a6",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12514816597104073,
+          "fit_attempts": 11,
+          "forecast_hash": "b4c9dab0009a842888cc5b581e3dbd9cadf3568989535b451431b2588263c6a6",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1745-HOUSEHOLD_2_100-WI_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.11567520792596042,
+          "fit_attempts": 11,
+          "forecast_hash": "7c3f372b3623fc8579e3c58ef612989cf309872babc6f1bbed6422147c133663",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0018455000827088952,
+          "fit_attempts": 8,
+          "forecast_hash": "7c3f372b3623fc8579e3c58ef612989cf309872babc6f1bbed6422147c133663",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1773-FOODS_3_805-CA_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.0017167080659419298,
+          "fit_attempts": 8,
+          "forecast_hash": "6ee6974507529bcb9cc2dc0d3fccbd8583f957917a3144d586d0c7967883fcb7",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.160100958077237,
+          "fit_attempts": 11,
+          "forecast_hash": "b29d669fd934b50d91c529eaf99bdab2b4ccb18790c75d94927913b94ce8bf0e",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1773-FOODS_3_805-TX_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.1704582090023905,
+          "fit_attempts": 11,
+          "forecast_hash": "89a2bb619e654665cc2c0a797c621caca5dd4e44dd1e49ce76c852c4b6bad39f",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.1705891250167042,
+          "fit_attempts": 8,
+          "forecast_hash": "89a2bb619e654665cc2c0a797c621caca5dd4e44dd1e49ce76c852c4b6bad39f",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1773-FOODS_3_805-WI_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.15974595805164427,
+          "fit_attempts": 8,
+          "forecast_hash": "af1a40714f58d84fa19732d3a9988b4f36f81c4780b111659da24c4b97d86f7f",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12188224995043129,
+          "fit_attempts": 11,
+          "forecast_hash": "f566772e6ebed5fa4ada7d82f9115b98b85b5519bce1bb8284d5db08759ecb70",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1773-HOUSEHOLD_2_100-CA_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.11540220899041742,
+          "fit_attempts": 11,
+          "forecast_hash": "557fd9e3b83c872c17a75576ce00b1e8a8ff3e5b84896e908f16ca34f720f4fc",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0018323749536648393,
+          "fit_attempts": 8,
+          "forecast_hash": "557fd9e3b83c872c17a75576ce00b1e8a8ff3e5b84896e908f16ca34f720f4fc",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1773-HOUSEHOLD_2_100-TX_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.0017172499792650342,
+          "fit_attempts": 8,
+          "forecast_hash": "eb2cf951b1dc1de9bde5ef894df9474e3413a92f871c5afefee38820785ce868",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12846804095897824,
+          "fit_attempts": 11,
+          "forecast_hash": "eb2cf951b1dc1de9bde5ef894df9474e3413a92f871c5afefee38820785ce868",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1773-HOUSEHOLD_2_100-WI_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.11785791697911918,
+          "fit_attempts": 11,
+          "forecast_hash": "f73a7bd9552a009913d77d20e01c8282cc859bb2bbc22e6de00d2b58eef95c99",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0019081250065937638,
+          "fit_attempts": 8,
+          "forecast_hash": "f73a7bd9552a009913d77d20e01c8282cc859bb2bbc22e6de00d2b58eef95c99",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1801-FOODS_3_805-CA_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.001728417002595961,
+          "fit_attempts": 8,
+          "forecast_hash": "fdd22dd685fb79df89f23aae21b8498339bda331f51fe73052a1b2db01f45203",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.16223204205743968,
+          "fit_attempts": 11,
+          "forecast_hash": "4faaa39364354eb054151171b407978e5d2f9a6f704be9d1e91937e13ebd0774",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1801-FOODS_3_805-TX_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.16813925001770258,
+          "fit_attempts": 11,
+          "forecast_hash": "f0e06b2726ebd7b681513c4c9d683ced8a88d1a991a1bcb431a0a68674a363e0",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.17489975003991276,
+          "fit_attempts": 8,
+          "forecast_hash": "f0e06b2726ebd7b681513c4c9d683ced8a88d1a991a1bcb431a0a68674a363e0",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1801-FOODS_3_805-WI_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.16972395800985396,
+          "fit_attempts": 8,
+          "forecast_hash": "8433e8c332c50f04d872c7d5f2b8af13945fbb370cd8296f608c80e4446e41cf",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12136012502014637,
+          "fit_attempts": 11,
+          "forecast_hash": "a095d06766c43fdb0080c7735c5192107ab3a3cb2bf0c3ba54b665528b6129c8",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1801-HOUSEHOLD_2_100-CA_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.11643716599792242,
+          "fit_attempts": 11,
+          "forecast_hash": "9d5db8cafb98bcd1e75621bed61b46010af628f480fe6b6799eb0dce36bb1d65",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.001891624997369945,
+          "fit_attempts": 8,
+          "forecast_hash": "9d5db8cafb98bcd1e75621bed61b46010af628f480fe6b6799eb0dce36bb1d65",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1801-HOUSEHOLD_2_100-TX_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.001739916973747313,
+          "fit_attempts": 8,
+          "forecast_hash": "194656f4af96f9d0bb1e2dc3b7efd498700648fb81902bb6960eec3aea521c27",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.13068970805034041,
+          "fit_attempts": 11,
+          "forecast_hash": "194656f4af96f9d0bb1e2dc3b7efd498700648fb81902bb6960eec3aea521c27",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1801-HOUSEHOLD_2_100-WI_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.11989241698756814,
+          "fit_attempts": 11,
+          "forecast_hash": "047beb6671243e7fa8b0b149bb60ad9055a3f7e15d3be56cd380cb236467621f",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.001882834010757506,
+          "fit_attempts": 8,
+          "forecast_hash": "047beb6671243e7fa8b0b149bb60ad9055a3f7e15d3be56cd380cb236467621f",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1829-FOODS_3_805-CA_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.16098408307880163,
+          "fit_attempts": 8,
+          "forecast_hash": "d70864e00a2504233a8ba6cb1bfa5222a97ba57827bb4c2b30d60c713b8a5524",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12212399998679757,
+          "fit_attempts": 11,
+          "forecast_hash": "5027fb05cd2348c9339d139092e847c7c5ddd4cd5026cca3c14c6db4230aad1b",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1829-FOODS_3_805-TX_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.16904383292421699,
+          "fit_attempts": 11,
+          "forecast_hash": "f18762c613f2e2959c4f6485e4e701c89ce16064dc5dda0331fe893d387b1869",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.16820979199837893,
+          "fit_attempts": 8,
+          "forecast_hash": "f18762c613f2e2959c4f6485e4e701c89ce16064dc5dda0331fe893d387b1869",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1829-FOODS_3_805-WI_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.17008358391467482,
+          "fit_attempts": 8,
+          "forecast_hash": "e65f69a2ebf9e225a608f3da96dd1e967103ee8545e631b6df20a1d92b59326c",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12755574996117502,
+          "fit_attempts": 11,
+          "forecast_hash": "a1a9c96609d6f193fd52efd981fb4ee6dbf5e2e1243978898544cd4de012822e",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1829-HOUSEHOLD_2_100-CA_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.11522854189388454,
+          "fit_attempts": 10,
+          "forecast_hash": "1302ebe44bc37f662a0582848bb78ae2e150fb9d25f991579bc7905c15b6f286",
+          "selected": "seasonal_naive",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0018410410266369581,
+          "fit_attempts": 7,
+          "forecast_hash": "1302ebe44bc37f662a0582848bb78ae2e150fb9d25f991579bc7905c15b6f286",
+          "selected": "seasonal_naive",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1829-HOUSEHOLD_2_100-TX_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.0017280420288443565,
+          "fit_attempts": 8,
+          "forecast_hash": "1f4ada9102be280ec5aa6f070f6a5ac32cc69825c3547638a6080a2c2e5672dd",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.1301317079924047,
+          "fit_attempts": 11,
+          "forecast_hash": "1f4ada9102be280ec5aa6f070f6a5ac32cc69825c3547638a6080a2c2e5672dd",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1829-HOUSEHOLD_2_100-WI_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.16656058304943144,
+          "fit_attempts": 11,
+          "forecast_hash": "2b0ff8a0759d682c0a1762e5423e5d8d42d58d395b27515909bee33def76c83a",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0023695830022916198,
+          "fit_attempts": 8,
+          "forecast_hash": "7acff05d7a3ee25a378285f4e57e5a5f045dfb346d3b70353e148069318dcb9b",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1857-FOODS_3_805-CA_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.16902558295987546,
+          "fit_attempts": 8,
+          "forecast_hash": "80ed1556e1c3de6dd61e3019f6835837da4b26444a9fc57bb6edcd2ccc2ecb21",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.1268364159623161,
+          "fit_attempts": 11,
+          "forecast_hash": "10a68e1bba48b88f24a996f313cb8d6d93c8c16a1959a0be7c3a9fb57a204683",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1857-FOODS_3_805-TX_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.1783250829903409,
+          "fit_attempts": 11,
+          "forecast_hash": "fde0b4277bcea22b7194ab0d7cffcb35085943546fd9b33bec700c64dfffe65b",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.18260220799129456,
+          "fit_attempts": 8,
+          "forecast_hash": "fde0b4277bcea22b7194ab0d7cffcb35085943546fd9b33bec700c64dfffe65b",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1857-FOODS_3_805-WI_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.1740007079206407,
+          "fit_attempts": 8,
+          "forecast_hash": "f7ec5a5c2156db6377f679942ee160c14be7e07450b19da009bb23d6c99f4ef7",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12872354104183614,
+          "fit_attempts": 11,
+          "forecast_hash": "ef2e84c7f6597081e8ce2c360f844db867a6d9c2bafb0cd83f54adc173d8112c",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1857-HOUSEHOLD_2_100-CA_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.11527424992527813,
+          "fit_attempts": 10,
+          "forecast_hash": "5968c211326104b351bb9bf1163cf70dac356a4c40536903ff9dc6f2d78c19b7",
+          "selected": "seasonal_naive",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.001797458971850574,
+          "fit_attempts": 7,
+          "forecast_hash": "5968c211326104b351bb9bf1163cf70dac356a4c40536903ff9dc6f2d78c19b7",
+          "selected": "seasonal_naive",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1857-HOUSEHOLD_2_100-TX_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.0017416250193491578,
+          "fit_attempts": 8,
+          "forecast_hash": "a621573c5e7835ea238edaf67c5c24344b9f276fbc1a9f0aa0d47b322ee15678",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.1273694169940427,
+          "fit_attempts": 11,
+          "forecast_hash": "a621573c5e7835ea238edaf67c5c24344b9f276fbc1a9f0aa0d47b322ee15678",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1857-HOUSEHOLD_2_100-WI_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.16081650007981807,
+          "fit_attempts": 11,
+          "forecast_hash": "57fac81315f42ae4f7602cbfea59d60dadda414ce0ea4f3431d59c69be42d939",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0019445829093456268,
+          "fit_attempts": 8,
+          "forecast_hash": "93e18bc382a2fd1c8445b20a766f6ee23e469c2a0421e48773ce87d43aec647d",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1885-FOODS_3_805-CA_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.15787733299657702,
+          "fit_attempts": 8,
+          "forecast_hash": "6808b6b1d720116bca82ea0dbeea41ee2a1a9dfdffb9eb6a097239f974d4fa20",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.11955066700465977,
+          "fit_attempts": 11,
+          "forecast_hash": "7376e4b516b69a44839916910a269fc18f3cc5308a5744bfe5f5c0d2c96d7d98",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1885-FOODS_3_805-TX_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.1647844590479508,
+          "fit_attempts": 11,
+          "forecast_hash": "ce303c212eecbcacb583e2a7474160e6f9e37280b6010f1673d3be4d1342c919",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.16642929101362824,
+          "fit_attempts": 8,
+          "forecast_hash": "ce303c212eecbcacb583e2a7474160e6f9e37280b6010f1673d3be4d1342c919",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1885-FOODS_3_805-WI_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.16715629200916737,
+          "fit_attempts": 8,
+          "forecast_hash": "534816541a3f28ddf234fb03618db1adc6cb95b8406290916f628e65297e47cb",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.12530266703106463,
+          "fit_attempts": 11,
+          "forecast_hash": "f0e8f8a52b351f8468f53bb916142b31b9983dcd4911e6486ac59a10f514ced3",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1885-HOUSEHOLD_2_100-CA_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.116097665973939,
+          "fit_attempts": 11,
+          "forecast_hash": "087080bc7cd5029fc267fc6952040af77d30cca3c979c94ebee3cfd0464b700b",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0018919160356745124,
+          "fit_attempts": 8,
+          "forecast_hash": "087080bc7cd5029fc267fc6952040af77d30cca3c979c94ebee3cfd0464b700b",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1885-HOUSEHOLD_2_100-TX_1",
+      "order": [
+        "B",
+        "D"
+      ],
+      "arms": {
+        "B": {
+          "seconds": 0.0017620839644223452,
+          "fit_attempts": 8,
+          "forecast_hash": "fc044b66c8bdaac906a84f57296f40c70da2babcf78bf38c41891cd84c0e6e18",
+          "selected": "tsb",
+          "status": "ok"
+        },
+        "D": {
+          "seconds": 0.16555162495933473,
+          "fit_attempts": 11,
+          "forecast_hash": "5f982fff43b3105ea773ebce1c0be380965ea0e7997ce93216effbe8b69bf734",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "case_id": "P02-M-1885-HOUSEHOLD_2_100-WI_1",
+      "order": [
+        "D",
+        "B"
+      ],
+      "arms": {
+        "D": {
+          "seconds": 0.1614606250077486,
+          "fit_attempts": 11,
+          "forecast_hash": "8eae7d3f277a68f4a9f58eff0f77b6a558eeda96e227966ea97282f693b92d37",
+          "selected": "hw_add_damped",
+          "status": "ok"
+        },
+        "B": {
+          "seconds": 0.0019808749202638865,
+          "fit_attempts": 8,
+          "forecast_hash": "ca36f687fb540d18f6e1dbb7e721a94725a7275ac2efe906ac4d3d0e331a5a8f",
+          "selected": "tsb",
+          "status": "ok"
+        }
+      }
+    }
+  ]
+}

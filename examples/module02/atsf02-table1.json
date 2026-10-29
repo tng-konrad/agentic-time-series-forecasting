@@ -1,0 +1,88 @@
+[
+  {
+    "headers": [
+      "Case class",
+      "Cases",
+      "Target days",
+      "Validation before origin"
+    ],
+    "raw": [
+      [
+        "Full history",
+        12,
+        449,
+        "3 × 28 days; 365-day training"
+      ],
+      [
+        "Short view",
+        2,
+        60,
+        "28 days; 32-day training"
+      ],
+      [
+        "New-product view",
+        2,
+        0,
+        "No target validation; fixed donor prior"
+      ],
+      [
+        "Additional input cases",
+        4,
+        "0 or 449",
+        "Separate ambiguity / gate checks"
+      ]
+    ],
+    "display": [
+      [
+        "Full history",
+        "12",
+        "449",
+        "3 × 28 days; 365-day training"
+      ],
+      [
+        "Short view",
+        "2",
+        "60",
+        "28 days; 32-day training"
+      ],
+      [
+        "New-product view",
+        "2",
+        "0",
+        "No target validation; fixed donor prior"
+      ],
+      [
+        "Additional input cases",
+        "4",
+        "0 or 449",
+        "Separate ambiguity / gate checks"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "int",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str"
+      ]
+    ]
+  }
+]

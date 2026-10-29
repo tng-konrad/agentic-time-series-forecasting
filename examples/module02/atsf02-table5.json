@@ -1,0 +1,162 @@
+[
+  {
+    "headers": [
+      "Case",
+      "Provenance",
+      "B status",
+      "C / fixture",
+      "Live calls",
+      "Recovery"
+    ],
+    "raw": [
+      [
+        "X01",
+        "ambiguity request",
+        "abstained",
+        "abstained",
+        1,
+        "none"
+      ],
+      [
+        "X02",
+        "ambiguity request",
+        "abstained",
+        "abstained",
+        1,
+        "none"
+      ],
+      [
+        "X03",
+        "gate request",
+        "clarify",
+        "clarify",
+        0,
+        "none"
+      ],
+      [
+        "X04",
+        "gate request",
+        "invalid_input",
+        "invalid_input",
+        0,
+        "none"
+      ],
+      [
+        "X05",
+        "injected response",
+        "not a B trial",
+        "rejected",
+        0,
+        "regular / rules"
+      ],
+      [
+        "X06",
+        "injected response",
+        "not a B trial",
+        "rejected",
+        0,
+        "short / rules"
+      ]
+    ],
+    "display": [
+      [
+        "X01",
+        "ambiguity request",
+        "abstained",
+        "abstained",
+        "1",
+        "none"
+      ],
+      [
+        "X02",
+        "ambiguity request",
+        "abstained",
+        "abstained",
+        "1",
+        "none"
+      ],
+      [
+        "X03",
+        "gate request",
+        "clarify",
+        "clarify",
+        "0",
+        "none"
+      ],
+      [
+        "X04",
+        "gate request",
+        "invalid_input",
+        "invalid_input",
+        "0",
+        "none"
+      ],
+      [
+        "X05",
+        "injected response",
+        "not a B trial",
+        "rejected",
+        "0",
+        "regular / rules"
+      ],
+      [
+        "X06",
+        "injected response",
+        "not a B trial",
+        "rejected",
+        "0",
+        "short / rules"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str",
+        "str",
+        "int",
+        "str"
+      ]
+    ]
+  }
+]

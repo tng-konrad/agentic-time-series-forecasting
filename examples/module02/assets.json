@@ -1,0 +1,182 @@
+[
+  {
+    "kind": "graph",
+    "number": 1,
+    "filename": "atsf02-graph1.png",
+    "path": "graphs/atsf02-graph1.png",
+    "section": "Why route a forecasting request?",
+    "cell_id": "routing-diagram",
+    "caption": "A shared gate, a bounded decision, and four numerical workflows.",
+    "source_result_hash": "c5fc9c73de3924a27f8e0b1937f5c9e6273099a864bdaf18860d75e3fee11860",
+    "sha256": "7239a3fa24bc70bab796820fb24e6b6cf416a354bec9605a4578066725b2cfe5",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      5.2
+    ]
+  },
+  {
+    "kind": "graph",
+    "number": 2,
+    "filename": "atsf02-graph2.png",
+    "path": "graphs/atsf02-graph2.png",
+    "section": "Four requests, one sales dataset",
+    "cell_id": "visible-histories",
+    "caption": "Only observations permitted at the forecast origin are shown.",
+    "source_result_hash": "c5fc9c73de3924a27f8e0b1937f5c9e6273099a864bdaf18860d75e3fee11860",
+    "sha256": "f9c2e2d652b06dee4bff470e0e1b4674d8cf7675f585dc2da94ecc3ada67ac4e",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      6.5
+    ]
+  },
+  {
+    "kind": "table",
+    "number": 1,
+    "filename": "atsf02-table1.png",
+    "path": "graphs/atsf02-table1.png",
+    "section": "Four requests, one sales dataset",
+    "cell_id": "case-table",
+    "caption": "Case counts and validation structure; final dates are 2016-03-28–2016-04-24.",
+    "source_result_hash": "c5fc9c73de3924a27f8e0b1937f5c9e6273099a864bdaf18860d75e3fee11860",
+    "sha256": "d5c091c219176f6dc95a579efbb95e62d02d6a6789e0cb3b964fea554d05767a",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      2.2
+    ],
+    "table_sidecar": "examples/module02/atsf02-table1.json",
+    "table_sidecar_sha256": "f5694a653261dcced3102c50496461dddd198649e1c654ca8d1731e407796714",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 2,
+    "filename": "atsf02-table2.png",
+    "path": "graphs/atsf02-table2.png",
+    "section": "Define the workflows before routing",
+    "cell_id": "workflow-table",
+    "caption": "Workflow capabilities are declared before any final score is read.",
+    "source_result_hash": "c5fc9c73de3924a27f8e0b1937f5c9e6273099a864bdaf18860d75e3fee11860",
+    "sha256": "4321d064e7a37b6724c25a43a6cd699beec51b6ac58deb2a509b11a2d91b6be2",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      2.86
+    ],
+    "table_sidecar": "examples/module02/atsf02-table2.json",
+    "table_sidecar_sha256": "bba604f4c718af1a5f925e7357734ee0884a91f12baf6371cd4cc44034dd254b",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 3,
+    "filename": "atsf02-table3.png",
+    "path": "graphs/atsf02-table3.png",
+    "section": "Let rules and an LLM choose a path",
+    "cell_id": "route-table",
+    "caption": "Primary proposals and execution sources; short and new are abbreviated route names.",
+    "source_result_hash": "9e7d78669a5c95190d2daf084657371431e74c9c6dd4aa2da47425dd5e4437df",
+    "sha256": "b397ba7eafdda5f8c7f5f3ed3dd82b451404d68bb8885418f91f1bdf41a055dc",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      7.48
+    ],
+    "table_sidecar": "examples/module02/atsf02-table3.json",
+    "table_sidecar_sha256": "e1ec9092678b16b1528681f85fd00d4cf3c6ebfbdcba98f21e966981db411e94",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "graph",
+    "number": 3,
+    "filename": "atsf02-graph3.png",
+    "path": "graphs/atsf02-graph3.png",
+    "section": "Measure forecasts and routing separately",
+    "cell_id": "final-forecasts",
+    "caption": "Predetermined representative cases, with identical curves explicitly grouped.",
+    "source_result_hash": "9337b02b993d0ba1267128d5c2feb30aa5034ece07696c56cba5386699d2d410",
+    "sha256": "9beae11c5cc40ac8ad794f094c45dda51da967867b9adbab6a17d0e840ec56ba",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      6.5
+    ]
+  },
+  {
+    "kind": "table",
+    "number": 4,
+    "filename": "atsf02-table4.png",
+    "path": "graphs/atsf02-table4.png",
+    "section": "Measure forecasts and routing separately",
+    "cell_id": "accuracy-table",
+    "caption": "Coverage and scale-defined common-subset scores; constructed views stay separate.",
+    "source_result_hash": "9337b02b993d0ba1267128d5c2feb30aa5034ece07696c56cba5386699d2d410",
+    "sha256": "c06cc468196a970e45600fade9240bcf8df15976046673ece3bf9f24438bfdd1",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      4.4
+    ],
+    "table_sidecar": "examples/module02/atsf02-table4.json",
+    "table_sidecar_sha256": "4568d3d5a8f8abd3ad282719825d58768d7578d322c026624d1f8d98f8c1bf33",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 5,
+    "filename": "atsf02-table5.png",
+    "path": "graphs/atsf02-table5.png",
+    "section": "When the request is incomplete",
+    "cell_id": "failure-table",
+    "caption": "Two genuine ambiguity responses, two shared-gate cases and two injected response failures.",
+    "source_result_hash": "9337b02b993d0ba1267128d5c2feb30aa5034ece07696c56cba5386699d2d410",
+    "sha256": "33519213e32bdbada8fc058fb0bfa46df9f92dd42d0a61c9d52000f5396b16e8",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      3.08
+    ],
+    "table_sidecar": "examples/module02/atsf02-table5.json",
+    "table_sidecar_sha256": "497dcd688baefe7eff310309c32172276b7cc848d0a2b681d200545dd5c44e74",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 6,
+    "filename": "atsf02-table6.png",
+    "path": "graphs/atsf02-table6.png",
+    "section": "Count the work, including failures",
+    "cell_id": "work-table",
+    "caption": "Primary and ambiguity cohorts, archived dispatch, and current numerical work are separate.",
+    "source_result_hash": "9337b02b993d0ba1267128d5c2feb30aa5034ece07696c56cba5386699d2d410",
+    "sha256": "41e9933cfd94447d739ca080d44bfa1c72fa0112e16cb7a40720b213b68e2aae",
+    "post": "a02-post.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      5.94
+    ],
+    "table_sidecar": "examples/module02/atsf02-table6.json",
+    "table_sidecar_sha256": "72cdcdf5f2e1a52cddbb451f84ceb0df94ed87d416b643a45c410123a5df3613",
+    "free_text_artists": 0
+  }
+]

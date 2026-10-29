@@ -1,0 +1,215 @@
+[
+  {
+    "headers": [
+      "Shared development + main bank",
+      "Count / fit seconds"
+    ],
+    "raw": [
+      [
+        "Numerical fit lookups",
+        28800
+      ],
+      [
+        "Unique actual fit attempts",
+        9900
+      ],
+      [
+        "Exact-fit cache hits",
+        18900
+      ],
+      [
+        "Failed fit attempts retained",
+        6
+      ],
+      [
+        "Sum of measured fit seconds",
+        128.14324004063383
+      ]
+    ],
+    "display": [
+      [
+        "Numerical fit lookups",
+        "28800"
+      ],
+      [
+        "Unique actual fit attempts",
+        "9900"
+      ],
+      [
+        "Exact-fit cache hits",
+        "18900"
+      ],
+      [
+        "Failed fit attempts retained",
+        "6"
+      ],
+      [
+        "Sum of measured fit seconds",
+        "128.14"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "float"
+      ]
+    ]
+  },
+  {
+    "headers": [
+      "Main arm",
+      "Logical fit attempts across 1800 cases"
+    ],
+    "raw": [
+      [
+        "A",
+        1800
+      ],
+      [
+        "B",
+        14291
+      ],
+      [
+        "R",
+        14251
+      ],
+      [
+        "I",
+        14289
+      ],
+      [
+        "F",
+        14289
+      ],
+      [
+        "D",
+        19697
+      ]
+    ],
+    "display": [
+      [
+        "A",
+        "1800"
+      ],
+      [
+        "B",
+        "14291"
+      ],
+      [
+        "R",
+        "14251"
+      ],
+      [
+        "I",
+        "14289"
+      ],
+      [
+        "F",
+        "14289"
+      ],
+      [
+        "D",
+        "19697"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ],
+      [
+        "str",
+        "int"
+      ]
+    ]
+  },
+  {
+    "headers": [
+      "Uncached arm",
+      "Cases",
+      "Fit attempts",
+      "Total seconds",
+      "Median seconds"
+    ],
+    "raw": [
+      [
+        "B",
+        36,
+        286,
+        2.3731727910926566,
+        0.0018520620069466531
+      ],
+      [
+        "D",
+        36,
+        394,
+        4.6951432027854025,
+        0.11926222947658971
+      ]
+    ],
+    "display": [
+      [
+        "B",
+        "36",
+        "286",
+        "2.37",
+        "0.00"
+      ],
+      [
+        "D",
+        "36",
+        "394",
+        "4.70",
+        "0.12"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "int",
+        "int",
+        "float",
+        "float"
+      ],
+      [
+        "str",
+        "int",
+        "int",
+        "float",
+        "float"
+      ]
+    ]
+  }
+]

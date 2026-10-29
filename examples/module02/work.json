@@ -1,0 +1,108 @@
+{
+  "capture_session": "module02-primary-20261026",
+  "numerical_session": "2026-10-26T22:20:45.661484+00:00",
+  "dispatch": [
+    {
+      "cohort": "main",
+      "arm": "A",
+      "n": 16,
+      "calls": 0,
+      "seconds": 0.018229873850941658,
+      "median_seconds": 0.0011731039849109948,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "cohort": "main",
+      "arm": "B",
+      "n": 16,
+      "calls": 0,
+      "seconds": 0.014666420058347285,
+      "median_seconds": 0.0007896664901636541,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "cohort": "main",
+      "arm": "C",
+      "n": 16,
+      "calls": 16,
+      "seconds": 60.08518358319998,
+      "median_seconds": 2.5588531459798105,
+      "input_tokens": 8372,
+      "output_tokens": 2054
+    },
+    {
+      "cohort": "ambiguity",
+      "arm": "C",
+      "n": 2,
+      "calls": 2,
+      "seconds": 4.7242266670800745,
+      "median_seconds": 2.3621133335400373,
+      "input_tokens": 1108,
+      "output_tokens": 225
+    }
+  ],
+  "numerical": [
+    {
+      "arm": "A",
+      "requests": 16,
+      "delivered": 16,
+      "fits": 14,
+      "seconds": 0.0019155382178723812,
+      "cache_reuse": 0
+    },
+    {
+      "arm": "B",
+      "requests": 16,
+      "delivered": 16,
+      "fits": 103,
+      "seconds": 1.2700882098870352,
+      "cache_reuse": 0
+    },
+    {
+      "arm": "C",
+      "requests": 16,
+      "delivered": 11,
+      "fits": 75,
+      "seconds": 0.6394777498207986,
+      "cache_reuse": 0
+    },
+    {
+      "arm": "D",
+      "requests": 12,
+      "delivered": 12,
+      "fits": 132,
+      "seconds": 1.730808583786711,
+      "cache_reuse": 0
+    }
+  ],
+  "audit": [
+    {
+      "cohort": "main",
+      "n": 16,
+      "schema_valid": 5,
+      "accepted_forecasts": 0,
+      "fallbacks": 11,
+      "abstentions": 5,
+      "reasons": {
+        "supported": 3,
+        "contradicted": 11,
+        "unsupported": 1,
+        "ambiguous": 1
+      }
+    },
+    {
+      "cohort": "ambiguity",
+      "n": 2,
+      "schema_valid": 2,
+      "accepted_forecasts": 0,
+      "fallbacks": 0,
+      "abstentions": 2,
+      "reasons": {
+        "contradicted": 1,
+        "supported": 1
+      }
+    }
+  ]
+}

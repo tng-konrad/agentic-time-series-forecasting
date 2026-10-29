@@ -1,0 +1,402 @@
+[
+  {
+    "headers": [
+      "Case",
+      "Days",
+      "Zeros / window",
+      "B route",
+      "C proposal",
+      "C execution"
+    ],
+    "raw": [
+      [
+        "F01",
+        449,
+        "5 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F02",
+        449,
+        "8 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F03",
+        449,
+        "2 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F04",
+        449,
+        "8 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F05",
+        449,
+        "220 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F06",
+        449,
+        "251 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F07",
+        449,
+        "275 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F08",
+        449,
+        "216 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F09",
+        449,
+        "140 / 365",
+        "regular",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "F10",
+        449,
+        "154 / 365",
+        "regular",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "F11",
+        449,
+        "209 / 365",
+        "intermittent",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "F12",
+        449,
+        "204 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "N01",
+        0,
+        "N/A",
+        "new",
+        "new",
+        "new / rules"
+      ],
+      [
+        "N02",
+        0,
+        "N/A",
+        "new",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "S01",
+        60,
+        "0 / 60",
+        "short",
+        "short",
+        "short / rules"
+      ],
+      [
+        "S02",
+        60,
+        "29 / 60",
+        "short",
+        "clarify",
+        "none / clarify"
+      ]
+    ],
+    "display": [
+      [
+        "F01",
+        "449",
+        "5 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F02",
+        "449",
+        "8 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F03",
+        "449",
+        "2 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F04",
+        "449",
+        "8 / 365",
+        "regular",
+        "regular",
+        "regular / rules"
+      ],
+      [
+        "F05",
+        "449",
+        "220 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F06",
+        "449",
+        "251 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F07",
+        "449",
+        "275 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F08",
+        "449",
+        "216 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "F09",
+        "449",
+        "140 / 365",
+        "regular",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "F10",
+        "449",
+        "154 / 365",
+        "regular",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "F11",
+        "449",
+        "209 / 365",
+        "intermittent",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "F12",
+        "449",
+        "204 / 365",
+        "intermittent",
+        "intermittent",
+        "intermittent / rules"
+      ],
+      [
+        "N01",
+        "0",
+        "N/A",
+        "new",
+        "new",
+        "new / rules"
+      ],
+      [
+        "N02",
+        "0",
+        "N/A",
+        "new",
+        "clarify",
+        "none / clarify"
+      ],
+      [
+        "S01",
+        "60",
+        "0 / 60",
+        "short",
+        "short",
+        "short / rules"
+      ],
+      [
+        "S02",
+        "60",
+        "29 / 60",
+        "short",
+        "clarify",
+        "none / clarify"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "str"
+      ]
+    ]
+  }
+]

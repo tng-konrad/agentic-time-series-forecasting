@@ -1,0 +1,217 @@
+{
+  "capture_hash": "838667b77229aaafe8e608120af6f1ee418482c8149f3d0abb0a3a36be65e015",
+  "cohorts": {
+    "main": {
+      "requests": 16,
+      "attempts": 16,
+      "json_schema_shape_valid": {
+        "numerator": 16,
+        "denominator": 16,
+        "display": "16/16"
+      },
+      "decision_contract_valid": {
+        "numerator": 5,
+        "denominator": 16,
+        "display": "5/16"
+      },
+      "accepted_eligible_decisions": {
+        "numerator": 5,
+        "denominator": 16,
+        "display": "5/16"
+      },
+      "accepted_forecasting_decisions": {
+        "numerator": 0,
+        "denominator": 16,
+        "display": "0/16"
+      },
+      "policy_agreement_accepted_forecasts": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "clarifications": {
+        "numerator": 5,
+        "denominator": 16,
+        "display": "5/16"
+      },
+      "questions_request_missing_requirements": {
+        "numerator": 0,
+        "denominator": 16,
+        "display": "0/16"
+      },
+      "unnecessary_questions": {
+        "numerator": 16,
+        "denominator": 16,
+        "display": "16/16"
+      },
+      "unnecessary_clarifications": {
+        "numerator": 5,
+        "denominator": 16,
+        "display": "5/16"
+      },
+      "rule_fallbacks": {
+        "numerator": 11,
+        "denominator": 16,
+        "display": "11/16"
+      },
+      "input_gate_stops": {
+        "numerator": 0,
+        "denominator": 16,
+        "display": "0/16"
+      },
+      "reason_review": {
+        "supported": 3,
+        "contradicted": 11,
+        "unsupported": 1,
+        "ambiguous": 1
+      }
+    },
+    "ambiguity": {
+      "requests": 2,
+      "attempts": 2,
+      "json_schema_shape_valid": {
+        "numerator": 2,
+        "denominator": 2,
+        "display": "2/2"
+      },
+      "decision_contract_valid": {
+        "numerator": 2,
+        "denominator": 2,
+        "display": "2/2"
+      },
+      "accepted_eligible_decisions": {
+        "numerator": 2,
+        "denominator": 2,
+        "display": "2/2"
+      },
+      "accepted_forecasting_decisions": {
+        "numerator": 0,
+        "denominator": 2,
+        "display": "0/2"
+      },
+      "policy_agreement_accepted_forecasts": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "clarifications": {
+        "numerator": 2,
+        "denominator": 2,
+        "display": "2/2"
+      },
+      "questions_request_missing_requirements": {
+        "numerator": 2,
+        "denominator": 2,
+        "display": "2/2"
+      },
+      "unnecessary_questions": {
+        "numerator": 0,
+        "denominator": 2,
+        "display": "0/2"
+      },
+      "unnecessary_clarifications": {
+        "numerator": 0,
+        "denominator": 2,
+        "display": "0/2"
+      },
+      "rule_fallbacks": {
+        "numerator": 0,
+        "denominator": 2,
+        "display": "0/2"
+      },
+      "input_gate_stops": {
+        "numerator": 0,
+        "denominator": 2,
+        "display": "0/2"
+      },
+      "reason_review": {
+        "contradicted": 1,
+        "supported": 1
+      }
+    },
+    "gate": {
+      "requests": 2,
+      "attempts": 0,
+      "json_schema_shape_valid": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "decision_contract_valid": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "accepted_eligible_decisions": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "accepted_forecasting_decisions": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "policy_agreement_accepted_forecasts": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "clarifications": {
+        "numerator": 0,
+        "denominator": 2,
+        "display": "0/2"
+      },
+      "questions_request_missing_requirements": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "unnecessary_questions": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "unnecessary_clarifications": {
+        "numerator": 0,
+        "denominator": 2,
+        "display": "0/2"
+      },
+      "rule_fallbacks": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "N/A"
+      },
+      "input_gate_stops": {
+        "numerator": 2,
+        "denominator": 2,
+        "display": "2/2"
+      },
+      "reason_review": {}
+    }
+  },
+  "numerical_fallbacks": {
+    "A": {
+      "numerator": 0,
+      "denominator": 16
+    },
+    "B": {
+      "numerator": 0,
+      "denominator": 16
+    },
+    "C": {
+      "numerator": 0,
+      "denominator": 11
+    },
+    "D": {
+      "numerator": 0,
+      "denominator": 12
+    }
+  },
+  "notes": [
+    "Shape checks implement the exact supplied small schema; cross-field/null and word-limit rules are additional contract checks.",
+    "Archived schema_valid means the complete Python decision contract, retained for capture integrity.",
+    "Zero accepted forecasting decisions give N/A policy agreement, not zero or perfect compliance.",
+    "A relevant question can contain redundancy or accompany an inaccurate reason; see the manual audit."
+  ]
+}

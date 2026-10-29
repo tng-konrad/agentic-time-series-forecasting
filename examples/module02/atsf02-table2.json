@@ -1,0 +1,90 @@
+[
+  {
+    "headers": [
+      "Route",
+      "Eligibility",
+      "Candidates / action"
+    ],
+    "raw": [
+      [
+        "regular",
+        "449+ observed days",
+        "Seasonal naive; damped additive Holt–Winters"
+      ],
+      [
+        "intermittent",
+        "449+ observed days",
+        "Seasonal naive; TSB (0.10, 0.10)"
+      ],
+      [
+        "short_history",
+        "56–448 observed days",
+        "Seasonal naive; trailing 28-day mean"
+      ],
+      [
+        "new_product",
+        "0 days + declared launch + authorized donors",
+        "Median of three donor 28-day means"
+      ],
+      [
+        "clarify",
+        "Missing / inconsistent requirements",
+        "Ask for information; no forecast"
+      ]
+    ],
+    "display": [
+      [
+        "regular",
+        "449+ observed days",
+        "Seasonal naive; damped additive Holt–Winters"
+      ],
+      [
+        "intermittent",
+        "449+ observed days",
+        "Seasonal naive; TSB (0.10, 0.10)"
+      ],
+      [
+        "short_history",
+        "56–448 observed days",
+        "Seasonal naive; trailing 28-day mean"
+      ],
+      [
+        "new_product",
+        "0 days + declared launch + authorized donors",
+        "Median of three donor 28-day means"
+      ],
+      [
+        "clarify",
+        "Missing / inconsistent requirements",
+        "Ask for information; no forecast"
+      ]
+    ],
+    "types": [
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ],
+      [
+        "str",
+        "str",
+        "str"
+      ]
+    ]
+  }
+]

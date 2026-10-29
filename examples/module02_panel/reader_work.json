@@ -1,0 +1,34 @@
+{
+  "bank": {
+    "actual_fit_attempts": 9900,
+    "lookups": 28800,
+    "cache_hits": 18900,
+    "seconds": 139.9549573569093,
+    "failed_fits": 6,
+    "scope": "Development plus main; exact training-window fits shared across arms and origins."
+  },
+  "logical_main": {
+    "A": 1800,
+    "B": 14291,
+    "R": 14251,
+    "I": 14289,
+    "F": 14289,
+    "D": 19697
+  },
+  "uncached_timing": {
+    "B": {
+      "n": 36,
+      "seconds": 2.5669534988701344,
+      "median_seconds": 0.0019627289148047566,
+      "fit_attempts": 286
+    },
+    "D": {
+      "n": 36,
+      "seconds": 5.008562455768697,
+      "median_seconds": 0.12801189546007663,
+      "fit_attempts": 394
+    }
+  },
+  "timing_session": "2026-10-29T21:55:25.456726+00:00",
+  "new_llm_calls": 0
+}

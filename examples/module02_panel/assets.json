@@ -1,0 +1,176 @@
+[
+  {
+    "kind": "graph",
+    "number": 1,
+    "filename": "atsf02-graph1.png",
+    "path": "graphs/module02-panel/atsf02-graph1.png",
+    "section": "Why test routing beyond one store and one month?",
+    "cell_id": "study-diagram",
+    "caption": "Development chooses F; main evaluation repeats; actual runtime is measured separately.",
+    "source_result_hash": "485573eaf454e41a3875f451990c7ac8cb1a22c6d3bb5e8df0a337d55c66ff4e",
+    "sha256": "4db2660f1c48c0b59f6074d54aa710e4cb6cdaf166326410f15dff513bd1651a",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      4.55
+    ]
+  },
+  {
+    "kind": "graph",
+    "number": 2,
+    "filename": "atsf02-graph2.png",
+    "path": "graphs/module02-panel/atsf02-graph2.png",
+    "section": "Build a panel without looking at future outcomes",
+    "cell_id": "raw-histories",
+    "caption": "Two hash-selected items across three stores; only their permitted pre-origin histories appear.",
+    "source_result_hash": "485573eaf454e41a3875f451990c7ac8cb1a22c6d3bb5e8df0a337d55c66ff4e",
+    "sha256": "89de5fab4f1d1d12745350a255b9b182aeb1284c8f033a40adf1cc8798060668",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      7.15
+    ]
+  },
+  {
+    "kind": "table",
+    "number": 1,
+    "filename": "atsf02-table1.png",
+    "path": "graphs/module02-panel/atsf02-table1.png",
+    "section": "Build a panel without looking at future outcomes",
+    "cell_id": "cohort-table",
+    "caption": "Department quotas and declared product–store–origin counts.",
+    "source_result_hash": "485573eaf454e41a3875f451990c7ac8cb1a22c6d3bb5e8df0a337d55c66ff4e",
+    "sha256": "96e9db2e66160f32b811aefecc05bad7d382d3d7a07b0329600475167a2bc1a7",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      3.96
+    ],
+    "table_sidecar": "examples/module02_panel/atsf02-table1.json",
+    "table_sidecar_sha256": "8de55b7f1cf7972037acabc37429010d92633e8ace4e216357a0d73b30364b11",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "graph",
+    "number": 3,
+    "filename": "atsf02-graph3.png",
+    "path": "graphs/module02-panel/atsf02-graph3.png",
+    "section": "Separate workflow selection from forecast evaluation",
+    "cell_id": "evaluation-calendar",
+    "caption": "Outer development/main horizons and the inner folds at one issue date.",
+    "source_result_hash": "485573eaf454e41a3875f451990c7ac8cb1a22c6d3bb5e8df0a337d55c66ff4e",
+    "sha256": "996cb6ed57ac0e5afc078496617d178055d4af444af935ae191498ce1e1a82a9",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      6.5
+    ]
+  },
+  {
+    "kind": "table",
+    "number": 2,
+    "filename": "atsf02-table2.png",
+    "path": "graphs/module02-panel/atsf02-table2.png",
+    "section": "Separate workflow selection from forecast evaluation",
+    "cell_id": "protocol-table",
+    "caption": "Six arms share numerical methods, information and failure rules.",
+    "source_result_hash": "485573eaf454e41a3875f451990c7ac8cb1a22c6d3bb5e8df0a337d55c66ff4e",
+    "sha256": "5421504b1ed045e1a9546093e7ffb4d420595488f96ad9e8d3ecbd8a41a87ac1",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      5.5
+    ],
+    "table_sidecar": "examples/module02_panel/atsf02-table2.json",
+    "table_sidecar_sha256": "1b5e4deb97a79ecfd623aad2b6e722909a3f2751e97d0f9017265bd9ff8fbca3",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "graph",
+    "number": 4,
+    "filename": "atsf02-graph4.png",
+    "path": "graphs/module02-panel/atsf02-graph4.png",
+    "section": "Where does routing help, and where does it hurt?",
+    "cell_id": "errors-by-origin",
+    "caption": "Every predefined main store and date; negative paired differences favor B.",
+    "source_result_hash": "b9a7dab41f83104dfb320838c90bb9269d0331219bf90dac98d260bb8495d598",
+    "sha256": "c12495b3de8701d5e6ad11d05e238723d9b6b7a29e551ba812144b0480778750",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      4.55
+    ]
+  },
+  {
+    "kind": "graph",
+    "number": 5,
+    "filename": "atsf02-graph5.png",
+    "path": "graphs/module02-panel/atsf02-graph5.png",
+    "section": "Where does routing help, and where does it hurt?",
+    "cell_id": "errors-by-band",
+    "caption": "Predeclared zero-fraction bands and their actual denominators.",
+    "source_result_hash": "b9a7dab41f83104dfb320838c90bb9269d0331219bf90dac98d260bb8495d598",
+    "sha256": "47ea7134eafed4ab95f89630e3054893601cbf6e0ea421ec73b9d915e105a38d",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      4.2250000000000005
+    ]
+  },
+  {
+    "kind": "table",
+    "number": 3,
+    "filename": "atsf02-table3.png",
+    "path": "graphs/module02-panel/atsf02-table3.png",
+    "section": "Where does routing help, and where does it hurt?",
+    "cell_id": "accuracy-table",
+    "caption": "Common-case accuracy; paired differences and conditional interval endpoints scaled by 1,000.",
+    "source_result_hash": "b9a7dab41f83104dfb320838c90bb9269d0331219bf90dac98d260bb8495d598",
+    "sha256": "e19eff4b27abf3120f2eca2cc2aaece6adb1ffd5aafb9393340ec9d56cd4b01c",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      4.4
+    ],
+    "table_sidecar": "examples/module02_panel/atsf02-table3.json",
+    "table_sidecar_sha256": "03979a5db88cdcc7419fdb0caf31f53cf10d218d2726e0e03272c3543a048037",
+    "free_text_artists": 0
+  },
+  {
+    "kind": "table",
+    "number": 4,
+    "filename": "atsf02-table4.png",
+    "path": "graphs/module02-panel/atsf02-table4.png",
+    "section": "How much work does routing save?",
+    "cell_id": "work-table",
+    "caption": "Shared-bank work, logical main-arm budgets and archived uncached execution are separate.",
+    "source_result_hash": "8aca28f621c3668921b4fb2832df8bb20e97aaddb9204e315614d1a5e818578b",
+    "sha256": "dc32ca007b159feb6e7d8870682c8000213ecdc81344816f85f304663e1e090c",
+    "post": "a02-post-new.md",
+    "dpi": 180,
+    "font": "Arial.ttf",
+    "figsize": [
+      13.0,
+      7.04
+    ],
+    "table_sidecar": "examples/module02_panel/atsf02-table4.json",
+    "table_sidecar_sha256": "853c23876e74e940880ce302135debc3d5b3d2aef36761c2c06196616347fe4c",
+    "free_text_artists": 0
+  }
+]
