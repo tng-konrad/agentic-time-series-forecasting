@@ -3,7 +3,7 @@
     "actual_fit_attempts": 9900,
     "lookups": 28800,
     "cache_hits": 18900,
-    "seconds": 139.9549573569093,
+    "seconds": 130.4628315262962,
     "failed_fits": 6,
     "scope": "Development plus main; exact training-window fits shared across arms and origins."
   },
@@ -18,17 +18,17 @@
   "uncached_timing": {
     "B": {
       "n": 36,
-      "seconds": 2.5669534988701344,
-      "median_seconds": 0.0019627289148047566,
+      "seconds": 2.41377900110092,
+      "median_seconds": 0.001964333525393158,
       "fit_attempts": 286
     },
     "D": {
       "n": 36,
-      "seconds": 5.008562455768697,
-      "median_seconds": 0.12801189546007663,
+      "seconds": 4.796011583297513,
+      "median_seconds": 0.12143975053913891,
       "fit_attempts": 394
     }
   },
-  "timing_session": "2026-10-29T21:55:25.456726+00:00",
+  "timing_session": "2026-11-04T23:57:24.802711+00:00",
   "new_llm_calls": 0
 }

@@ -40,3 +40,6 @@ docs/module-3-plan.md
 a02-post-new.md
 a02-routing-panel.ipynb
 a02-routing-panel.ipynb
+examples/module02_panel/reader_fit_bank.json.gz
+examples/module02_panel/reader_timings.json
+examples/module02_panel/reader_work.json
