@@ -2,9 +2,13 @@
 
 Companion article: [a02-post-new.md](../a02-post-new.md).
 
+## SEO title
+
+Agentic Forecasting: When Does Routing Help?
+
 ## SEO description
 
-Does forecast routing help? A 1,800-case retail study finds a small accuracy gain and 27.45% fewer model fits.
+Explore routing in agentic forecasting, why specialist workflows matter, and the trade-offs between forecast accuracy and computational cost.
 
 ## LinkedIn post
 
