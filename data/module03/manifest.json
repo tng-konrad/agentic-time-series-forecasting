@@ -1,0 +1,15 @@
+{
+  "source_csv": "data/a01/abs_retail_panel.csv",
+  "csv_sha256": "6822dd47bdbad769feb6238a7044d4474033bc970690034c4dd9d3bad2999c21",
+  "source_manifest": "data/a01/manifest.json",
+  "source_doc": "docs/ReAct Single-Agent Tool Loops.docx",
+  "source_doc_sha256": "3aaa3fee2c9425bba9c112f3c0dccd33b66297b306c0b34ba23edb2fc00c32b2",
+  "units": "nominal AUD millions",
+  "series_type": "Original",
+  "prefix_end": "2024-06-01",
+  "final_start": "2024-07-01",
+  "final_end": "2025-06-01",
+  "release": "June 2025",
+  "retrieved_on": "2026-10-22",
+  "retrospective_revised_snapshot": true
+}
