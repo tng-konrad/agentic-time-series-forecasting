@@ -1,0 +1,25 @@
+{
+  "source": "https://www.kaggle.com/competitions/demand-forecasting-kernels-only/data",
+  "source_file": "time-series-with-Konrad/data/train.csv",
+  "copied_at": "2026-11-12",
+  "original_retrieval_date": "unavailable; existing local series material",
+  "release": "local competition train.csv snapshot; release identifier unavailable",
+  "raw_sha256": "038f25690a65149c94f86ddd3deceda20c037a5cfd754cafdfc539a72992f2ed",
+  "compressed_sha256": "6d4711bbe3cee664deff5582d245521e4417e0e08722e6785c2709db634886f8",
+  "aggregate_sha256": "be7a8033ad07fc8a1ca1fa51e86f266d759acf0c1a3332eab34049e4ad7fb504",
+  "raw_shape": [
+    913000,
+    4
+  ],
+  "aggregation": "sum sales over all50 items by store/date",
+  "stores": 10,
+  "items_per_store": 50,
+  "dates": 1826,
+  "store_days": 18260,
+  "units": "daily sales units; competition dataset, retailer authenticity not established",
+  "calendar": [
+    "2013-01-01",
+    "2017-12-31"
+  ],
+  "limitations": "historical competition snapshot, no real-time-vintage or representativeness claim"
+}

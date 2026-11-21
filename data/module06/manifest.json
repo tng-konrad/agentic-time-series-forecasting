@@ -1,0 +1,54 @@
+{
+  "prepared_at": "2026-11-12T21:42:41.801543+01:00",
+  "source_url": "https://www.kaggle.com/competitions/demand-forecasting-kernels-only/data",
+  "source_snapshot": "existing competition train.csv; via module05 panel",
+  "source_csv_sha256": "038f25690a65149c94f86ddd3deceda20c037a5cfd754cafdfc539a72992f2ed",
+  "panel_sha256": "c6f3c430fe56705669c5489e32ec9a56ea4d1cf31861057c445dcece96475661",
+  "extraction": "date and item_1 columns, renamed sales; store1/item1; no interpolation",
+  "data_sha256": "2f1694a0f843ab6cd49933d20d4ed355fbfc36e6eb9c525fe80146ed12f57dcc",
+  "rows": 1826,
+  "units": "sales units/day",
+  "start": "2013-01-01",
+  "end": "2017-12-31",
+  "limitations": [
+    "previously explored historical competition snapshot",
+    "retailer provenance unverified",
+    "not real-time-vintage data"
+  ],
+  "sources": {
+    "m07-conformal-prediction.ipynb": "541d3a7b65dc3c1479b2700273d2a6ce9e0a6b6951ccae08839b173ee5fe8181",
+    "m08-validation-methods.ipynb": "5302576c648ae6e333374a8da0d503f06e35ce9f38e7c8e15c272584cc2b09b6",
+    "m16-agents.ipynb": "7dcad245e3f19cb23a10e269793ff764333c8c61f75d9ff71e7cd982447fdf8f",
+    "docs/a06-Evaluator-Optimizer Agentic Workflows.docx": "f5ac52b149cd76d5ef46b7eca05587c99592fd48fa6347b0536e4cdfdde56d0d"
+  },
+  "historical_comparison": {
+    "source": "time-series-with-Konrad/m16-post.md",
+    "sha256": "a1c625fe1bd3666fd6db5aa752b272d2ab3da17bca0985d42140eeff30059b1e",
+    "lines": [
+      130,
+      146
+    ],
+    "status": "HTML-commented draft; current notebook has a different capture",
+    "auto_arima_rmse": 20.52,
+    "chronos2_rmse": 17.92,
+    "excerpt_sha256": "ce33c1a77ff9113c758c0310fa44a2ec9e12d927a7f889759f314e29ea43ef48"
+  },
+  "research": [
+    {
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "verified_on": "2026-11-12"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.11738",
+      "verified_on": "2026-11-12"
+    },
+    {
+      "url": "https://arxiv.org/abs/2303.17651",
+      "verified_on": "2026-11-12"
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.13608",
+      "verified_on": "2026-11-12"
+    }
+  ]
+}

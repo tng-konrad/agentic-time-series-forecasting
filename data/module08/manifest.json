@@ -1,0 +1,11 @@
+{
+  "file": "nyc_taxi.csv",
+  "sha256": "d8fa6f7f0734bf5c8be12c52a94e20a82664c397d9dec4449156bd453d32856d",
+  "source": "https://github.com/numenta/NAB/blob/ea702d75cc2258d9d7dd35ca8e5e2539d71f3140/data/realKnownCause/nyc_taxi.csv",
+  "revision": "ea702d75cc2258d9d7dd35ca8e5e2539d71f3140",
+  "retrieved": "2026-11-13",
+  "retrieval": "copied cached m17 input; hash matches its pinned source",
+  "units": "taxi passengers per 30-minute bin as labeled in NAB; hourly sum used here",
+  "timezone": "naive archive timestamps; no reconstructed timezone or real-time vintages",
+  "prior_exploration": "historical data used in m17; the three predetermined November windows were inspected for background threshold crossings before freeze; not unseen evaluation"
+}

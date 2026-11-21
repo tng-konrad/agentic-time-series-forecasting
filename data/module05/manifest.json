@@ -1,0 +1,18 @@
+{
+  "source_url": "https://www.kaggle.com/competitions/demand-forecasting-kernels-only/data",
+  "source_workspace": "time-series-with-Konrad/data/train.csv",
+  "source_sha256": "038f25690a65149c94f86ddd3deceda20c037a5cfd754cafdfc539a72992f2ed",
+  "source_rows": 913000,
+  "extraction": "store=1; item=1..10; pivot date/item; integer sales; no transform",
+  "retrieved_from_existing_local_source_at": "2026-11-12T20:14:27.814929+01:00",
+  "observation_start": "2013-01-01",
+  "observation_end": "2017-12-31",
+  "panel_shape": [
+    1826,
+    10
+  ],
+  "panel_sha256": "c6f3c430fe56705669c5489e32ec9a56ea4d1cf31861057c445dcece96475661",
+  "units": "daily item sales units",
+  "vintage": "historical competition snapshot; previous exploration and pretraining overlap unknown",
+  "retailer_provenance": "unverified"
+}

@@ -1,0 +1,28 @@
+{
+  "episode_number": 7,
+  "data_sha256": "fcb55ab023ca5d9938cd19e148b6b992e9e4aba50cf7953f4c7f31efbf902e1d",
+  "source_files_sha256": {
+    "m04_sales_data_prepared.csv": "fcb55ab023ca5d9938cd19e148b6b992e9e4aba50cf7953f4c7f31efbf902e1d",
+    "helper-m04.ipynb": "0b69c3f192ef1411e88eee1a15cb9e0c7f599cbddef2539609b4eb965873ee8a",
+    "m04-hierarchical-forecasting.ipynb": "530bcc913fce712c055ae02bcbe5ed3f1ed31ff408b3d73bc271e76dc37ce44d",
+    "m06-sales-and-demand.ipynb": "d5074b91cb48c1f8370ca951e60f6b3daee44fa270e30b64d3315be29199e9a8",
+    "m07-conformal-prediction.ipynb": "541d3a7b65dc3c1479b2700273d2a6ce9e0a6b6951ccae08839b173ee5fe8181",
+    "a07-Orchestrator-Workers Agentic Architecture.docx": "8785d0f984c9173bd8323b947398d073fdc9e8c21cd92dc25d38a6e982695dea"
+  },
+  "prepared_at": "2026-11-13T01:48:22.546832+01:00",
+  "source": "Existing local m04 prepared CSV; helper-m04.ipynb selects FOODS_3_819 from M5 sales_train_evaluation and joins the calendar, filtering date >=2012-01-01. Original downloaded archive/release identity was not independently verified.",
+  "source_url": "https://www.kaggle.com/competitions/m5-forecasting-accuracy/data",
+  "item_id": "FOODS_3_819",
+  "unit": "daily units sold for one item at each store",
+  "shape": [
+    16040,
+    4
+  ],
+  "dates": [
+    "2012-01-01",
+    "2016-05-22"
+  ],
+  "stores": 10,
+  "states": 3,
+  "prior_exposure": "Historical panel previously explored in m04/m06. This is a teaching comparison, not an unseen confirmatory study."
+}
