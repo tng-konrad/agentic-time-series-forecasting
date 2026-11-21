@@ -19,3 +19,9 @@ This repo is about agentic workflows for time series problems:
    Pattern: Single-agent tool loop / ReAct-style agent. 
 
    A local Ollama model chooses diagnostics on three monthly retail series, with six request attempts, five tool attempts and zero retries. Compare every first attempt with a matched fixed checklist; retain unsupported reasons and measured inference overhead.
+
+4. A04: Plan the forecasting experiment before executing it
+
+   Pattern: Plan-and-execute.
+
+   A local Ollama model (`qwen3.5:9b-q8_0`) writes an upfront experiment contract and dependency ledger across ten daily store demand series, while Python handles fitting, scoring, and a Ljung–Box residual monitor. When the initial trend check fails, Python pauses blocked downstream steps, retains completed artifacts, and triggers one bounded revision adding `bsm` and `sarimax`. Compare the repaired plan against `seasonal_naive`, the unrevised counterfactual, and a fixed log-BSM comparator on 90-day forecasts, retaining unresolved diagnostics, explanation-audit results, and measured runtime.
